@@ -95,6 +95,14 @@ Done items move to `DONE.md` with their date. Order inside a lane = priority.
 | A-72 | **Visualise a stack script in vectors:** handlers as nodes (grouped by category/prefix), calls as lines, globals as a ring, drawn in Vibecode3D's vector style (and as an image for the docs) |
 | A-73 | DONE 2026-11-13 (LIB_SCRIPTBLOCKS + LIB_GENERICA/Data/Example): GAD script blocks into LIB_GENERICA `Data/Example/`: generic scripts per object type and per code category, stored INACTIVE (text), with an editor to browse and edit them all at once; applied to objects only on purpose |
 
+### iGame3D, running again (2026-11-13)
+| ID | Task |
+|---|---|
+| A-80 | Find iGame3D's shutdown call so the 7.1.4 server exits cleanly (signal 11 now) |
+| A-81 | Run a 2008 level headless-ish: ig3d_Init on the LIB_BIN Data, load a level by Lua, CopyGLToRevWindow into an image, save a screenshot |
+| A-82 | Harvest with the 9.6.3 server one process per stack (timeout each): the Collector stacks again |
+| O-14 | (owner, when convenient) try the iGame3D Player exe / the LC7 main UI on the desktop if you have LiveCode 7.1.4 (desktop) somewhere | 
+
 ### Project health
 | ID | Task |
 |---|---|

@@ -8,6 +8,10 @@ Friday, November 13, 2026, 01:30. Rewritten at every milestone (OPERATING_PROMPT
 | Spark: iGame3D 2008 manifest | Spark's own window; log `LIB_GAMES/igame3D_2008_Texts/_manifest/spark/_run.log` | ~800 requests left (~9 h); `.fl` files skipped; Fluid/Mappers: 5 final builds only |
 
 ## Done today
+- **LIB_BIN:** LiveCode Community Server 7.1.4 (32-bit) and 9.6.3 (64-bit) installed and running
+  from WSL. **The 2007 iGame3D Pro external loads in 7.1.4** (123 commands, 53 functions), starts
+  (OpenGL 4.6) and **runs Lua** (`print(6*7)` → 42). Why it seemed dead: the LC7 stack names the
+  Mac `.bundle`, and only a 32-bit engine can load it. `LIB_ig3d/IGAME3D_EXTERNAL.md` (+ `_API.md`).
 - **Owner's SUPER_IMPORTANT note:** images ignored by every model incl. Spark (rule 4); provenance
   then dedupe (rule 4b, `tools/provenance.py`; record in `LIB_LLMOUT/Read/LIB_XTJSON/PROVENANCE.md`:
   192 files, no identical copies). The inbox's ~2,900 non-stack files were cleared before this
