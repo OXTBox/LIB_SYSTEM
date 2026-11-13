@@ -70,6 +70,11 @@ Details and routing rules: `OPERATING_PROMPT.md`.
 ### Files and folders
 1. Inputs arrive in `LIB_LLMIN/<project>/`. Once read AND acted on, MOVE them to
    `LIB_LLMOUT/Read/<project>/` (log where the work went). Never make `input/` folders in a project.
+2. **Every `LIB_` folder is its own git repository** (the owner, 2026-11-13: "as if we might
+   suddenly change base programming paradigms and lib it all over again"). A new LIB_ gets
+   `git init -b main` and a first commit the day it is made. Passing or third-party bulk is
+   ignored, not tracked: LIB_LLMIN/LIB_LLMOUT keep only their READMEs, LIB_GAD ignores the
+   downloaded Galactica source trees.
 2. Each project keeps a `README.md` (what, how to use) and, for AI notes, a `CLAUDE.md`.
 3. Never leave loose scripts around `~/projects`: scripts belong to a project or the corpus.
 4. Don't look at `.png` files in the inbox unless asked; count them, that is all.
