@@ -98,8 +98,9 @@ Done items move to `DONE.md` with their date. Order inside a lane = priority.
 ### iGame3D, running again (2026-11-13)
 | ID | Task |
 |---|---|
-| A-80 | Find iGame3D's shutdown call so the 7.1.4 server exits cleanly (signal 11 now) |
-| A-81 | Run a 2008 level headless-ish: ig3d_Init on the LIB_BIN Data, load a level by Lua, CopyGLToRevWindow into an image, save a screenshot |
+| A-80 | (PARKED 2026-11-13: the old engine is reference, not ongoing) Find iGame3D's shutdown call so the 7.1.4 server exits cleanly (signal 11 now) |
+| A-81 | (PARKED) Run a 2008 level headless-ish: ig3d_Init on the LIB_BIN Data, load a level by Lua, CopyGLToRevWindow into an image, save a screenshot |
+| A-83 | **Reuse inventory of the old iGame3D main UI** (2007 `.rev` vs 2026 `.livecode` harvests): every stack, card, control and script group sorted keep / adapt / junk, with where each kept piece goes now (LIB_SCRIPTBLOCKS examples, LIB_GENERICA, Vibecode3D/xt3d editors, LIB_TOOLBAR) |
 | A-82 | Harvest with the 9.6.3 server one process per stack (timeout each): the Collector stacks again |
 | O-14 | (owner, when convenient) try the iGame3D Player exe / the LC7 main UI on the desktop if you have LiveCode 7.1.4 (desktop) somewhere | 
 
