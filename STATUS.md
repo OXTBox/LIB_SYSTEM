@@ -8,6 +8,16 @@ Friday, November 13, 2026, 01:30. Rewritten at every milestone (OPERATING_PROMPT
 | Spark: iGame3D 2008 manifest | Spark's own window; log `LIB_GAMES/igame3D_2008_Texts/_manifest/spark/_run.log` | ~800 requests left (~9 h); `.fl` files skipped; Fluid/Mappers: 5 final builds only |
 
 ## Done today
+- **Owner's SUPER_IMPORTANT note:** images ignored by every model incl. Spark (rule 4); provenance
+  then dedupe (rule 4b, `tools/provenance.py`; record in `LIB_LLMOUT/Read/LIB_XTJSON/PROVENANCE.md`:
+  192 files, no identical copies). The inbox's ~2,900 non-stack files were cleared before this
+  (not by me): say if that wasn't you.
+- **New stacks harvested:** iGame3D main UI 2007 (`ig3d_MainUI050107.rev`: 17 stacks, 41 cards,
+  971 controls, 315 scripts) and 2026 (`ig3d_UI_MAIN_11_13_2026`: 19 stacks, 46 cards, 1,226
+  controls, 328 scripts). The harvester had been renamed to `.txt` (owner): tools accept both.
+- **LIB_SCRIPTBLOCKS** (owner agreed): harvest / manage / export script blocks. Examples in
+  `LIB_GENERICA/Data/Example`: 24 blocks (all 351 handlers of GAD_WORKING + Generica), 47 generic
+  object scripts, inactive text. ScriptBlocks stack: edit, Check, Find, Replace in all, Export, Apply.
 - **Harvester bug fixed (LIB_XTJSON branch `harvester-nested-groups`, checked out):** every group
   inside a group was dropped (LiveCode error 242). Re-harvested with 0 errors: Invaders (73 objects
   were missing), TTRPG_STUDIO, GenericaAnyData_04042018a, **GAD_Globals (7)**, **Game_Object_Properties_Manager**,

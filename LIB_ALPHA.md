@@ -41,6 +41,7 @@ mention LiveCode 9.6.3 or the Community edition in public material (internally i
 | `LIB_DATA` | the one Data folder every app loads and saves through (`Documents/Data`) |
 | `LIB_GAD` | Galactica (Ed Zavada) reference; GAD = Generic Any Data; our Genetic Anomaly Detector |
 | `LIB_GENERICA` | a game's words as plain label files (Galactica's 533 labels; themes overlay a base): retheme by editing labels, not code |
+| `LIB_SCRIPTBLOCKS` | harvest, manage and export script blocks: GAD's code palette as its own stack and library; edits examples and other stacks, never its own source |
 | `LIB_ig3d` | where the worlds converge: glossary, procedures, engine categories |
 | `LIB_PUBLIC` | the public page |
 | `LIB_GLOBALS` | (planned) every global name, its use, and its Python equivalent |
