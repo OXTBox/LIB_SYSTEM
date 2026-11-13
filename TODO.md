@@ -19,6 +19,7 @@ Done items move to `DONE.md` with their date. Order inside a lane = priority.
 | O-10 | Look at 3 or 4 Spark GUI design drafts when they land (S-3) and mark keep / redo | 20 min | A-45 |
 | O-11 | (dropped 2026-11-13: I work to each limit and commit on branches) | - | - |
 | O-12 | Decide the Thrmnlra working title for public use | 2 min | LIB_PUBLIC |
+| O-13 | Correct the Genetic Anomaly draft words (`LIB_GENERICA/sets/genetic_anomaly/`: 7 small files) | 15 min | A-61 |
 
 ## Spark (local, free; I prepare the prompts, you start `START_SPARK.bat` when a run is ready)
 
@@ -75,6 +76,14 @@ Done items move to `DONE.md` with their date. Order inside a lane = priority.
 | A-42 | LIB_GUI: a GUI builder that keeps the system alive outside the LiveCode engine (the "put away the old IDE" test) |
 | A-43 | LIB_USERS: who is at the controls (for titles, logs and permissions) |
 | A-45 | Spark GUI design prompts (S-3), then test the approved ones in LiveCode via XTJSON redeem |
+
+### LIB_GENERICA (approved 2026-11-13)
+| ID | Task |
+|---|---|
+| A-60 | Thrmnlra and Amazing Couple take their UI words and event strings from LIB_GENERICA sets (a `thrmnlra` theme) |
+| A-61 | Genetic Anomaly theme: fill the other game-state lists with the owner (O-13) |
+| A-62 | A label editor stack (LIB_TEST): browse categories, edit labels, save the files |
+| A-63 | Move the 393 duplicate label .txt files in LIB_LLMIN/LIB_XTJSON to LIB_LLMOUT (the set is now the source) |
 
 ### Project health
 | ID | Task |

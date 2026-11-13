@@ -40,6 +40,7 @@ mention LiveCode 9.6.3 or the Community edition in public material (internally i
 | `LIB_MOCAP` / `LIB_BVH` | video -> motion capture -> characters / the BVH motion library (local only: rights unsettled) |
 | `LIB_DATA` | the one Data folder every app loads and saves through (`Documents/Data`) |
 | `LIB_GAD` | Galactica (Ed Zavada) reference; GAD = Generic Any Data; our Genetic Anomaly Detector |
+| `LIB_GENERICA` | a game's words as plain label files (Galactica's 533 labels; themes overlay a base): retheme by editing labels, not code |
 | `LIB_ig3d` | where the worlds converge: glossary, procedures, engine categories |
 | `LIB_PUBLIC` | the public page |
 | `LIB_GLOBALS` | (planned) every global name, its use, and its Python equivalent |

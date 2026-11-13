@@ -17,6 +17,9 @@ Friday, November 13, 2026, 01:30. Rewritten at every milestone (OPERATING_PROMPT
 - A-12, GAD first: `LIB_GAD/GENERICA_TEMPLATE.md`. Generica = a 37-category, 637-label
   schema of a game's words (Galactica's); data unchanged since Feb 2024, the 2026 builds load it
   from the .txt files; maps onto Galactica-4's variables; GAD_WORKING is a separate line (the game).
+- **LIB_GENERICA** (approved): `sets/galactica` (49 lists, 533 labels from the newest Generica),
+  `sets/genetic_anomaly` (DRAFT overlay, 7 lists), LiveCode + Python loaders (overlays, slot
+  filling), Sequencer `{@list:n}`. Tested in Python and in LiveCode. Branch `lib-generica-1`.
 - Rules updated: work to each 5-hour limit, committing on branches (LIB_ALPHA rule 7, operating prompt §5).
 - Branch commits: LIB_SYSTEM `lib-system-draft1`, LIB_XTJSON `xtjson-batch`, LIB_GAMES `spark-review`.
 
