@@ -37,11 +37,11 @@ Done items move to `DONE.md` with their date. Order inside a lane = priority.
 ### XTJSON and the stack inbox
 | ID | Task |
 |---|---|
-| A-10 | Finish the 2026-11-13 batch (32 stacks left; the watchdog stopped with the last session): resume under `LIB_XTJSON/tools/xtjson_batch_watch.sh` |
-| A-11 | Batch app: pass `customSample=5` for stacks over 2 MB; retry CRASHED stacks with sampling; then decide LiveCode Server (one process per stack) after O-5 |
+| A-10 (done) | Finish the 2026-11-13 batch (32 stacks left; the watchdog stopped with the last session): resume under `LIB_XTJSON/tools/xtjson_batch_watch.sh` |
+| A-11 (done) | Batch app: pass `customSample=5` for stacks over 2 MB; retry CRASHED stacks with sampling; then decide LiveCode Server (one process per stack) after O-5 |
 | A-12 | Analyse all harvests, newest builds first (`XTJSON/batch/_NEWEST.md`): GAD/Generica as a reusable template (variables, options, save/load), then CLIP, DND/TTRPG, Enochian, the rest; map Generica's variables onto `LIB_GAD/GAD_ESSENCE_AND_VARIABLES.md` |
 | A-13 | Make `XTJSON/newest/` links; move the inbox's non-stack files to `LIB_LLMOUT/Read` once analysed (no PNG reading) |
-| A-14 | Document `customSample` in `LIB_XTJSON/docs/HARVEST_FORMAT.md`; commit LCHarvest2 + watchdog |
+| A-14 (done) | Document `customSample` in `LIB_XTJSON/docs/HARVEST_FORMAT.md`; commit LCHarvest2 + watchdog |
 
 ### Spark manifest (iGame3D 2008)
 | ID | Task |

@@ -8,6 +8,13 @@ Friday, November 13, 2026, 01:30. Rewritten at every milestone (OPERATING_PROMPT
 | Spark: iGame3D 2008 manifest | Spark's own window; log `LIB_GAMES/igame3D_2008_Texts/_manifest/spark/_run.log` | ~800 requests left (~9 h); `.fl` files skipped; Fluid/Mappers: 5 final builds only |
 
 ## Done today
+- **Harvester bug fixed (LIB_XTJSON branch `harvester-nested-groups`, checked out):** every group
+  inside a group was dropped (LiveCode error 242). Re-harvested with 0 errors: Invaders (73 objects
+  were missing), TTRPG_STUDIO, GenericaAnyData_04042018a, **GAD_Globals (7)**, **Game_Object_Properties_Manager**,
+  GenericaProperties 03162026a / Day_2_Part6 / Day_3_Part1, XMLdemo, video_capture; and the Vibecode3D
+  engine harvest (29 missing; Vibecode3D branch `xtjson-nested-groups`). GAD notes written from the
+  old GAD_Globals / Game_Object_Properties_Manager harvests may need a second look.
+- All 19 `LIB_` folders are git repositories (LIB_ALPHA rule 2); LIB_LLMOUT items now in `Read/`.
 - LIB_SYSTEM started: `LIB_ALPHA.md`, `LIB_OMEGA.md`, `OPERATING_PROMPT.md`, `TODO.md`, this file.
 - XTJSON batch: 113 of 115 stacks harvested into `~/projects/XTJSON/batch/`, originals moved to
   `LIB_LLMOUT/Read/LIB_XTJSON/`. Left: `Web_Collector_Watcher_..._newest.livecode` (crashes LiveCode,
