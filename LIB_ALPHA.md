@@ -47,6 +47,7 @@ mention LiveCode 9.6.3 or the Community edition in public material (internally i
 | `LIB_GLOBALS` | (planned) every global name, its use, and its Python equivalent |
 | `LIB_USERS` | (planned) who is at the controls: owner, Claude, Spark, other agents |
 | `LIB_SYSTEM` | this: the rules and the plan |
+| `LIB_BIN` | third-party applications (e.g. LiveCode Server 9.6.3 Linux) in versioned folders; git keeps only README + MANIFEST; internal only |
 | **Passing through** | |
 | `LIB_LLMIN/<project>/` | the inbox: the owner drops anything for the AIs here |
 | `LIB_LLMOUT/Read/<project>/` | read and acted on: items move here, never deleted |

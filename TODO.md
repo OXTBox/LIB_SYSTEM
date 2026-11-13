@@ -11,7 +11,7 @@ Done items move to `DONE.md` with their date. Order inside a lane = priority.
 | O-2 | Play Thrmnlra (Vibecode3D standalone, card Play.Thrmnlra): note anything else too fast, too hard, or unclear | 15 min | A-20 |
 | O-3 | Review LIB_GAMES branch `thrmnlra` (Sequencer + Thrmnlra) and say merge or not | 15 min | A-21 |
 | O-4 | Review LIB_GAMES branch `amazing-couple` and say merge or not | 15 min | PROMPT_GLAZE |
-| O-5 | Find the LiveCode Server 9.6.3 (Linux) zip if you have it; drop it in `LIB_LLMIN/LIB_XTJSON/` | 5 min | A-11 |
+| O-5 | Find the LiveCode Server 9.6.3 (Linux) zip if you have it; drop it in `LIB_LLMIN/LIB_BIN/` (it goes to `LIB_BIN/livecode-server/9.6.3-linux-x64/`) | 5 min | A-11 |
 | O-6 | Say what to do with `xt3D_Raylib_Livecode_Bridge/ForClaude/ClaudeRead` (tracked on your feature branch): move to `LIB_LLMOUT/Read`, or keep | 1 min | tidy |
 | O-7 | Say whether the two LIB_PUBLIC notes ("any text to use...", "dowhathouwilt.txt") were already used | 1 min | LIB_PUBLIC |
 | O-8 | Sketch (words or a photo) the LIB_TOOLBAR you want: which buttons, where it sits | 10 min | A-40 |
