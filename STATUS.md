@@ -55,6 +55,8 @@ Full list: `TODO.md`, owner lane.
 ## Next (AI)
 
 1. A-12: the newest builds by family: the iGame3D main UI 2007 vs 2026 first, then CLIP, DND/TTRPG, Enochian, the one-offs.
-2. Collector_v11022026 (running now); Web_Collector_Watcher crashes LiveCode: one-process test (A-11).
+2. Both Collector stacks (Collector_v11022026, Web_Collector_Watcher) hang LiveCode on harvest, even
+   sampled (guess: a browser widget). Their scripts are already exported as text in the inbox
+   (`CollectorStacks/*.txt`): analyse those; one-process test later (A-11).
 3. LIB_SCRIPTBLOCKS: open the ScriptBlocks stack in LiveCode and test it; the palette view.
 4. A-72: a stack script drawn in vectors (handlers as nodes, calls as lines).
