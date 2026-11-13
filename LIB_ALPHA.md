@@ -1,7 +1,7 @@
 # LIB_ALPHA: read this first
 
 Friday, November 13, 2026. Draft 1, written by Claude (Opus 5.5) from the owner's notes
-(`LIB_LLMOUT/LIB_SYSTEM/Notes To Claude 1207AM_11_13_2026.txt`, `LIB_ARRAY/Notes To Claude 756PM_11_12_2026.txt`)
+(`LIB_LLMOUT/Read/LIB_SYSTEM/Notes To Claude 1207AM_11_13_2026.txt`, `LIB_ARRAY/Notes To Claude 756PM_11_12_2026.txt`)
 and two days of working memory. The owner corrects it; every AI model, agent or person
 working in `~/projects` reads it before any important task, and again whenever they lose the
 thread. `LIB_OMEGA.md` holds the lessons that made these rules; `OPERATING_PROMPT.md` says how
@@ -48,7 +48,7 @@ mention LiveCode 9.6.3 or the Community edition in public material (internally i
 | `LIB_SYSTEM` | this: the rules and the plan |
 | **Passing through** | |
 | `LIB_LLMIN/<project>/` | the inbox: the owner drops anything for the AIs here |
-| `LIB_LLMOUT/<project>/` | read and acted on: items move here, never deleted |
+| `LIB_LLMOUT/Read/<project>/` | read and acted on: items move here, never deleted |
 | `LIB_TEST/` | (planned) what the owner should open and try now |
 | `LIB_LOGS/` | (planned) saved test stacks and their results |
 | `XTJSON/` | harvests of the owner's stacks (data, not a repository) |
@@ -69,7 +69,7 @@ Details and routing rules: `OPERATING_PROMPT.md`.
 
 ### Files and folders
 1. Inputs arrive in `LIB_LLMIN/<project>/`. Once read AND acted on, MOVE them to
-   `LIB_LLMOUT/<project>/` (log where the work went). Never make `input/` folders in a project.
+   `LIB_LLMOUT/Read/<project>/` (log where the work went). Never make `input/` folders in a project.
 2. Each project keeps a `README.md` (what, how to use) and, for AI notes, a `CLAUDE.md`.
 3. Never leave loose scripts around `~/projects`: scripts belong to a project or the corpus.
 4. Don't look at `.png` files in the inbox unless asked; count them, that is all.

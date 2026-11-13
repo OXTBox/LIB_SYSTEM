@@ -12,7 +12,7 @@ Done items move to `DONE.md` with their date. Order inside a lane = priority.
 | O-3 | Review LIB_GAMES branch `thrmnlra` (Sequencer + Thrmnlra) and say merge or not | 15 min | A-21 |
 | O-4 | Review LIB_GAMES branch `amazing-couple` and say merge or not | 15 min | PROMPT_GLAZE |
 | O-5 | Find the LiveCode Server 9.6.3 (Linux) zip if you have it; drop it in `LIB_LLMIN/LIB_XTJSON/` | 5 min | A-11 |
-| O-6 | Say what to do with `xt3D_Raylib_Livecode_Bridge/ForClaude/ClaudeRead` (tracked on your feature branch): move to LIB_LLMOUT, or keep | 1 min | tidy |
+| O-6 | Say what to do with `xt3D_Raylib_Livecode_Bridge/ForClaude/ClaudeRead` (tracked on your feature branch): move to `LIB_LLMOUT/Read`, or keep | 1 min | tidy |
 | O-7 | Say whether the two LIB_PUBLIC notes ("any text to use...", "dowhathouwilt.txt") were already used | 1 min | LIB_PUBLIC |
 | O-8 | Sketch (words or a photo) the LIB_TOOLBAR you want: which buttons, where it sits | 10 min | A-40 |
 | O-9 | Pick the users list for window titles (LIB_USERS): OWNER, CLAUDE, SPARK, ...? and their short tags | 2 min | A-30 |
@@ -40,7 +40,7 @@ Done items move to `DONE.md` with their date. Order inside a lane = priority.
 | A-10 | Finish the 2026-11-13 batch (32 stacks left; the watchdog stopped with the last session): resume under `LIB_XTJSON/tools/xtjson_batch_watch.sh` |
 | A-11 | Batch app: pass `customSample=5` for stacks over 2 MB; retry CRASHED stacks with sampling; then decide LiveCode Server (one process per stack) after O-5 |
 | A-12 | Analyse all harvests, newest builds first (`XTJSON/batch/_NEWEST.md`): GAD/Generica as a reusable template (variables, options, save/load), then CLIP, DND/TTRPG, Enochian, the rest; map Generica's variables onto `LIB_GAD/GAD_ESSENCE_AND_VARIABLES.md` |
-| A-13 | Make `XTJSON/newest/` links; move the inbox's non-stack files to LIB_LLMOUT once analysed (no PNG reading) |
+| A-13 | Make `XTJSON/newest/` links; move the inbox's non-stack files to `LIB_LLMOUT/Read` once analysed (no PNG reading) |
 | A-14 | Document `customSample` in `LIB_XTJSON/docs/HARVEST_FORMAT.md`; commit LCHarvest2 + watchdog |
 
 ### Spark manifest (iGame3D 2008)
@@ -83,7 +83,7 @@ Done items move to `DONE.md` with their date. Order inside a lane = priority.
 | A-60 | Thrmnlra and Amazing Couple take their UI words and event strings from LIB_GENERICA sets (a `thrmnlra` theme) |
 | A-61 | Genetic Anomaly theme: fill the other game-state lists with the owner (O-13) |
 | A-62 | A label editor stack (LIB_TEST): browse categories, edit labels, save the files |
-| A-63 | Move the 393 duplicate label .txt files in LIB_LLMIN/LIB_XTJSON to LIB_LLMOUT (the set is now the source) |
+| A-63 | Move the 393 duplicate label .txt files in LIB_LLMIN/LIB_XTJSON to `LIB_LLMOUT/Read` (the set is now the source) |
 | A-64 | Script-block browser: GAD's code palette (handlers by name prefix, one button per category) over any harvest or live stack (LIB_MCP), read-only first (`LIB_GAD/GAD_SELF_WRITING_SCRIPTS.md`) |
 | A-65 | A developer library for GAD's script tools (insert global, global init builder, trace codes, block compare) that edits OTHER stacks or script files, with a backup before each write; fix the bugs listed in the GAD doc |
 

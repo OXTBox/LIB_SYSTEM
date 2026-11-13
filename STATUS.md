@@ -10,7 +10,7 @@ Friday, November 13, 2026, 01:30. Rewritten at every milestone (OPERATING_PROMPT
 ## Done today
 - LIB_SYSTEM started: `LIB_ALPHA.md`, `LIB_OMEGA.md`, `OPERATING_PROMPT.md`, `TODO.md`, this file.
 - XTJSON batch: 113 of 115 stacks harvested into `~/projects/XTJSON/batch/`, originals moved to
-  `LIB_LLMOUT/LIB_XTJSON/`. Left: `Web_Collector_Watcher_..._newest.livecode` (crashes LiveCode,
+  `LIB_LLMOUT/Read/LIB_XTJSON/`. Left: `Web_Collector_Watcher_..._newest.livecode` (crashes LiveCode,
   even sampled: A-11) and `Bezier.livecode/__MACOSX/._Bezier.livecode` (Mac junk, not a stack).
 - Newest builds of each stack family listed: `XTJSON/batch/_NEWEST.md`; `XTJSON/newest/` links
   the 80 newest harvests (33 older builds left out) (A-13, first half).
@@ -37,5 +37,5 @@ Full list: `TODO.md`, owner lane.
 
 ## Next (AI)
 1. A-12: the other newest builds: CLIP, DND/TTRPG, Enochian, then the one-offs (a table per family).
-2. A-13: move the inbox's non-stack files to LIB_LLMOUT once analysed.
+2. A-13: move the inbox's non-stack files to `LIB_LLMOUT/Read` once analysed.
 3. A-14: document `customSample`; commit LIB_XTJSON (harvester, batch app, watchdog).

@@ -10,5 +10,5 @@ The rules and the plan for the whole LIB_ARRAY (`~/projects`). Read in this orde
 | `TODO.md` | The long list: owner tasks posted early, Spark tasks, AI tasks, open questions with defaults |
 | `STATUS.md` | Today: running, done, waiting, next |
 
-Started 2026-11-13 from the owner's notes (`LIB_LLMOUT/LIB_SYSTEM/`, `LIB_ARRAY/`). Draft 1:
+Started 2026-11-13 from the owner's notes (`LIB_LLMOUT/Read/LIB_SYSTEM/`, `LIB_ARRAY/`). Draft 1:
 the owner corrects it, the models keep it current.
