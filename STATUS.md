@@ -8,6 +8,11 @@ Friday, November 13, 2026, 01:30. Rewritten at every milestone (OPERATING_PROMPT
 | Spark: iGame3D 2008 manifest | Spark's own window; log `LIB_GAMES/igame3D_2008_Texts/_manifest/spark/_run.log` | ~800 requests left (~9 h); `.fl` files skipped; Fluid/Mappers: 5 final builds only |
 
 ## Done today
+- **WEEKEND HANDOVER (usage nearly out until Sunday's reset):** `LIB_TEST/README.md` is the test
+  sheet; `PLAY_Thrmnlra_Vibecode3D.bat` and `PLAY_Thrmnlra_xt3d.bat` launch the game in each engine
+  without an AI. Thrmnlra runs unchanged in the xt3d games bench (labels line up, 27 fps). Pace is
+  70% (`kPace`), grid at rest 10,40,10. Owner's notes go in `LIB_TEST/OBSERVATIONS.txt`.
+  NOT done: answers growing by letters, the fitness-of-service test, Escape pause menu, titles (A-20, A-30, A-33).
 - **LIB_BIN:** LiveCode Community Server 7.1.4 (32-bit) and 9.6.3 (64-bit) installed and running
   from WSL. **The 2007 iGame3D Pro external loads in 7.1.4** (123 commands, 53 functions), starts
   (OpenGL 4.6) and **runs Lua** (`print(6*7)` → 42). Why it seemed dead: the LC7 stack names the
