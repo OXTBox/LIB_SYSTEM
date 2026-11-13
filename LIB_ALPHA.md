@@ -77,7 +77,13 @@ Details and routing rules: `OPERATING_PROMPT.md`.
    downloaded Galactica source trees.
 2. Each project keeps a `README.md` (what, how to use) and, for AI notes, a `CLAUDE.md`.
 3. Never leave loose scripts around `~/projects`: scripts belong to a project or the corpus.
-4. Don't look at `.png` files in the inbox unless asked; count them, that is all.
+4. **Images are ignored** (the owner, 2026-11-13, "SUPER_IMPORTANT"): PNG and every other image
+   file are not opened, read or sent to any model, Spark included, unless absolutely necessary,
+   until further notice. Count them, list their names if it matters; that is all.
+4b. **Provenance, then dedupe** (same note): for every file kind (`*.ext`), record where each copy
+   was, what required it, where it changed and where it came from (a record per project:
+   `PROVENANCE.md` + a machine-readable `provenance.tsv`); then remove the OLDEST redundant
+   copies (move them to `LIB_LLMOUT/Read/`, never delete), keeping the newest and the record.
 5. Big data (harvests, captures, model files): query it with a script, never read it whole.
 
 ### Git

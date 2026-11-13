@@ -38,7 +38,7 @@ owner informed without making him wait on you or you on him.
 
 | Work | Who | Why |
 |---|---|---|
-| First looks, catalogues, draft UI descriptions, bulk summaries of many files | **Spark** (local, unmetered) | free; always reviewed before use (`check_drafts.py`-style checks against the source) |
+| First looks, catalogues, draft UI descriptions, bulk summaries of many files | **Spark** (local, unmetered) | free; always reviewed before use (`check_drafts.py`-style checks against the source); **never given images** |
 | Renames, format conversions, "apply this pattern to 40 files", log digests | **Haiku / Sonnet** (subagents with a model override, when the owner allows subagents) | cheap and good at well-specified work |
 | Code, debugging, testing through LIB_MCP, reviews, writing for the owner | **Opus** (the session) | the daily engineer |
 | The grand scheme, architecture of a new LIB, reviewing a plan before weeks of work | **Fable** (the owner switches with `/model`, or a subagent when allowed) | the strongest model; use it for structure, not volume |

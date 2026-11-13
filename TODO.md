@@ -87,6 +87,14 @@ Done items move to `DONE.md` with their date. Order inside a lane = priority.
 | A-64 | Script-block browser: GAD's code palette (handlers by name prefix, one button per category) over any harvest or live stack (LIB_MCP), read-only first (`LIB_GAD/GAD_SELF_WRITING_SCRIPTS.md`) |
 | A-65 | A developer library for GAD's script tools (insert global, global init builder, trace codes, block compare) that edits OTHER stacks or script files, with a backup before each write; fix the bugs listed in the GAD doc |
 
+### From the owner's SUPER_IMPORTANT note (2026-11-13)
+| ID | Task |
+|---|---|
+| A-70 | Provenance record of the LIB_XTJSON inbox and harvests by file kind (where each copy was, what needs it, what changed, where it came from; content hashes), then move the oldest redundant copies to LIB_LLMOUT/Read (LIB_ALPHA rule 4b) |
+| A-71 | Show unfinished stacks: a viewer that displays any harvested stack (cards, controls, scripts) even when the stack itself can't run |
+| A-72 | **Visualise a stack script in vectors:** handlers as nodes (grouped by category/prefix), calls as lines, globals as a ring, drawn in Vibecode3D's vector style (and as an image for the docs) |
+| A-73 | GAD script blocks into LIB_GENERICA `Data/Example/`: generic scripts per object type and per code category, stored INACTIVE (text), with an editor to browse and edit them all at once; applied to objects only on purpose |
+
 ### Project health
 | ID | Task |
 |---|---|
