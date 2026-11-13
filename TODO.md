@@ -84,6 +84,8 @@ Done items move to `DONE.md` with their date. Order inside a lane = priority.
 | A-61 | Genetic Anomaly theme: fill the other game-state lists with the owner (O-13) |
 | A-62 | A label editor stack (LIB_TEST): browse categories, edit labels, save the files |
 | A-63 | Move the 393 duplicate label .txt files in LIB_LLMIN/LIB_XTJSON to LIB_LLMOUT (the set is now the source) |
+| A-64 | Script-block browser: GAD's code palette (handlers by name prefix, one button per category) over any harvest or live stack (LIB_MCP), read-only first (`LIB_GAD/GAD_SELF_WRITING_SCRIPTS.md`) |
+| A-65 | A developer library for GAD's script tools (insert global, global init builder, trace codes, block compare) that edits OTHER stacks or script files, with a backup before each write; fix the bugs listed in the GAD doc |
 
 ### Project health
 | ID | Task |
@@ -97,4 +99,5 @@ Done items move to `DONE.md` with their date. Order inside a lane = priority.
 | ID | Question | Default |
 |---|---|---|
 | Q-1 | LIB_LOGS file name: `<intention>_<result>_<names>.livecode<seconds>.lib_log` exactly, or `<...>_<seconds>.lib_log`? | `<intention>_<result>_<names>_<seconds>.lib_log` (a saved .livecode stack inside) |
+| Q-3 | Make `LIB_GAD` a git repo (third-party Galactica sources ignored, local only)? | yes, local only, the Galactica folders in `.gitignore` |
 | Q-2 | Thrmnlra's G.O.A.T.-style test: name it something of ours in public? | "Fitness of Service test" |

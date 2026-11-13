@@ -20,6 +20,9 @@ Friday, November 13, 2026, 01:30. Rewritten at every milestone (OPERATING_PROMPT
 - **LIB_GENERICA** (approved): `sets/galactica` (49 lists, 533 labels from the newest Generica),
   `sets/genetic_anomaly` (DRAFT overlay, 7 lists), LiveCode + Python loaders (overlays, slot
   filling), Sequencer `{@list:n}`. Tested in Python and in LiveCode. Branch `lib-generica-1`.
+- GAD's self-writing system mapped: `LIB_GAD/GAD_SELF_WRITING_SCRIPTS.md` (code as data, the
+  script-block palette, globals written into the stack script, Generica's file import and global
+  init builder, the trace-code instrumenter; 5 bugs found). New TODO A-64, A-65.
 - Rules updated: work to each 5-hour limit, committing on branches (LIB_ALPHA rule 7, operating prompt §5).
 - Branch commits: LIB_SYSTEM `lib-system-draft1`, LIB_XTJSON `xtjson-batch`, LIB_GAMES `spark-review`.
 
@@ -28,6 +31,7 @@ Friday, November 13, 2026, 01:30. Rewritten at every milestone (OPERATING_PROMPT
 |---|---|---|
 | O-1 | Correct LIB_ALPHA / OPERATING_PROMPT | they stand as written |
 | O-5 | LiveCode Server 9.6.3 Linux zip? | I'll look for it online when you say so |
+| Q-3 | Make LIB_GAD a git repo? | yes, local only, Galactica sources ignored |
 | Q-1 | LIB_LOGS file name | `<intention>_<result>_<names>_<seconds>.lib_log` |
 Full list: `TODO.md`, owner lane.
 
