@@ -1,6 +1,6 @@
 # STATUS
 
-Friday, November 13, 2026, 01:00. Rewritten at every milestone (OPERATING_PROMPT section 4).
+Friday, November 13, 2026, 01:30. Rewritten at every milestone (OPERATING_PROMPT section 4).
 
 ## Running (no Claude usage)
 | What | Where | State |
@@ -14,6 +14,11 @@ Friday, November 13, 2026, 01:00. Rewritten at every milestone (OPERATING_PROMPT
   even sampled: A-11) and `Bezier.livecode/__MACOSX/._Bezier.livecode` (Mac junk, not a stack).
 - Newest builds of each stack family listed: `XTJSON/batch/_NEWEST.md`; `XTJSON/newest/` links
   the 80 newest harvests (33 older builds left out) (A-13, first half).
+- A-12, GAD first: `LIB_GAD/GENERICA_TEMPLATE.md`. Generica = a 37-category, 637-label
+  schema of a game's words (Galactica's); data unchanged since Feb 2024, the 2026 builds load it
+  from the .txt files; maps onto Galactica-4's variables; GAD_WORKING is a separate line (the game).
+- Rules updated: work to each 5-hour limit, committing on branches (LIB_ALPHA rule 7, operating prompt §5).
+- Branch commits: LIB_SYSTEM `lib-system-draft1`, LIB_XTJSON `xtjson-batch`, LIB_GAMES `spark-review`.
 
 ## Waiting on the owner (with the default I'll take)
 | ID | Question | Default |
@@ -24,6 +29,6 @@ Friday, November 13, 2026, 01:00. Rewritten at every milestone (OPERATING_PROMPT
 Full list: `TODO.md`, owner lane.
 
 ## Next (AI)
-1. A-12: analyse the harvests, newest builds first; GAD/Generica as a reusable template.
+1. A-12: the other newest builds: CLIP, DND/TTRPG, Enochian, then the one-offs (a table per family).
 2. A-13: move the inbox's non-stack files to LIB_LLMOUT once analysed.
 3. A-14: document `customSample`; commit LIB_XTJSON (harvester, batch app, watchdog).
