@@ -54,6 +54,8 @@ Rules of economy:
 
 - **In chat:** short; what changed, what was tested, what wasn't, what's next. Tables over prose.
 - **`LIB_SYSTEM/STATUS.md`:** rewritten at every milestone: Running / Done today / Waiting on owner / Next.
+- **`LIB_SYSTEM/PROGRESS.html`** (and `.md`): run `python3 -I LIB_SYSTEM/tools/progress.py` after each milestone; it lists
+  what waits on the owner, the branches waiting for review and every commit, newest first.
 - **Away from the keyboard:** if he's away for hours, append to STATUS.md and, where the session
   allows push notifications, send one line when something finishes or needs him.
 - **At the end of a session or before the budget line:** update STATUS.md and the resume note
