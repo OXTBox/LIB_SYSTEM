@@ -1,6 +1,6 @@
 # Progress, newest first
 
-Made Friday, November 13, 2026 23:04 by `LIB_SYSTEM/tools/progress.py` (run it again to refresh). Last 3 days, every project.
+Made Saturday, November 14, 2026 00:41 by `LIB_SYSTEM/tools/progress.py` (run it again to refresh). Last 3 days, every project.
 
 ## Waiting on the owner (with the default I'll take)
 
@@ -31,31 +31,92 @@ Full list: `TODO.md`, owner lane.
 
 | last commit | project | branch | commits | latest |
 |---|---|---|---|---|
+| Sat Nov 14, 00:40 | LIB_GAMES | `game-notes` | 3 | Game notes box = the in-game command line: /next /back /play <name> /games |
+| Sat Nov 14, 00:36 | LIB_TEST | `weekend-tests` (checked out) | 5 | Installer: with two VibeCode3D windows open, say so plainly instead of 'bad or missing X-Token' |
+| Sat Nov 14, 00:28 | LIB_GAMES | `amazing-couple` (checked out) | 2 | HUDs below the engine's top bars (Face, Hunter, demos, Canyon, Amazing Couple, BatDuel): the ... menu stays clickable |
+| Sat Nov 14, 00:28 | LIB_GAMES | `spark-arcade` | 11 | HUDs below the engine's top bars (the owner: the three-dot menu got stuck under City Shield's HUD) |
+| Sat Nov 14, 00:22 | xt3D_Raylib_Livecode_Bridge | `window-guards-and-animation` (checked out) | 29 | Games bench: loads LIB_GAMES/tools/GameNotes when a game starts (` or F2: a note to LIB_LLMIN/LIB_GAMES/GAME_NOTES.txt) |
+| Fri Nov 13, 23:48 | LIB_GAMES | `upbge-demos` | 1 | Trench Run: the first UPBGE example remade (TrenchRun_Torus_IV, LIB_UPBGE/specs) |
+| Fri Nov 13, 23:48 | LIB_UPBGE | `lib-upbge-1` (checked out) | 2 | README: Trench Run made |
+| Fri Nov 13, 23:44 | LIB_BIN | `lib-bin-1` (checked out) | 4 | MANIFEST: UPBGE 0.50 (headless template dumps for LIB_UPBGE), at C:\LIB_BIN\upbge-0.50 |
+| Fri Nov 13, 23:04 | LIB_SYSTEM | `lib-system-draft1` (checked out) | 20 | TODO: O-1 (rules fine), O-2 (Thrmnlra stopped for later), O-13 (Genetic Anomaly fine) done |
 | Fri Nov 13, 23:04 | LIB_GAMES | `no-mouse-tests` | 1 | Hunter: gNoMouse = true never locks or moves the mouse (AI tests leave the owner's mouse alone) |
 | Fri Nov 13, 23:04 | LIB_GAMES | `udead-feedback` | 3 | uDead: shooters stop to reload, carry 2 magazines, fetch ammo from crates; gNoMouse for AI tests |
-| Fri Nov 13, 22:54 | LIB_SYSTEM | `lib-system-draft1` (checked out) | 19 | TODO: O-3, O-4, O-5, O-6, O-12 done (merges into LIB_GAMES main); O-7 paused |
-| Fri Nov 13, 22:53 | LIB_BIN | `lib-bin-1` (checked out) | 3 | LiveCode Server 9.6.3 for Linux: native xTalk in WSL, tested with LIB_GENERICA |
 | Fri Nov 13, 22:41 | LIB_GAMES | `genetic-anomaly` | 1 | Genetic Anomaly prototype: the big map, point plotting, stick figures with escalating ranks |
 | Fri Nov 13, 22:41 | LIB_GENERICA | `lib-generica-1` (checked out) | 5 | generic_array_data: the base theme (the most generic word for everything); genetic_anomaly rewritten over it |
 | Fri Nov 13, 22:33 | LIB_XTJSON | `harvester-nested-groups` (checked out) | 2 | Harvester renamed by the owner to LCHarvest2_livecodescript.txt; batch tools accept either name |
 | Fri Nov 13, 22:33 | LIB_SPARK | `arcade-round2` | 1 | Arcade round two: the owner's nine concepts, Spark's concepts and level tables |
-| Fri Nov 13, 22:33 | LIB_TEST | `weekend-tests` (checked out) | 3 | PLAY_uDead_Vibecode3D launcher |
 | Fri Nov 13, 22:23 | LIB_GAMES | `ig3d-ui-remake` | 3 | Ig3dEditor: Library menu = the filesLibrary browser remade; 2008 .wtf models load as Vibecode3D wireframes |
 | Fri Nov 13, 22:23 | LIB_ig3d | `igame3d-external` (checked out) | 4 | MAIN_UI_REUSE: menus and the library browser done; next steps |
 | Fri Nov 13, 22:14 | LIB_BUILD | `lib-build-1` (checked out) | 1 | LIB_BUILD: parts list and a one-button collector for a portable xt3d bench + Vibecode3D demo |
-| Fri Nov 13, 22:12 | LIB_GAMES | `spark-arcade` | 3 | Round two (the owner's concepts): VectorPong3D, JaiAlaiBlock, FloppyFlynn, VectorBlobApocalypse, BigBallOfVectors |
 | Fri Nov 13, 13:06 | LIB_GAMES | `udead` | 1 | uDead: the owner's uDeadGame 2009 as a Vibecode3D vector game |
 | Fri Nov 13, 05:50 | LIB_SCRIPTBLOCKS | `lib-scriptblocks-1` (checked out) | 1 | LIB_SCRIPTBLOCKS: harvest, manage and export script blocks (GAD's palette as its own lib) |
 | Fri Nov 13, 05:48 | LIB_XTJSON | `xtjson-batch-2` | 2 | XTJSON batch: harvester kept as text (owner's rename), fresh harvester every run, Retry failed |
 | Fri Nov 13, 01:38 | Vibecode3D | `xtjson-nested-groups` | 1 | XTJSON: re-harvested with the nested-group fix (29 objects in nested groups were missing) |
 | Fri Nov 13, 01:14 | LIB_GAMES | `spark-review` | 2 | igame3D_2008 manifest: prompt v4, .fl not sent, Fluid/Mappers final builds only, drafts so far |
 | Fri Nov 13, 01:13 | LIB_XTJSON | `xtjson-batch` | 1 | XTJSON batch: custom-data sampling for big stacks, crash retry, outside watchdog |
-| Thu Nov 12, 04:28 | xt3D_Raylib_Livecode_Bridge | `window-guards-and-animation` (checked out) | 28 | Benches show their window when they open (a standalone build opened one hidden) |
 
 ## Every commit, newest first
 
+### Saturday, November 14
+
+- **00:40** `LIB_GAMES` / `game-notes`: **Game notes box = the in-game command line: /next /back /play <name> /games**
+  /next and /back go to the next / previous game card (alphabetical, wrapping) through the
+  engine's Game.Select + Game.Play, so gCurrentGame and the stack's CurrentGame follow; in the
+  xt3d bench they use xbPlayGame. Tested in Vibecode3D: CityShield -> CrossTraffic -> CityShield
+  -> TrenchRun. Commands are never saved as notes.
+- **00:36** `LIB_TEST` / `weekend-tests`: **Installer: with two VibeCode3D windows open, say so plainly instead of 'bad or missing X-Token'**
+- **00:28** `LIB_GAMES` / `amazing-couple`: **HUDs below the engine's top bars (Face, Hunter, demos, Canyon, Amazing Couple, BatDuel): the ... menu stays clickable**
+- **00:28** `LIB_GAMES` / `spark-arcade`: **HUDs below the engine's top bars (the owner: the three-dot menu got stuck under City Shield's HUD)**
+  Every HUD line drawn above y 110 moves down 100 (to y 120..): the status bar and the ... menu
+  stay clickable. uDead's title/counts/orders too.
+- **00:23** `LIB_GAMES` / `spark-arcade`: **WASD for everything (the owner's game note): W A S D work beside the arrows in 16 arcade games**
+  Games that already used letters (Amazing Couple, Antack, Hunter, Ig3dEditor, Probe vs Cone,
+  Trench Run) are unchanged. Matrix Lock's one-step-a-press keys too.
+- **00:22** `LIB_GAMES` / `game-notes`: **Game notes in the xt3d games bench too: the game read from its CARD SCRIPT header, the box over the 3D view**
+- **00:22** `xt3D_Raylib_Livecode_Bridge` / `window-guards-and-animation`: **Games bench: loads LIB_GAMES/tools/GameNotes when a game starts (` or F2: a note to LIB_LLMIN/LIB_GAMES/GAME_NOTES.txt)**
 ### Friday, November 13
 
+- **23:59** `LIB_GAMES` / `game-notes`: **Game notes: ` or F2 in any game opens a note box at the top, pauses the game; Return saves**
+  One line per note to LIB_LLMIN/LIB_GAMES/GAME_NOTES.txt (the inbox): date time | game | the
+  game's State() line | the note. A front script, so every game has it without changes.
+  (The owner: notes without going to different windows.) Tested in the Vibecode3D standalone.
+- **23:59** `LIB_TEST` / `weekend-tests`: **Installer: loads GameNotes (` or F2 in any game: a note to LIB_LLMIN/LIB_GAMES/GAME_NOTES.txt)**
+- **23:48** `LIB_GAMES` / `upbge-demos`: **Trench Run: the first UPBGE example remade (TrenchRun_Torus_IV, LIB_UPBGE/specs)**
+  A vector trench round the inside of a giant ring (the floor loops up ahead); the ring turns,
+  you slide and climb; pillboxes fire once a pass as they come near, with scatter; Space fires
+  along the ring. 5 shields, 5 laps, each faster; knocked-out pillboxes return each lap.
+  Tested headless (sitting still reaches lap 2) and on screen at 30 fps.
+- **23:48** `LIB_UPBGE` / `lib-upbge-1`: **README: Trench Run made**
+- **23:44** `LIB_BIN` / `lib-bin-1`: **MANIFEST: UPBGE 0.50 (headless template dumps for LIB_UPBGE), at C:\LIB_BIN\upbge-0.50**
+- **23:44** `LIB_UPBGE` / `lib-upbge-1`: **LIB_UPBGE: 22 Blender Game Engine templates as text specs (UPBGE headless dump), mapped to our games**
+- **23:39** `LIB_GAMES` / `spark-arcade`: **Probe vs Cone: orbiters stay inside the arena (never out past its top edge)**
+- **23:35** `LIB_GAMES` / `spark-arcade`: **Probe vs Cone: each new game re-checks mouse aim (a test's gNoMouse left the owner without mouse aim)**
+- **23:33** `LIB_GAMES` / `spark-arcade`: **Probe vs Cone: the throwing arm follows the mouse (the owner: 'super stiff')**
+  The arm is its own piece pivoting at the shoulder, turned to the aim every frame, with the
+  spear held in the hand until it's thrown; the aim arrow starts past the spear tip.
+- **23:31** `LIB_GAMES` / `spark-arcade`: **Probe vs Cone: aim sweep, ricochets, bumpers, orbiting geometry foes (the owner)**
+  - Q / E sweep the aim the full circle (mouse aim still works); a dotted preview shows the
+    path to the first ricochet and the bounce after it.
+  - Walls and four angled bumper bars bank the spear; the first 3 bounces keep it lively.
+  - Orbiters (tetrahedron, octahedron, cube) circle the Cone fast, swinging out at the runner;
+    a touch costs a life, a spear smashes them (back in 6 s) and ricochets. 2..6 by level.
+  - 5 lives. Headless runner: ProjectVertex stub, gNoMouse on.
+- **23:24** `LIB_GAMES` / `amazing-couple`: **Amazing Couple, Antack, Hunter: arrow keys never open menus (focus on nothing, arrowKey caught); Hunter gNoMouse**
+- **23:23** `LIB_GAMES` / `spark-arcade`: **Arrow keys never open menus: every arrow game takes focus off controls and catches arrowKey; Probe aims**
+  - focus on nothing at Game.OnStart, and an empty arrowKey handler on the card (the owner:
+    arrow keys were triggering menus).
+  - Probe vs Cone: aim with the mouse (a dashed aim arrow), click or Space throws; WASD too;
+    no mouse: it throws the way you last ran. A loose spear hurts only while fast (> 4).
+- **23:12** `LIB_GAMES` / `spark-arcade`: **Round two complete: PromptAndGlazeMaze, ShaftDescent, MatrixLock, ProbeVsCone (the owner's concepts)**
+  - Maze: PROMPT and GLAZE (Tab swaps), patrols chase, a thrown polyhedron turns corners and
+    loses a side per strike: PROMPT de-rezzes, GLAZE charms.
+  - Shaft: side view, a real jump curve, drop through gaps, drones, air runs out; camera follows.
+  - Lock: cube shapes fall on a grid floor with a shadow; step away, Space rotates; rows clear.
+  - Probe: spear the shield cubes for key tokens, the shield refills outward every few seconds,
+    a loose spear is dangerous until it lies still; hit the Cone with the password complete.
+  All compile, pass headless play, and run on screen in the Vibecode3D standalone at 30 fps.
+- **23:04** `LIB_SYSTEM` / `lib-system-draft1`: **TODO: O-1 (rules fine), O-2 (Thrmnlra stopped for later), O-13 (Genetic Anomaly fine) done**
 - **23:04** `LIB_GAMES` / `no-mouse-tests`: **Hunter: gNoMouse = true never locks or moves the mouse (AI tests leave the owner's mouse alone)**
 - **23:04** `LIB_GAMES` / `udead-feedback`: **uDead: shooters stop to reload, carry 2 magazines, fetch ammo from crates; gNoMouse for AI tests**
   - Reloading (2.2 s) the shooter stands still; a yellow ring shows it.

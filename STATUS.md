@@ -8,6 +8,12 @@ Friday, November 13, 2026, 01:30. Rewritten at every milestone (OPERATING_PROMPT
 | Spark: iGame3D 2008 manifest | Spark's own window; log `LIB_GAMES/igame3D_2008_Texts/_manifest/spark/_run.log` | ~800 requests left (~9 h); `.fl` files skipped; Fluid/Mappers: 5 final builds only |
 
 ## Done today
+- **13–14 Nov, late:** the plan for next time and the long-term goals are in
+  `Next_Steps_With_Claude/WHEN_WE_RESUME_AFTER_11_14_2026.md`. Done since the last entry: all 9
+  round-two games, Probe vs Cone reworked (aim, ricochets, orbiters, arm), uDead ammo and
+  feedback, arrow keys never open menus, WASD everywhere, HUDs below the top bars, LIB_UPBGE (22
+  template specs) and Trench Run, Linux LiveCode server, **game notes (` or F2) and the in-game
+  command line (/next /back /play /games)** in Vibecode3D and the xt3d bench.
 - **iGame3D main UI remade in Vibecode3D (A-83, LIB_GAMES branch `ig3d-ui-remake`):** card
   `Play.Ig3dEditor`: the 26-tool toolbar with Unicode icons and old tooltips, the old menu bar,
   and Library = the asset browser: 755 models from the 2008 Data load as wireframes. Primitives,
