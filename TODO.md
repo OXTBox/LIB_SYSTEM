@@ -15,6 +15,7 @@ Done items move to `DONE.md` with their date. Order inside a lane = priority.
 | O-5 | Find the LiveCode Server 9.6.3 (Linux) zip if you have it; drop it in `LIB_LLMIN/LIB_BIN/` (it goes to `LIB_BIN/livecode-server/9.6.3-linux-x64/`) | 5 min | A-11 | PLACED :`LIB_LLMIN/LIB_BIN/`
 | O-6 | Say what to do with `xt3D_Raylib_Livecode_Bridge/ForClaude/ClaudeRead` (tracked on your feature branch): move to `LIB_LLMOUT/Read`, or keep | 1 min | tidy |DELETED
 
+I STOPPED HERE.
 | O-7 | Say whether the two LIB_PUBLIC notes ("any text to use...", "dowhathouwilt.txt") were already used | 1 min | LIB_PUBLIC | Those are place holder instructions for later. (DO NOT track this until further notice, after merge note to write notes to project)
 
 | O-8 | Sketch (words or a photo) the LIB_TOOLBAR you want: which buttons, where it sits | 10 min | A-40 | You should be able to extract from the data of : Start here: "\\wsl$\Ubuntu\home\igame3d\projects\XTJSON\batch\rev\ig3d_MainUI050107\stack_ig3d_UI_MAIN_may2007.json"   
@@ -33,8 +34,15 @@ With the binary strings.
 Everything is the most generic term for everything and collapse it into a spread sheet at a tap of a key.
 
 
-
+gentica_anomaly should be based on our successs and knowledge gains by generic_array_data development.
  people with paranormal powers and/or experiences real and imagined, with escalating levels of super strange and powerful beings. Who are all stickfigures. in procedural world. Lets go! Work on this. We don't see a lot of aniamtion , focus on the whole big map point plotting angle. The Super hero stuff has to be a big shocker when the gameplay is largely good and Ed Zevada will say 
+
+START ON igame3d UI reuse  NOW 1014 PM 11 11 2026
+
+
+################################################
+BILL IS STILL READING BELOW
+
 
 ## Spark (local, free; I prepare the prompts, you start `START_SPARK.bat` when a run is ready)
 

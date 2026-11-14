@@ -8,6 +8,10 @@ Friday, November 13, 2026, 01:30. Rewritten at every milestone (OPERATING_PROMPT
 | Spark: iGame3D 2008 manifest | Spark's own window; log `LIB_GAMES/igame3D_2008_Texts/_manifest/spark/_run.log` | ~800 requests left (~9 h); `.fl` files skipped; Fluid/Mappers: 5 final builds only |
 
 ## Done today
+- **iGame3D main UI remade in Vibecode3D (A-83, LIB_GAMES branch `ig3d-ui-remake`):** card
+  `Play.Ig3dEditor`: the 26-tool toolbar with Unicode icons and old tooltips, the old menu bar,
+  and Library = the asset browser: 755 models from the 2008 Data load as wireframes. Primitives,
+  camera, colours, play/orbit, undo, boom wired. Launch: `LIB_TEST/install_all_games_vibecode3d.sh Ig3dEditor`.
 - **LIB_BUILD** (2026-11-13 evening): `collector.livecodescript` + `parts.txt` collect the xt3d
   bench, Vibecode3D standalone, games and libraries into one portable folder (tested:
   `C:\LIB_DEMO`, 3,146 files, 311 MB). Thrmnlra: Return-in-field fixed (the xt3d bench bug),
