@@ -36,11 +36,17 @@ review list; Amazing Couple's ball (kick and hold).
 
 Confirmed by the owner (14 Nov): cellmap v2's five numbers a cell; the Heights tab opens showing glyphs ("so the user doesn't get lost between general design and detail design"), Blocks stays an optional button.
 
+**Merged on the owner's word (14 Nov, 13:05):** every branch in LIB_GAMES (12), LIB_XTJSON, LIB_ig3d,
+LIB_SPARK and xt3d; Vibecode3D's XTJSON deletions committed. Details at the top of
+`Next_Steps_With_Claude/MERGE_PLAN_11_14_2026.md`. Only LIB_BIT `1bit-to-3d` is still open (the
+editor is not tested yet). The owner's play test "went great, really lovely".
+**Spark:** a game-design run finished at 13:05: 14 new designs in `LIB_SPARK/arcade/out/` (124 Grid
+Sprint ... 945 Tabletop Racers) wait for a review and scripts (Opus).
+
 ## Waiting on the owner (with the default I'll take)
 | ID | Question | Default |
 |---|---|---|
-| F-3 | The merges (MERGE_PLAN): start with LIB_BIT; Vibecode3D's 109 deleted XTJSON files: is that harvest leaving the repository? | nothing is merged or deleted until you do it |
-| F-4 | Play test: the ball in Amazing Couple (`couple-ball`); walk `Edit_E13` | - |
+| F-3 | Test the BitEditor (Heights tab); then LIB_BIT `1bit-to-3d` can be merged: the last open branch | it stays checked out and unmerged until you say |
 | O-1 | Correct LIB_ALPHA / OPERATING_PROMPT | they stand as written |
 | Q-1 | LIB_LOGS file name | `<intention>_<result>_<names>_<seconds>.lib_log` |
 Full list: `TODO.md`, owner lane.
