@@ -34,10 +34,11 @@ started (plan from Forge / Anvil / Tomb Raider editor manuals, E01, E02); BitEdi
 Aquarius font, 1bit and Cells tabs, ghost preview; LIB_THEME; LIB_DEV Status_Browser and the
 review list; Amazing Couple's ball (kick and hold).
 
+Confirmed by the owner (14 Nov): cellmap v2's five numbers a cell.
+
 ## Waiting on the owner (with the default I'll take)
 | ID | Question | Default |
 |---|---|---|
-| F-1 | cellmap v2: five numbers a cell, colours only a view (CELLMAP_V2 section 2) | it stands |
 | F-2 | Heights tab: glyphs (your description) or Blocks as the first view? | glyphs, Blocks one click away |
 | F-3 | The merges (MERGE_PLAN): start with LIB_BIT; Vibecode3D's 109 deleted XTJSON files: is that harvest leaving the repository? | nothing is merged or deleted until you do it |
 | F-4 | Play test: the ball in Amazing Couple (`couple-ball`); walk `Edit_E13` | - |
