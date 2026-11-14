@@ -12,7 +12,7 @@ Done items move to `DONE.md` with their date. Order inside a lane = priority.
 | O-2 | Play Thrmnlra (Vibecode3D standalone, card Play.Thrmnlra): note anything else too fast, too hard, or unclear | 15 min | A-20 | SEE NOTES IN "\\wsl$\Ubuntu\home\igame3d\projects\LIB_LLMIN\LIB_GAMES"
 | O-3 | Review LIB_GAMES branch `thrmnlra` (Sequencer + Thrmnlra) and say merge or not | 15 min | A-21 |  MERGE AND STOP tracking as active development , keep in the games of course.
 | O-4 | Review LIB_GAMES branch `amazing-couple` and say merge or not | 15 min | PROMPT_GLAZE | MERGE 
-| O-5 | Find the LiveCode Server 9.6.3 (Linux) zip if you have it; drop it in `LIB_LLMIN/LIB_BIN/` (it goes to `LIB_BIN/livecode-server/9.6.3-linux-x64/`) | 5 min | A-11 | PLACED :`LIB_LLMIN/LIB_BIN/`
+| O-5 | Find the LiveCode Server 9.6.3 (Linux) zip if you have it; drop it in `LIB_LLMIN/LIB_BIN/` (it goes to `LIB_BIN/livecode-server/9.6.3-linux-x64/`) | 5 min | A-11 | PLACED :`LIB_LLMIN/LIB_BIN/` **DONE 2026-11-13 (Claude): installed at `LIB_BIN/livecode-server/9.6.3-linux-x64/`, runs natively in WSL; tested.**
 | O-6 | Say what to do with `xt3D_Raylib_Livecode_Bridge/ForClaude/ClaudeRead` (tracked on your feature branch): move to `LIB_LLMOUT/Read`, or keep | 1 min | tidy |DELETED
 
 I STOPPED HERE.
@@ -38,10 +38,6 @@ gentica_anomaly should be based on our successs and knowledge gains by generic_a
  people with paranormal powers and/or experiences real and imagined, with escalating levels of super strange and powerful beings. Who are all stickfigures. in procedural world. Lets go! Work on this. We don't see a lot of aniamtion , focus on the whole big map point plotting angle. The Super hero stuff has to be a big shocker when the gameplay is largely good and Ed Zevada will say 
 
 START ON igame3d UI reuse  NOW 1014 PM 11 11 2026
-
-
-################################################
-BILL IS STILL READING BELOW
 
 
 ## Spark (local, free; I prepare the prompts, you start `START_SPARK.bat` when a run is ready)
@@ -73,7 +69,7 @@ BILL IS STILL READING BELOW
 | A-16 | Build `GLOSSARY.md` and `PROCEDURES.md` from the reviewed drafts into `LIB_ig3d` |
 | A-17 | Commit the manifest changes (prompt v4, HOLD/ONLY, Mappers review) to `spark-review` |
 
-### Games
+### Games STOP PRODUCTION OF Thrmnlra its fine for now.
 | ID | Task |
 |---|---|
 | A-20 | Thrmnlra pace: slower defaults; answers grow by letters (Y/N → OK/NO → YAY/NAY); a fitness-of-service test (G.O.A.T. style) as the Trainer's frame; play-test the Intro launch prompt and the recall/detonate stage under the new layout |
@@ -91,7 +87,7 @@ BILL IS STILL READING BELOW
 | A-34 | Developer card 1 blank; cards laid out as a grid on screen |
 | A-35 | LIB_GLOBALS: register every global, its use and its Python equivalent, so standalone scripts reuse them safely |
 
-### New LIBs (plan first, with Fable when the owner switches)
+### New LIBs (plan first, with Fable when the owner switches) 
 | ID | Task |
 |---|---|
 | A-40 | LIB_TOOLBAR: a floating, always-in-front launcher for the latest and most important stacks, menus and folders (after O-8) |
@@ -107,6 +103,7 @@ BILL IS STILL READING BELOW
 | A-61 | Genetic Anomaly theme: fill the other game-state lists with the owner (O-13) |
 | A-62 | A label editor stack (LIB_TEST): browse categories, edit labels, save the files |
 | A-63 | Move the 393 duplicate label .txt files in LIB_LLMIN/LIB_XTJSON to `LIB_LLMOUT/Read` (the set is now the source) |
+
 | A-64 | (now LIB_SCRIPTBLOCKS: owner agreed 2026-11-13) Script-block browser: GAD's code palette (handlers by name prefix, one button per category) over any harvest or live stack (LIB_MCP), read-only first (`LIB_GAD/GAD_SELF_WRITING_SCRIPTS.md`) |
 | A-65 | (now LIB_SCRIPTBLOCKS) A developer library for GAD's script tools (insert global, global init builder, trace codes, block compare) that edits OTHER stacks or script files, with a backup before each write; fix the bugs listed in the GAD doc |
 
@@ -140,4 +137,5 @@ BILL IS STILL READING BELOW
 |---|---|---|
 | Q-1 | LIB_LOGS file name: `<intention>_<result>_<names>.livecode<seconds>.lib_log` exactly, or `<...>_<seconds>.lib_log`? | `<intention>_<result>_<names>_<seconds>.lib_log` (a saved .livecode stack inside) |
 | Q-3 | Make `LIB_GAD` a git repo (third-party Galactica sources ignored, local only)? | yes, local only, the Galactica folders in `.gitignore` |
-| Q-2 | Thrmnlra's G.O.A.T.-style test: name it something of ours in public? | "Fitness of Service test" |
+| Q-2 | Thrmnlra's G.O.A.T.-style test: name it something of ours in public? | "Fitness of Service test" | HAHA mayb. We have to work on funny typos, later and see how it holds up in a demo release of the games in on go.
+
