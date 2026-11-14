@@ -1,13 +1,58 @@
 # STATUS
 
-Friday, November 13, 2026, 01:30. Rewritten at every milestone (OPERATING_PROMPT section 4).
+Saturday, November 14, 2026, afternoon. Rewritten by Claude (Fable) at the end of the window
+Opus briefed (`Next_Steps_With_Claude/previous_steps/FABLE_BRIEF_11_14_2026.md`). Next plan:
+`Next_Steps_With_Claude/WHEN_WE_RESUME_AFTER_FABLE_11_14_2026.md`.
 
 ## Running (no Claude usage)
 | What | Where | State |
 |---|---|---|
-| Spark: iGame3D 2008 manifest | Spark's own window; log `LIB_GAMES/igame3D_2008_Texts/_manifest/spark/_run.log` | ~800 requests left (~9 h); `.fl` files skipped; Fluid/Mappers: 5 final builds only |
+| Nothing started by this window | - | `LIB_DEV/tools/wait_for_tell.sh` ends with the session: the next session starts it again |
+| Spark: iGame3D 2008 manifest | Spark's own window | stopped since 13 Nov (LM Studio was down); restart when wanted |
 
-## Done today
+## Done today (14 November)
+**Fable window (architecture):**
+- **cellmap v2**, the hub between the editor and the engines: `LIB_BIT/editor/CELLMAP_V2.md`.
+  Five heights a cell (floor and ceiling greys 0-255 where 100 = a full hallway; red digs down,
+  green builds up, blue floats a slab), links, objects, stacked maps; one rule set turns a map into
+  a level (line segments by class, walking by `CellMap.Walk`) for Vibecode3D and xt3d.
+  Python and LiveCode libraries give identical answers (tested); version 1 files still read.
+- **BitEditor Heights tab** (the owner's floor / ceiling colour paint mode): Floor and Ceiling
+  tools, grey / red / green / blue swatches, pick, Blocks view. Tested headless with pixels read
+  back; not yet seen on a screen.
+- **Sample map** `maps/wizard_pool.cellmap`: swimming pool, raised dais, wizard's tower, clouds,
+  a maze corner, a screen of glyphs laid flat to walk on.
+- **E13 Walk The Map** (`LIB_EDITOR/examples`): the sample as a 3D wire level; Amazing Couple's
+  hero walks the pool steps, the dais, the tower, teleports to the clouds, falls, crosses the
+  roofed maze. 11 headless scenes pass; 30 frames a second in the real Vibecode3D.
+- **Merge plan** `Next_Steps_With_Claude/MERGE_PLAN_11_14_2026.md`: 22 branches in 7
+  repositories, all tried, all merge clean; the order; the loose files to clear first.
+- Commits: LIB_BIT `1bit-to-3d` (+5 today), LIB_EDITOR `main` (+1), LIB_SYSTEM `lib-system-draft1`.
+
+**Opus, morning (from its brief):** LIB_HOWTO outline finished (18 topics, 92 steps); LIB_EDITOR
+started (plan from Forge / Anvil / Tomb Raider editor manuals, E01, E02); BitEditor with the
+Aquarius font, 1bit and Cells tabs, ghost preview; LIB_THEME; LIB_DEV Status_Browser and the
+review list; Amazing Couple's ball (kick and hold).
+
+## Waiting on the owner (with the default I'll take)
+| ID | Question | Default |
+|---|---|---|
+| F-1 | cellmap v2: five numbers a cell, colours only a view (CELLMAP_V2 section 2) | it stands |
+| F-2 | Heights tab: glyphs (your description) or Blocks as the first view? | glyphs, Blocks one click away |
+| F-3 | The merges (MERGE_PLAN): start with LIB_BIT; Vibecode3D's 109 deleted XTJSON files: is that harvest leaving the repository? | nothing is merged or deleted until you do it |
+| F-4 | Play test: the ball in Amazing Couple (`couple-ball`); walk `Edit_E13` | - |
+| O-1 | Correct LIB_ALPHA / OPERATING_PROMPT | they stand as written |
+| Q-1 | LIB_LOGS file name | `<intention>_<result>_<names>_<seconds>.lib_log` |
+Full list: `TODO.md`, owner lane.
+
+## Next (AI): see the resume plan, section 2
+1. Opus: Amazing Couple on cellmap v2 (each maze made once as a file, walls exactly as drawn:
+   answers the owner's invisible-wall notes of 14 Nov, which are still open).
+2. Opus: E13 in the xt3d games bench; `CellMap.LevelBoxes` in LiveCode for the solid look.
+3. Opus: LIB_EDITOR E03-E12, E14, E15 on the v2 format; LIB_HOWTO step code. Spark: step words.
+4. Fable, only when needed: stacked maps and slopes (format changes); LIB_ig3d convergence.
+
+## Earlier (12-14 November, kept as written)
 - **13–14 Nov, late:** the plan for next time and the long-term goals are in
   `Next_Steps_With_Claude/WHEN_WE_RESUME_AFTER_11_14_2026.md`. Done since the last entry: all 9
   round-two games, Probe vs Cone reworked (aim, ricochets, orbiters, arm), uDead ammo and
@@ -71,20 +116,3 @@ Friday, November 13, 2026, 01:30. Rewritten at every milestone (OPERATING_PROMPT
 - Rules updated: work to each 5-hour limit, committing on branches (LIB_ALPHA rule 7, operating prompt §5).
 - Branch commits: LIB_SYSTEM `lib-system-draft1`, LIB_XTJSON `xtjson-batch`, LIB_GAMES `spark-review`.
 
-## Waiting on the owner (with the default I'll take)
-| ID | Question | Default |
-|---|---|---|
-| O-1 | Correct LIB_ALPHA / OPERATING_PROMPT | they stand as written |
-| O-5 | LiveCode Server 9.6.3 Linux zip? | I'll look for it online when you say so |
-| Q-3 | Make LIB_GAD a git repo? | yes, local only, Galactica sources ignored |
-| Q-1 | LIB_LOGS file name | `<intention>_<result>_<names>_<seconds>.lib_log` |
-Full list: `TODO.md`, owner lane.
-
-## Next (AI)
-
-1. A-83: reuse inventory of the iGame3D main UI (2007 vs 2026); then A-12: then CLIP, DND/TTRPG, Enochian, the one-offs.
-2. Both Collector stacks (Collector_v11022026, Web_Collector_Watcher) hang LiveCode on harvest, even
-   sampled (guess: a browser widget). Their scripts are already exported as text in the inbox
-   (`CollectorStacks/*.txt`): analyse those; one-process test later (A-11).
-3. LIB_SCRIPTBLOCKS: open the ScriptBlocks stack in LiveCode and test it; the palette view.
-4. A-72: a stack script drawn in vectors (handlers as nodes, calls as lines).

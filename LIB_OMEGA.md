@@ -58,3 +58,11 @@ project's notes). Newest at the bottom. Add to it whenever something costs a deb
 | # | Transgression | Commandment |
 |---|---|---|
 | 26 | The BitEditor passed every test (image sizes, cell counts) while its palette and 1-bit map were blank: LiveCode reads PBM (P1) text only with spaces between the bits and silently makes a blank 128 x 32 image otherwise (2026-11-14) | Test what the owner will SEE, not just sizes: a test of anything drawn checks pixels (e.g. count lit bytes in `the imageData`). |
+| 27 | The BitEditor script would not compile ("missing end if") with nothing visibly wrong: a one-line `if x then y` sat on the line just before an `else`, and LiveCode gave the `else` to it (2026-11-14) | The last statement before an `else` is never a one-line `if`: write that one as a block (`if ... then` / `end if`). |
+| 28 | Six walking tests failed on the first run, all from distances worked out by hand; and a 20 hu step could not be climbed because the raised glyph on it (6) pushed it over the 25 limit | Take test distances from the game's own numbers (State shows the step size), and test limits that add up (step + relief) together, in the sample map, before fixing the defaults. |
+
+## Git
+
+| # | Transgression | Commandment |
+|---|---|---|
+| 29 | Twenty-two unmerged branches in seven repositories; LIB_EDITOR's main only works while LIB_BIT has a branch checked out, and its tests read a file out of a LIB_GAMES branch by name (2026-11-14) | Say in the commit or the plan when work in one repository needs a branch of another; a branch is merged or dropped within two sessions (proposed: the owner decides). The merge plan lists such ties. |
