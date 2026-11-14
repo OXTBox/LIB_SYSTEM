@@ -10,13 +10,9 @@ Done items move to `DONE.md` with their date. Order inside a lane = priority.
 |---|---|---|---|
 | O-1 | Read `LIB_ALPHA.md` and `OPERATING_PROMPT.md`; correct anything wrong (just say "rule 16 is wrong because...") | 20 min | everything | SEE CHANGES TO FILES 11 13 2026
 | O-2 | Play Thrmnlra (Vibecode3D standalone, card Play.Thrmnlra): note anything else too fast, too hard, or unclear | 15 min | A-20 | SEE NOTES IN "\\wsl$\Ubuntu\home\igame3d\projects\LIB_LLMIN\LIB_GAMES"
-| O-3 | Review LIB_GAMES branch `thrmnlra` (Sequencer + Thrmnlra) and say merge or not | 15 min | A-21 |  MERGE AND STOP tracking as active development , keep in the games of course.
-| O-4 | Review LIB_GAMES branch `amazing-couple` and say merge or not | 15 min | PROMPT_GLAZE | MERGE 
-| O-5 | Find the LiveCode Server 9.6.3 (Linux) zip if you have it; drop it in `LIB_LLMIN/LIB_BIN/` (it goes to `LIB_BIN/livecode-server/9.6.3-linux-x64/`) | 5 min | A-11 | PLACED :`LIB_LLMIN/LIB_BIN/` **DONE 2026-11-13 (Claude): installed at `LIB_BIN/livecode-server/9.6.3-linux-x64/`, runs natively in WSL; tested.**
-| O-6 | Say what to do with `xt3D_Raylib_Livecode_Bridge/ForClaude/ClaudeRead` (tracked on your feature branch): move to `LIB_LLMOUT/Read`, or keep | 1 min | tidy |DELETED
 
 I STOPPED HERE.
-| O-7 | Say whether the two LIB_PUBLIC notes ("any text to use...", "dowhathouwilt.txt") were already used | 1 min | LIB_PUBLIC | Those are place holder instructions for later. (DO NOT track this until further notice, after merge note to write notes to project)
+| O-7 | Say whether the two LIB_PUBLIC notes ("any text to use...", "dowhathouwilt.txt") were already used | 1 min | LIB_PUBLIC | Those are place holder instructions for later. (DO NOT track this until further notice, after merge note to write notes to project) **PAUSED (not tracked until the owner says).**
 
 | O-8 | Sketch (words or a photo) the LIB_TOOLBAR you want: which buttons, where it sits | 10 min | A-40 | You should be able to extract from the data of : Start here: "\\wsl$\Ubuntu\home\igame3d\projects\XTJSON\batch\rev\ig3d_MainUI050107\stack_ig3d_UI_MAIN_may2007.json"   
 Now it's fill in the blanks. 
@@ -29,7 +25,6 @@ With the binary strings.
 | O-9 | Pick the users list for window titles (LIB_USERS): OWNER, CLAUDE, SPARK, ...? and their short tags | 2 min | A-30 |
 | O-10 | Look at 3 or 4 Spark GUI design drafts when they land (S-3) and mark keep / redo | 20 min | A-45 |
 | O-11 | (dropped 2026-11-13: I work to each limit and commit on branches) | - | - |  
-| O-12 | Decide the Thrmnlra working title for public use | 2 min | LIB_PUBLIC | STOP TRACKING THIS UNTIL FURTHER NOTICE, NAME IS FINE,  MERGE
 | O-13 | Correct the Genetic Anomaly draft words (`LIB_GENERICA/sets/genetic_anomaly/`: 7 small files) | 15 min | A-61 |LIB_GENERICA/sets/genetic_anomaly/ oh that template looks great though, use that, duplicate and calle it generic_array_data
 Everything is the most generic term for everything and collapse it into a spread sheet at a tap of a key.
 
