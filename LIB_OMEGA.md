@@ -52,3 +52,9 @@ project's notes). Newest at the bottom. Add to it whenever something costs a deb
 | # | Transgression | Commandment |
 |---|---|---|
 | 25 | A long request to Fable hit the 5-hour limit mid-task and the session stopped (2026-11-12, 19:37) | Keep an hour of every 5-hour window for the owner; hand bulk work to Spark; checkpoint plans to files before big steps so a cut-off loses nothing. |
+
+## Testing
+
+| # | Transgression | Commandment |
+|---|---|---|
+| 26 | The BitEditor passed every test (image sizes, cell counts) while its palette and 1-bit map were blank: LiveCode reads PBM (P1) text only with spaces between the bits and silently makes a blank 128 x 32 image otherwise (2026-11-14) | Test what the owner will SEE, not just sizes: a test of anything drawn checks pixels (e.g. count lit bytes in `the imageData`). |
