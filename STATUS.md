@@ -8,6 +8,13 @@ Friday, November 13, 2026, 01:30. Rewritten at every milestone (OPERATING_PROMPT
 | Spark: iGame3D 2008 manifest | Spark's own window; log `LIB_GAMES/igame3D_2008_Texts/_manifest/spark/_run.log` | ~800 requests left (~9 h); `.fl` files skipped; Fluid/Mappers: 5 final builds only |
 
 ## Done today
+- **LIB_BUILD** (2026-11-13 evening): `collector.livecodescript` + `parts.txt` collect the xt3d
+  bench, Vibecode3D standalone, games and libraries into one portable folder (tested:
+  `C:\LIB_DEMO`, 3,146 files, 311 MB). Thrmnlra: Return-in-field fixed (the xt3d bench bug),
+  answers grow by letters. Round two games (owner's concepts) on LIB_GAMES `spark-arcade`:
+  VectorPong3D, JaiAlaiBlock, FloppyFlynn, VectorBlobApocalypse, BigBallOfVectors (compile; first
+  three pass headless). Spark drafted concepts and levels for all nine (LIB_SPARK/arcade/out/2*);
+  still to script: PromptAndGlazeMaze, ShaftDescent, MatrixLock, ProbeVsCone.
 - **WEEKEND HANDOVER (usage nearly out until Sunday's reset):** `LIB_TEST/README.md` is the test
   sheet; `PLAY_Thrmnlra_Vibecode3D.bat` and `PLAY_Thrmnlra_xt3d.bat` launch the game in each engine
   without an AI. Thrmnlra runs unchanged in the xt3d games bench (labels line up, 27 fps). Pace is

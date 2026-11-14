@@ -105,7 +105,7 @@ Details and routing rules: `OPERATING_PROMPT.md`.
 
 ### Windows the owner sees (from the owner's notes, 2026-11-13)
 13. **Title of every window an AI, agent or person is driving:**
-    `"<MCP ADDRESS>" && "|" && <USERS> && <what is being tested>`, e.g.
+    `"<MCP NAME OR URL>" && "|" && <USERS> && <what is being tested>`, e.g.
     `127.0.0.1:8769 | CLAUDE | Do you see particle effects?`
 14. **Title of a window the owner should try:** `"FOR" && <USERS> && "|" && <what to do first,
     which key or button for more>`, e.g. `FOR OWNER | Press Space to start, H for help`.
@@ -120,17 +120,19 @@ Details and routing rules: `OPERATING_PROMPT.md`.
     whether another process is watching the result. The goal may simply be "was it fun?".
 
 ### In every test stack and game
-18. **Escape first pauses every loop.** The pause has developer options; AI assistants read and
-    act on what is chosen there.
+18. **Escape first pauses every loop.** The pause has  in developer mode has developer options; this is to confgure defaults for common HUMAN use. Such as the game's speed, delay between texts/scenes.
 19. A toggle opens an MCP command line inside the window, lower left (8/10 down).
 20. Otherwise fall back to card `Developer` (card 1, blank for now); cards laid out on screen
     as a grid, like raylib's web examples page.
-21. Games: keep the player typing, but not much: answers grow by one letter per level
+21. Games: THIS IS INSTRUCTION ONLY FOR THE THRMNCLR GAME: keep the player typing, but not much: answers grow by one letter per level
     (Y/N, then OK/NO, then YAY/NAY). Pace for fitness-of-service tests (a G.O.A.T.-style test),
-    not speed: the owner found Thrmnlra "way too fast".
+    not speed: the owner found Thrmnlra "way too fast". Each game is going to have 
 
 ### Working with the owner
 22. Plain words, short tables; no raw JSON dumps. Say what was tested and what wasn't.
 23. Post the owner's tasks (and Spark's) far ahead of when they are needed (`TODO.md`).
 24. Never sit idle waiting for an answer: ask, then work on something else (`OPERATING_PROMPT.md`).
 25. Report outcomes faithfully: failures with the evidence, guesses labelled as guesses.
+
+### FABLE 5 EATS ACCOUNT USAGE TIME 10x faster
+26. Use the Fable 5 only for the most absolutely complex tasks , suggest what those are and when we'll need to run them ahead of time. Owner  got it wrong and chewed through 5 hours of AI assistance  access time  in just 11 minutes.
