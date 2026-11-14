@@ -1,6 +1,6 @@
 # Progress, newest first
 
-Made Friday, November 13, 2026 22:54 by `LIB_SYSTEM/tools/progress.py` (run it again to refresh). Last 3 days, every project.
+Made Friday, November 13, 2026 23:04 by `LIB_SYSTEM/tools/progress.py` (run it again to refresh). Last 3 days, every project.
 
 ## Waiting on the owner (with the default I'll take)
 
@@ -31,7 +31,9 @@ Full list: `TODO.md`, owner lane.
 
 | last commit | project | branch | commits | latest |
 |---|---|---|---|---|
-| Fri Nov 13, 22:53 | LIB_SYSTEM | `lib-system-draft1` (checked out) | 18 | TODO: O-5 done (LiveCode Server 9.6.3 Linux installed and tested) |
+| Fri Nov 13, 23:04 | LIB_GAMES | `no-mouse-tests` | 1 | Hunter: gNoMouse = true never locks or moves the mouse (AI tests leave the owner's mouse alone) |
+| Fri Nov 13, 23:04 | LIB_GAMES | `udead-feedback` | 3 | uDead: shooters stop to reload, carry 2 magazines, fetch ammo from crates; gNoMouse for AI tests |
+| Fri Nov 13, 22:54 | LIB_SYSTEM | `lib-system-draft1` (checked out) | 19 | TODO: O-3, O-4, O-5, O-6, O-12 done (merges into LIB_GAMES main); O-7 paused |
 | Fri Nov 13, 22:53 | LIB_BIN | `lib-bin-1` (checked out) | 3 | LiveCode Server 9.6.3 for Linux: native xTalk in WSL, tested with LIB_GENERICA |
 | Fri Nov 13, 22:41 | LIB_GAMES | `genetic-anomaly` | 1 | Genetic Anomaly prototype: the big map, point plotting, stick figures with escalating ranks |
 | Fri Nov 13, 22:41 | LIB_GENERICA | `lib-generica-1` (checked out) | 5 | generic_array_data: the base theme (the most generic word for everything); genetic_anomaly rewritten over it |
@@ -54,6 +56,22 @@ Full list: `TODO.md`, owner lane.
 
 ### Friday, November 13
 
+- **23:04** `LIB_GAMES` / `no-mouse-tests`: **Hunter: gNoMouse = true never locks or moves the mouse (AI tests leave the owner's mouse alone)**
+- **23:04** `LIB_GAMES` / `udead-feedback`: **uDead: shooters stop to reload, carry 2 magazines, fetch ammo from crates; gNoMouse for AI tests**
+  - Reloading (2.2 s) the shooter stands still; a yellow ring shows it.
+  - Out of magazines: walk (distance map A) to the nearest of 3 ammo crates (3 refills each,
+    grey when empty); no crate left or reachable: the gun is dropped. 2009 maps: no crates.
+  - global gNoMouse = true: never lock or move the mouse (the owner: turn it off when testing).
+  Tested in the standalone with gNoMouse on: two dry shooters walked to crates and refilled.
+- **22:58** `LIB_GAMES` / `udead-feedback`: **uDead: the owner's feedback (11 13 2026): easier start, bigger hotel, show don't tell**
+  - Level 1 a cake walk: shooters hit ~1/3 as often, fire half as fast, half damage (level 2: 0.65).
+  - The hotel bigger: rooms 7 m, doors 1.5 m, front windows twice the door and ~80% of the wall high.
+  - Muzzle flash and an orange ring across the ground with every shot.
+  - Red blood sparks on hits; injured zombies leave a blood trail (70 marks kept).
+  - Targeted living strobe dark red to blood red every half second.
+  - Crowds of 4+ dead make noise: a white ring that wakes the living within 8 m.
+  Tested in the Vibecode3D standalone (level 1, RUSH: blood trail and strobe seen).
+- **22:54** `LIB_SYSTEM` / `lib-system-draft1`: **TODO: O-3, O-4, O-5, O-6, O-12 done (merges into LIB_GAMES main); O-7 paused**
 - **22:54** `LIB_GAMES` / `main`: **Merge amazing-couple (owner, TODO O-4: merge)**
   README conflict: amazing-couple's game table kept (it already holds the Thrmnlra row).
 - **22:54** `LIB_GAMES` / `main`: **Merge thrmnlra: the Sequencer and Thrmnlra (owner, TODO O-3/O-12: merge, stop tracking as active development)**

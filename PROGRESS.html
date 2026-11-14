@@ -15,13 +15,15 @@ table{border-collapse:collapse;width:100%;font-size:14px;margin:.4em 0}th,td{bor
 .c pre{white-space:pre-wrap;margin:.5em 0 0;color:var(--ink);font:13px/1.5 ui-monospace,Consolas,monospace;opacity:.9}
 ul{padding-left:1.2em}li{margin:.2em 0}
 </style></head><body><main>
-<h1>Progress, newest first</h1><div class="meta">Made Friday, November 13, 2026 22:54 by <code>LIB_SYSTEM/tools/progress.py</code>; run it again to refresh. Last 3 days, every project.</div>
+<h1>Progress, newest first</h1><div class="meta">Made Friday, November 13, 2026 23:04 by <code>LIB_SYSTEM/tools/progress.py</code>; run it again to refresh. Last 3 days, every project.</div>
 <h2>Waiting on you</h2><table><tr><th>ID</th><th>Question</th><th>Default</th></tr><tr><td>O-1</td><td>Correct LIB_ALPHA / OPERATING_PROMPT</td><td>they stand as written</td></tr><tr><td>O-5</td><td>LiveCode Server 9.6.3 Linux zip?</td><td>I&#x27;ll look for it online when you say so</td></tr><tr><td>Q-3</td><td>Make LIB_GAD a git repo?</td><td>yes, local only, Galactica sources ignored</td></tr><tr><td>Q-1</td><td>LIB_LOGS file name</td><td><code>&lt;intention&gt;_&lt;result&gt;_&lt;names&gt;_&lt;seconds&gt;.lib_log</code></td></tr></table>
 <p>Full list: <code>TODO.md</code>, owner lane.</p>
 <h2>Running</h2><table><tr><th>What</th><th>Where</th><th>State</th></tr><tr><td>Spark: iGame3D 2008 manifest</td><td>Spark&#x27;s own window; log <code>LIB_GAMES/igame3D_2008_Texts/_manifest/spark/_run.log</code></td><td>~800 requests left (~9 h); <code>.fl</code> files skipped; Fluid/Mappers: 5 final builds only</td></tr></table>
 <h2>Next</h2><ul><li>A-83: reuse inventory of the iGame3D main UI (2007 vs 2026); then A-12: then CLIP, DND/TTRPG, Enochian, the one-offs.</li><li>Both Collector stacks (Collector_v11022026, Web_Collector_Watcher) hang LiveCode on harvest, even sampled (guess: a browser widget). Their scripts are already exported as text in the inbox (<code>CollectorStacks/*.txt</code>): analyse those; one-process test later (A-11).</li><li>LIB_SCRIPTBLOCKS: open the ScriptBlocks stack in LiveCode and test it; the palette view.</li><li>A-72: a stack script drawn in vectors (handlers as nodes, calls as lines).</li></ul>
 <h2>Branches waiting for your review</h2><table><tr><th>last commit</th><th>project</th><th>branch</th><th>commits</th><th>latest</th></tr>
-<tr><td class="meta">Fri Nov 13, 22:53</td><td>LIB_SYSTEM</td><td><code>lib-system-draft1</code> <span class="meta">(checked out)</span></td><td>18</td><td>TODO: O-5 done (LiveCode Server 9.6.3 Linux installed and tested)</td></tr>
+<tr><td class="meta">Fri Nov 13, 23:04</td><td>LIB_GAMES</td><td><code>no-mouse-tests</code></td><td>1</td><td>Hunter: gNoMouse = true never locks or moves the mouse (AI tests leave the owner&#x27;s mouse alone)</td></tr>
+<tr><td class="meta">Fri Nov 13, 23:04</td><td>LIB_GAMES</td><td><code>udead-feedback</code></td><td>3</td><td>uDead: shooters stop to reload, carry 2 magazines, fetch ammo from crates; gNoMouse for AI tests</td></tr>
+<tr><td class="meta">Fri Nov 13, 22:54</td><td>LIB_SYSTEM</td><td><code>lib-system-draft1</code> <span class="meta">(checked out)</span></td><td>19</td><td>TODO: O-3, O-4, O-5, O-6, O-12 done (merges into LIB_GAMES main); O-7 paused</td></tr>
 <tr><td class="meta">Fri Nov 13, 22:53</td><td>LIB_BIN</td><td><code>lib-bin-1</code> <span class="meta">(checked out)</span></td><td>3</td><td>LiveCode Server 9.6.3 for Linux: native xTalk in WSL, tested with LIB_GENERICA</td></tr>
 <tr><td class="meta">Fri Nov 13, 22:41</td><td>LIB_GAMES</td><td><code>genetic-anomaly</code></td><td>1</td><td>Genetic Anomaly prototype: the big map, point plotting, stick figures with escalating ranks</td></tr>
 <tr><td class="meta">Fri Nov 13, 22:41</td><td>LIB_GENERICA</td><td><code>lib-generica-1</code> <span class="meta">(checked out)</span></td><td>5</td><td>generic_array_data: the base theme (the most generic word for everything); genetic_anomaly rewritten over it</td></tr>
@@ -41,6 +43,20 @@ ul{padding-left:1.2em}li{margin:.2em 0}
 <tr><td class="meta">Thu Nov 12, 04:28</td><td>xt3D_Raylib_Livecode_Bridge</td><td><code>window-guards-and-animation</code> <span class="meta">(checked out)</span></td><td>28</td><td>Benches show their window when they open (a standalone build opened one hidden)</td></tr>
 </table><h2>Every commit, newest first</h2>
 <h3>Friday, November 13</h3>
+<div class="c"><div class="h"><span class="w">23:04</span><span class="tag">LIB_GAMES</span><span class="tag br">no-mouse-tests</span><span class="t">Hunter: gNoMouse = true never locks or moves the mouse (AI tests leave the owner&#x27;s mouse alone)</span></div></div>
+<div class="c"><div class="h"><span class="w">23:04</span><span class="tag">LIB_GAMES</span><span class="tag br">udead-feedback</span><span class="t">uDead: shooters stop to reload, carry 2 magazines, fetch ammo from crates; gNoMouse for AI tests</span></div><pre>- Reloading (2.2 s) the shooter stands still; a yellow ring shows it.
+- Out of magazines: walk (distance map A) to the nearest of 3 ammo crates (3 refills each,
+  grey when empty); no crate left or reachable: the gun is dropped. 2009 maps: no crates.
+- global gNoMouse = true: never lock or move the mouse (the owner: turn it off when testing).
+Tested in the standalone with gNoMouse on: two dry shooters walked to crates and refilled.</pre></div>
+<div class="c"><div class="h"><span class="w">22:58</span><span class="tag">LIB_GAMES</span><span class="tag br">udead-feedback</span><span class="t">uDead: the owner&#x27;s feedback (11 13 2026): easier start, bigger hotel, show don&#x27;t tell</span></div><pre>- Level 1 a cake walk: shooters hit ~1/3 as often, fire half as fast, half damage (level 2: 0.65).
+- The hotel bigger: rooms 7 m, doors 1.5 m, front windows twice the door and ~80% of the wall high.
+- Muzzle flash and an orange ring across the ground with every shot.
+- Red blood sparks on hits; injured zombies leave a blood trail (70 marks kept).
+- Targeted living strobe dark red to blood red every half second.
+- Crowds of 4+ dead make noise: a white ring that wakes the living within 8 m.
+Tested in the Vibecode3D standalone (level 1, RUSH: blood trail and strobe seen).</pre></div>
+<div class="c"><div class="h"><span class="w">22:54</span><span class="tag">LIB_SYSTEM</span><span class="tag br">lib-system-draft1</span><span class="t">TODO: O-3, O-4, O-5, O-6, O-12 done (merges into LIB_GAMES main); O-7 paused</span></div></div>
 <div class="c"><div class="h"><span class="w">22:54</span><span class="tag">LIB_GAMES</span><span class="tag br">main</span><span class="t">Merge amazing-couple (owner, TODO O-4: merge)</span></div><pre>README conflict: amazing-couple&#x27;s game table kept (it already holds the Thrmnlra row).</pre></div>
 <div class="c"><div class="h"><span class="w">22:54</span><span class="tag">LIB_GAMES</span><span class="tag br">main</span><span class="t">Merge thrmnlra: the Sequencer and Thrmnlra (owner, TODO O-3/O-12: merge, stop tracking as active development)</span></div></div>
 <div class="c"><div class="h"><span class="w">22:53</span><span class="tag">LIB_SYSTEM</span><span class="tag br">lib-system-draft1</span><span class="t">TODO: O-5 done (LiveCode Server 9.6.3 Linux installed and tested)</span></div></div>

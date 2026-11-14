@@ -8,8 +8,6 @@ Done items move to `DONE.md` with their date. Order inside a lane = priority.
 
 | ID | Task | Time | Needed for |
 |---|---|---|---|
-| O-1 | Read `LIB_ALPHA.md` and `OPERATING_PROMPT.md`; correct anything wrong (just say "rule 16 is wrong because...") | 20 min | everything | SEE CHANGES TO FILES 11 13 2026
-| O-2 | Play Thrmnlra (Vibecode3D standalone, card Play.Thrmnlra): note anything else too fast, too hard, or unclear | 15 min | A-20 | SEE NOTES IN "\\wsl$\Ubuntu\home\igame3d\projects\LIB_LLMIN\LIB_GAMES"
 
 I STOPPED HERE.
 | O-7 | Say whether the two LIB_PUBLIC notes ("any text to use...", "dowhathouwilt.txt") were already used | 1 min | LIB_PUBLIC | Those are place holder instructions for later. (DO NOT track this until further notice, after merge note to write notes to project) **PAUSED (not tracked until the owner says).**
@@ -25,7 +23,6 @@ With the binary strings.
 | O-9 | Pick the users list for window titles (LIB_USERS): OWNER, CLAUDE, SPARK, ...? and their short tags | 2 min | A-30 |
 | O-10 | Look at 3 or 4 Spark GUI design drafts when they land (S-3) and mark keep / redo | 20 min | A-45 |
 | O-11 | (dropped 2026-11-13: I work to each limit and commit on branches) | - | - |  
-| O-13 | Correct the Genetic Anomaly draft words (`LIB_GENERICA/sets/genetic_anomaly/`: 7 small files) | 15 min | A-61 |LIB_GENERICA/sets/genetic_anomaly/ oh that template looks great though, use that, duplicate and calle it generic_array_data
 Everything is the most generic term for everything and collapse it into a spread sheet at a tap of a key.
 
 
