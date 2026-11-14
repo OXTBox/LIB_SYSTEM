@@ -1,14 +1,16 @@
 # Progress, newest first
 
-Made Saturday, November 14, 2026 00:41 by `LIB_SYSTEM/tools/progress.py` (run it again to refresh). Last 3 days, every project.
+Made Saturday, November 14, 2026 12:54 by `LIB_SYSTEM/tools/progress.py` (run it again to refresh). Last 3 days, every project.
 
 ## Waiting on the owner (with the default I'll take)
 
 | ID | Question | Default |
 |---|---|---|
+| F-1 | cellmap v2: five numbers a cell, colours only a view (CELLMAP_V2 section 2) | it stands |
+| F-2 | Heights tab: glyphs (your description) or Blocks as the first view? | glyphs, Blocks one click away |
+| F-3 | The merges (MERGE_PLAN): start with LIB_BIT; Vibecode3D's 109 deleted XTJSON files: is that harvest leaving the repository? | nothing is merged or deleted until you do it |
+| F-4 | Play test: the ball in Amazing Couple (`couple-ball`); walk `Edit_E13` | - |
 | O-1 | Correct LIB_ALPHA / OPERATING_PROMPT | they stand as written |
-| O-5 | LiveCode Server 9.6.3 Linux zip? | I'll look for it online when you say so |
-| Q-3 | Make LIB_GAD a git repo? | yes, local only, Galactica sources ignored |
 | Q-1 | LIB_LOGS file name | `<intention>_<result>_<names>_<seconds>.lib_log` |
 Full list: `TODO.md`, owner lane.
 
@@ -16,36 +18,32 @@ Full list: `TODO.md`, owner lane.
 
 | What | Where | State |
 |---|---|---|
-| Spark: iGame3D 2008 manifest | Spark's own window; log `LIB_GAMES/igame3D_2008_Texts/_manifest/spark/_run.log` | ~800 requests left (~9 h); `.fl` files skipped; Fluid/Mappers: 5 final builds only |
-
-## Next (AI)
-
-1. A-83: reuse inventory of the iGame3D main UI (2007 vs 2026); then A-12: then CLIP, DND/TTRPG, Enochian, the one-offs.
-2. Both Collector stacks (Collector_v11022026, Web_Collector_Watcher) hang LiveCode on harvest, even
-   sampled (guess: a browser widget). Their scripts are already exported as text in the inbox
-   (`CollectorStacks/*.txt`): analyse those; one-process test later (A-11).
-3. LIB_SCRIPTBLOCKS: open the ScriptBlocks stack in LiveCode and test it; the palette view.
-4. A-72: a stack script drawn in vectors (handlers as nodes, calls as lines).
+| Nothing started by this window | - | `LIB_DEV/tools/wait_for_tell.sh` ends with the session: the next session starts it again |
+| Spark: iGame3D 2008 manifest | Spark's own window | stopped since 13 Nov (LM Studio was down); restart when wanted |
 
 ## Branches waiting for your review
 
 | last commit | project | branch | commits | latest |
 |---|---|---|---|---|
+| Sat Nov 14, 12:54 | LIB_SYSTEM | `lib-system-draft1` (checked out) | 24 | STATUS rewritten after the Fable window (cellmap v2, Heights tab, E13, merge plan); LIB_OMEGA lessons 27-29 |
+| Sat Nov 14, 12:51 | LIB_BIT | `1bit-to-3d` (checked out) | 13 | CELLMAP_V2: status (E13 done, xt3d not started) |
+| Sat Nov 14, 10:44 | LIB_GAMES | `couple-ball` (checked out) | 2 | Amazing Couple: kick and hold the ball (owner's review); the first maze's ball waits right up the hall |
+| Sat Nov 14, 09:46 | LIB_SPARK | `howto-outline` (checked out) | 6 | howto: the finished outline (18 topics, every engine call checked against the engine source; 07, 08, 13, 15, 17 rewritten; games mapped from their scripts) |
+| Sat Nov 14, 00:46 | LIB_SPARK | `arcade-round2` | 2 | Spark game designs: one button (START_SPARK_GAME_DESIGNS.bat) for the ideas in LIB_LLMIN/LIB_SPARK/GAME_IDEAS.txt |
+| Sat Nov 14, 00:45 | LIB_GAMES | `thrmnlra` | 1 | Thrmnlra: typing never lost to a focused menu button (the owner: 'the input breaks') |
 | Sat Nov 14, 00:40 | LIB_GAMES | `game-notes` | 3 | Game notes box = the in-game command line: /next /back /play <name> /games |
 | Sat Nov 14, 00:36 | LIB_TEST | `weekend-tests` (checked out) | 5 | Installer: with two VibeCode3D windows open, say so plainly instead of 'bad or missing X-Token' |
-| Sat Nov 14, 00:28 | LIB_GAMES | `amazing-couple` (checked out) | 2 | HUDs below the engine's top bars (Face, Hunter, demos, Canyon, Amazing Couple, BatDuel): the ... menu stays clickable |
+| Sat Nov 14, 00:28 | LIB_GAMES | `amazing-couple` | 2 | HUDs below the engine's top bars (Face, Hunter, demos, Canyon, Amazing Couple, BatDuel): the ... menu stays clickable |
 | Sat Nov 14, 00:28 | LIB_GAMES | `spark-arcade` | 11 | HUDs below the engine's top bars (the owner: the three-dot menu got stuck under City Shield's HUD) |
 | Sat Nov 14, 00:22 | xt3D_Raylib_Livecode_Bridge | `window-guards-and-animation` (checked out) | 29 | Games bench: loads LIB_GAMES/tools/GameNotes when a game starts (` or F2: a note to LIB_LLMIN/LIB_GAMES/GAME_NOTES.txt) |
 | Fri Nov 13, 23:48 | LIB_GAMES | `upbge-demos` | 1 | Trench Run: the first UPBGE example remade (TrenchRun_Torus_IV, LIB_UPBGE/specs) |
 | Fri Nov 13, 23:48 | LIB_UPBGE | `lib-upbge-1` (checked out) | 2 | README: Trench Run made |
 | Fri Nov 13, 23:44 | LIB_BIN | `lib-bin-1` (checked out) | 4 | MANIFEST: UPBGE 0.50 (headless template dumps for LIB_UPBGE), at C:\LIB_BIN\upbge-0.50 |
-| Fri Nov 13, 23:04 | LIB_SYSTEM | `lib-system-draft1` (checked out) | 20 | TODO: O-1 (rules fine), O-2 (Thrmnlra stopped for later), O-13 (Genetic Anomaly fine) done |
 | Fri Nov 13, 23:04 | LIB_GAMES | `no-mouse-tests` | 1 | Hunter: gNoMouse = true never locks or moves the mouse (AI tests leave the owner's mouse alone) |
 | Fri Nov 13, 23:04 | LIB_GAMES | `udead-feedback` | 3 | uDead: shooters stop to reload, carry 2 magazines, fetch ammo from crates; gNoMouse for AI tests |
 | Fri Nov 13, 22:41 | LIB_GAMES | `genetic-anomaly` | 1 | Genetic Anomaly prototype: the big map, point plotting, stick figures with escalating ranks |
 | Fri Nov 13, 22:41 | LIB_GENERICA | `lib-generica-1` (checked out) | 5 | generic_array_data: the base theme (the most generic word for everything); genetic_anomaly rewritten over it |
 | Fri Nov 13, 22:33 | LIB_XTJSON | `harvester-nested-groups` (checked out) | 2 | Harvester renamed by the owner to LCHarvest2_livecodescript.txt; batch tools accept either name |
-| Fri Nov 13, 22:33 | LIB_SPARK | `arcade-round2` | 1 | Arcade round two: the owner's nine concepts, Spark's concepts and level tables |
 | Fri Nov 13, 22:23 | LIB_GAMES | `ig3d-ui-remake` | 3 | Ig3dEditor: Library menu = the filesLibrary browser remade; 2008 .wtf models load as Vibecode3D wireframes |
 | Fri Nov 13, 22:23 | LIB_ig3d | `igame3d-external` (checked out) | 4 | MAIN_UI_REUSE: menus and the library browser done; next steps |
 | Fri Nov 13, 22:14 | LIB_BUILD | `lib-build-1` (checked out) | 1 | LIB_BUILD: parts list and a one-button collector for a portable xt3d bench + Vibecode3D demo |
@@ -60,6 +58,72 @@ Full list: `TODO.md`, owner lane.
 
 ### Saturday, November 14
 
+- **12:54** `LIB_SYSTEM` / `lib-system-draft1`: **STATUS rewritten after the Fable window (cellmap v2, Heights tab, E13, merge plan); LIB_OMEGA lessons 27-29**
+- **12:51** `LIB_BIT` / `1bit-to-3d`: **CELLMAP_V2: status (E13 done, xt3d not started)**
+- **12:51** `LIB_EDITOR` / `main`: **E13 Walk The Map: a version 2 cellmap built as a wire level (one mesh a class) and walked by Amazing Couple's hero through CellMap.Walk: pool steps, dais, tower door, teleporter link to the clouds, roofed maze; tests/e13_test.sh; E01/E02 read heights through the library (either map version)**
+- **12:46** `LIB_BIT` / `1bit-to-3d`: **BitEditor: Heights tab (the owner's floor / ceiling colour paint mode): Floor and Ceiling tools flip glyph and background colours, grey / red / green / blue swatches in steps of 10, pick, Blocks view; opens v1 maps as v2; opens the wizard_pool sample; tested headless with pixel checks**
+- **12:42** `LIB_BIT` / `1bit-to-3d`: **cellmap v2 in LiveCode: reads v1 and v2, CellMap.Upgrade, heights through Get/Set on both, Levels / StandAt / Walk, LevelSegments; tests compare every answer with Python's (segments and walks identical)**
+- **12:42** `LIB_BIT` / `1bit-to-3d`: **cellmap v2 in Python: reads v1 and v2, upgrade, levels / stand_at / walk, level_segments and level_boxes, the sample map wizard_pool (pool, dais, tower, clouds, maze corner, a screen of glyphs), tests**
+- **12:36** `LIB_BIT` / `1bit-to-3d`: **cellmap v2: the format and height model (five numbers a cell: floor, ceiling, red, green, blue), links, objects, stacks, and how a cellmap becomes a level in Vibecode3D and xt3d**
+- **12:26** `LIB_SYSTEM` / `lib-system-draft1`: **AI_ORCHESTRATION_TEMPLATE.md: how the owner runs the project with Claude and Spark while away (a shareable template)**
+- **12:10** `LIB_DEV` / `main`: **Launcher fixed: Status_Browser.livecode was missing (renamed to the owner's gui_For_edits); build now takes the layout from the owner's GUI file and never writes it; launcher is IDE-safe, visible, logged; quit-on-close only with the launcher's flag**
+- **12:01** `LIB_DEV` / `main`: **Status_Browser_Launcher: build once as a standalone; opens the current Status_Browser from disk at every start (survives IDE quits); closing the browser quits it**
+- **12:00** `LIB_DEV` / `main`: **Status_Browser: Tell Claude button (signal file the AI watches; unsent feedback submitted first); finds the projects folder from any build location; tools/wait_for_tell.sh**
+- **11:33** `LIB_BIT` / `1bit-to-3d`: **BitEditor: ghost preview of the selected glyph over the 1bit map (snapped to the cell, exactly as it paints); View menu for palette / map / ghost strength; palette softened to 55% (owner's notes)**
+- **11:27** `LIB_SYSTEM` / `lib-system-draft1`: **OMEGA: test pixels, not sizes (PBM needs spaces in LiveCode)**
+- **11:26** `LIB_BIT` / `1bit-to-3d`: **Bit.ToPBM: a space after every bit. LiveCode reads P1 only with spaces; without them the image was blank 128x32 (owner: glyphs invisible in the BitEditor palette and 1bit map)**
+  Verified: palette 256x256 and map 416x416 images now hold lit pixels; LIB_BIT 28/28 pass.
+- **11:26** `xtalk_py` / `main`: **corpus lib_bit: Bit.ToPBM spaces (LiveCode needs them)**
+- **11:13** `LIB_BIT` / `1bit-to-3d`: **BitEditor: Aquarius 16x16 font (AquaDouble) by default, glyph palette, 1bit tab = the whole map as one PBM of its glyphs (paint/pick), Cells tab, Auto Walls (owner's review)**
+  lib_cellmap: CellMap.AutoWalls, CellMap.OneBitGrid, CellMap.CellAtPixel, identical to cellmap.py
+  (tested: same walls, same 416x416 picture; 10 ms). Example map uses Aquarius and auto walls.
+- **10:45** `LIB_DEV` / `main`: **for_review: a reviewed file that changes again goes back to waiting**
+- **10:45** `LIB_BIT` / `1bit-to-3d`: **BitEditor built with LIB_THEME: menus dark text on a light strip (owner's bug: light grey on white); templates reset before and after**
+- **10:45** `LIB_DEV` / `main`: **CLAUDE.md: feedback lines stay (the browser reads them); handled notes logged in LIB_LLMOUT**
+- **10:45** `LIB_THEME` / `main`: **LIB_THEME: dark/light themes as text, lib_theme (Begin/End template resets, ApplyStack by type, the menu rule, MenuBar strip)**
+- **10:44** `LIB_GAMES` / `couple-ball`: **Amazing Couple: kick and hold the ball (owner's review); the first maze's ball waits right up the hall**
+  Walk into it to kick (harder when running); E picks it up into the hands, E again kicks it.
+  Headless-tested: kick, pick up, carry, kick down the hall.
+- **10:42** `LIB_DEV` / `main`: **Status_Browser: Submit keeps the comment and shows 'Saved <time>'; your stamped comments show under the details (owner's feedback)**
+- **10:22** `LIB_DEV` / `main`: **LIB_DEV: Status_Browser (owner's layout): review list, click opens Explorer, right-click Reviewed/Not Reviewed, feedback to the AI inbox; for_review.py**
+- **09:58** `LIB_BIT` / `1bit-to-3d`: **editor: ignore example test copies**
+- **09:58** `LIB_EDITOR` / `main`: **LIB_EDITOR started: plan from the Forge, Anvil and Tomb Raider Level Editor manuals; E01 blocks from a cellmap, E02 raise/lower; headless runner**
+- **09:46** `LIB_SPARK` / `howto-outline`: **howto: the finished outline (18 topics, every engine call checked against the engine source; 07, 08, 13, 15, 17 rewritten; games mapped from their scripts)**
+  Spark's v2 with the owner's 'Result:' edit kept as out_v1/OUTLINE_spark_v2_owner_result.md.
+- **09:43** `LIB_SPARK` / `howto-outline`: **howto prompt: 'Result:' like the owner's outline**
+- **09:43** `LIB_SPARK` / `howto-outline`: **howto: 'Makes this happen' renamed 'Result:' (owner's edit)**
+- **09:27** `LIB_BIT` / `1bit-to-3d`: **editor: BitEditor stack (dark: codes list, 16x16 glyph board, menus, painted map with tags/design/heights views), tag effects, tests**
+  Tags now carry an effect (owner: 'as a TAG it defines the function/effect of the cell').
+  Built from livecode/build_editor + editor_stack; headless test tests/lc_editor_test.txt passes.
+- **09:23** `LIB_BIT` / `1bit-to-3d`: **editor: cellmap data (design byte / tag / height a cell), 256-tag table with cycling colours, fonts, Python and LiveCode readers/writers, Amazing Couple example**
+  Same file from both sides (round trip tested in LiveCode 9.6.3); Python maze = Bit.Maze.
+- **08:56** `LIB_BIT` / `1bit-to-3d`: **docs: the owner's 1-bit to 3D utility prototype (harvested texts, layout, what exists, questions)**
+- **08:24** `LIB_SPARK` / `howto-outline`: **howto: outline v2 (topic 01 by hand as Spark's model answer, 7 rules), Claude's review**
+- **08:12** `LIB_HOWTO` / `main`: **LIB_HOWTO: started (README, CLAUDE.md, PLAN.md from LIB_SPARK/howto)**
+- **08:11** `LIB_SPARK` / `howto-outline`: **howto: keep Spark's first answer only (it repeats itself); stack plan for review**
+- **08:09** `LIB_SPARK` / `howto-outline`: **howto: Spark outlines LIB_HOWTO (step-by-step game programming tutorials)**
+  topics.tsv (18 fundamentals incl. Animation: No Bones / Animation: BVH),
+  games.tsv (33 games with their header lines), howto_prompt.md (SYSTEM with
+  the real engine calls, OUTLINE, MISSING, GAME), run_howto.py on top of the
+  arcade runner, run_howto.sh + START_SPARK_HOWTO.bat. Result: howto/OUTLINE.md.
+- **07:43** `LIB_GAMES` / `couple-ball`: **Amazing Couple: the ball (owner's game note 11 14 2026)**
+  A Big Ball of Vectors polyhedron loose in every maze: it hops above the walls,
+  rolls along the corridors and loses a side at every landing (16 sides, about
+  37 s). Either hero walks into it to find it; it then rides above that hero.
+  A worn-out ball shatters and a new one turns up in another room. HUD line and
+  Couple.State show it; Couple.TestBallHere for tests. Headless-tested.
+- **07:41** `LIB_GAMES` / `refs/stash`: **On couple-ball: untracked copies of main/thrmnlra files (identical), stashed 2026-11-14 before couple-ball**
+- **07:41** `LIB_GAMES` / `refs/stash`: **index on couple-ball: 6201712 HUDs below the engine's top bars (the owner: the three-dot menu got stuck under City Shield's HUD)**
+- **07:41** `LIB_GAMES` / `refs/stash`: **untracked files on couple-ball: 6201712 HUDs below the engine's top bars (the owner: the three-dot menu got stuck under City Shield's HUD)**
+- **00:46** `LIB_SPARK` / `arcade-round2`: **Spark game designs: one button (START_SPARK_GAME_DESIGNS.bat) for the ideas in LIB_LLMIN/LIB_SPARK/GAME_IDEAS.txt**
+  "Title | what happens" per line -> a concept and a 5-level table each (Spark: words and numbers;
+  Claude writes the code). Starts LM Studio and loads Spark by itself; done ideas are skipped.
+  The old arcade .bat failed: its queue games.tsv had been renamed (default now games_first_run.tsv).
+  Tested: Dodge Tunnel (973) written in 12 s.
+- **00:45** `LIB_GAMES` / `thrmnlra`: **Thrmnlra: typing never lost to a focused menu button (the owner: 'the input breaks')**
+  The ... menu button kept keyboard focus after a click and took Return/Space. Focus goes back to
+  the card at start and every half second from buttons as well as fields.
+- **00:41** `LIB_SYSTEM` / `lib-system-draft1`: **STATUS: late 13-14 Nov work; the plan for next time is in Next_Steps_With_Claude**
 - **00:40** `LIB_GAMES` / `game-notes`: **Game notes box = the in-game command line: /next /back /play <name> /games**
   /next and /back go to the next / previous game card (alphabetical, wrapping) through the
   engine's Game.Select + Game.Play, so gCurrentGame and the stack's CurrentGame follow; in the
@@ -608,17 +672,3 @@ Full list: `TODO.md`, owner lane.
     in the work folder: the Extension Builder kept opening the loose one,
     which has no DLL beside it ("unable to load foreign library").
   - .gitignore: 3DModels/ (sample assets stay out of git), Zone.Identifier files.
-- **09:51** `xt3D_Raylib_Livecode_Bridge` / `window-guards-and-animation`: **Window guards, raylib log file, double-click build, Mixamo animation**
-  - gen_xt3d.py: every generated wrapper that needs a window now does nothing
-    and returns 0/false/"" when none is open (290 of 493); Unload still frees
-    the handle. Manifest marks each wrapper with needs_window.
-  - xt3d_shim.c: same guard on the GPU helpers; new xt3d_SetTraceLogFile sends
-    raylib's log to a text file.
-  - build.bat: finds Visual Studio itself, pulls sources from the WSL folder
-    when run from C:\xt3d, stays open on errors.
-  - tools/fbx_to_glb.py: Blender script that bakes a Mixamo armature's rotation
-    and scale so raylib plays the animation (confirmed in LiveCode).
-  - tools/make_skinned_test.py and test_models/skinned_bend.glb: small skinned
-    test model.
-  - View demo writes C:\xt3d\raylib_log.txt and quiets per-frame messages.
-- **08:26** `xt3D_Raylib_Livecode_Bridge` / `master`: **xt3d bridge: first working cut**

@@ -25,7 +25,7 @@ Opus briefed (`Next_Steps_With_Claude/previous_steps/FABLE_BRIEF_11_14_2026.md`)
 - **E13 Walk The Map** (`LIB_EDITOR/examples`): the sample as a 3D wire level; Amazing Couple's
   hero walks the pool steps, the dais, the tower, teleports to the clouds, falls, crosses the
   roofed maze. 11 headless scenes pass; 30 frames a second in the real Vibecode3D.
-- **Merge plan** `Next_Steps_With_Claude/MERGE_PLAN_11_14_2026.md`: 22 branches in 7
+- **Merge plan** `Next_Steps_With_Claude/MERGE_PLAN_11_14_2026.md`: 22 branches in 8
   repositories, all tried, all merge clean; the order; the loose files to clear first.
 - Commits: LIB_BIT `1bit-to-3d` (+5 today), LIB_EDITOR `main` (+1), LIB_SYSTEM `lib-system-draft1`.
 

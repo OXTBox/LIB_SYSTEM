@@ -65,4 +65,4 @@ project's notes). Newest at the bottom. Add to it whenever something costs a deb
 
 | # | Transgression | Commandment |
 |---|---|---|
-| 29 | Twenty-two unmerged branches in seven repositories; LIB_EDITOR's main only works while LIB_BIT has a branch checked out, and its tests read a file out of a LIB_GAMES branch by name (2026-11-14) | Say in the commit or the plan when work in one repository needs a branch of another; a branch is merged or dropped within two sessions (proposed: the owner decides). The merge plan lists such ties. |
+| 29 | Twenty-two unmerged branches in eight repositories; LIB_EDITOR's main only works while LIB_BIT has a branch checked out, and its tests read a file out of a LIB_GAMES branch by name (2026-11-14) | Say in the commit or the plan when work in one repository needs a branch of another; a branch is merged or dropped within two sessions (proposed: the owner decides). The merge plan lists such ties. |
