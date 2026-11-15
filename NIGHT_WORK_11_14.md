@@ -40,4 +40,16 @@ A wake-up is scheduled for 22:33 (session-only: only if this Claude session is s
   6 repos answers `-h` / `--help`. `LIB_DEV/tools/help_audit.py` checks this without running
   anything. Left: `LIB_GAMES/tools/couple_mazes.py` (it lives on the `couple-cellmap` branch),
   and "one test that runs" per project (not started).
-- Next: A-12 "the rest" (one-off stacks), A-63/A-13 inbox tidy (moves only to LIB_LLMOUT/Read).
+- **A-12 "the rest" DONE** (LIB_XTJSON 52db1fa, 14297e4): `docs/analysis/ONE_OFFS.md`, about
+  70 one-off stacks in two tables (the owner's own, other people's). Finds: `Stick_Figure_Bubble_Man`
+  is a full BVH player in LiveCode (P4); `GAD_Globals` is the owner's first globals register,
+  165 globals (P5); `Schema_Livecode_thing` makes JSON Schemas (P6). Licences: animationEngine is
+  GPL and Invaders is AGPL, so use them as reference only.
+- **A-63/A-13 inbox tidy DONE:** the 393 label files were already gone from the inbox. Moved to
+  `LIB_LLMOUT/Read/LIB_XTJSON/`: the Collector stack with its 3 script texts, the
+  Web_Collector_Watcher stack, the ig3d_UI_MAIN script text and the owner's 2021 note (all
+  analysed). **Still waiting in the inbox (never harvested; harvesting needs LiveCode):**
+  `3DShufflepuckaroo_v5_NeonArcade`, `Game_card_reader_11_13_2025`, `LightCycles3`,
+  `TKInter-izer`. `OLD_TO_DELETE/` is left for the owner.
+- **Queue empty.** Waiting on the owner: R-1 / R-2 play, the BitEditor layout 2 rebuild, the proposals
+  (P1-P6), the A-83 TODOs, the PROCEDURES Status column, the global renames.
