@@ -19,6 +19,8 @@ Python, git and Spark only.
 | 04:10 | batch 6 done (24 requests, 119 s, half the time, no cut-offs): every table inside its ranges. Fuse Runner and Rope Swing Gap as is; 8 more with a small change. Running count: 28 games near enough to build. Prompt: LOSE now names what ends a try, or "nothing: moves against par" (LIB_SPARK 8a5eb08). |
 | 04:13 | batch 7 started. |
 | 04:15 | batch 7 done (24 requests, 120 s): LOSE names a cause in 8 of 12 (was about 2). 3 drafts copied the prompt's example wording into CONTROLS: reworded. Dust Devil Chase, Train Yard Switch, Clock Tower Climb as is; 5 with a small change. **Running count: 36 games near enough to build** (`LIB_SPARK/arcade/REVIEW.md`). |
+| 04:35 | batch 8 done after the first real rest (rest 04:16-04:31, work 04:31-04:35, 118 s): keys right in 12 of 12. Hedge Cutter, Lift Bridge, Echo Bats, Lost Lambs as is; 6 with a small change. **Running count: 46.** |
+| 04:36 | batch 9 started (the clock decides when it rests). |
 | 04:16 | **My mistake: Spark had no rest from 03:31 to 04:15.** Each batch took under 10 minutes and every run restarted the work clock, so the 10-on / 15-off pace never fired. The clock now carries across runs (LIB_SPARK 1c6fa70, tested); batch 8 began with a 15-minute rest, model unloaded, until about 04:31. |
 | 03:31 | yesterday's 14 road-trip drafts were uncommitted in LIB_SPARK: committed on main (0fa4c14). |
 
@@ -66,3 +68,9 @@ Python, git and Spark only.
   is no harder to find), oil 25% as before; 35% of cars swerve at you (was 50%). Linted, not played.
 - Your Genetic Anomaly note (14 Nov, 8:13 PM: advancement economy, big scrolling/zooming map,
   turn based with End Turn) is a design job, not a quick fix: it waits for you to say go.
+
+## Question for you (default: I keep going)
+Spark's game-design format is now settled and **46 designs are near enough to build**, more than
+we can build soon. More batches add more of the same. Options: (a) keep making designs all day
+(the plan; default), (b) switch Spark to another job, e.g. the HOWTO step words or the 2008
+manifest drafts, (c) you pick 4 to 6 designs and I write their level checkers next.
