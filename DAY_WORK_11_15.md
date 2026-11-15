@@ -10,6 +10,8 @@ Python, git and Spark only.
 | 03:36 | batch 1 done (24 requests, 160 s); verdicts in `LIB_SPARK/arcade/REVIEW.md`: Ring Arena as is; Wire Sentries, Courier Run with a small change; Tower Shift dropped for now (needs stacked maps); the rest need changes. Spark's layouts are unusable: levels should come from a Python maze tool with a checker. |
 | 03:43 | batch 2 done (24 requests, 181 s; one level table cut off). Every draft invented a Space key: my "no Space key" rule sat in a `#` line Spark never reads. Batch 3 puts the keys in each idea. |
 | 03:47 | batch 3 (12 arena and run ideas) started. |
+| 03:50 | batch 3 done (24 requests, 232 s). 10 of 12 still invented Space: the real cause was `arcade_prompt.md` itself ("CONTROLS: Only arrow keys and Space", and "what costs a life"). Prompt fixed (LIB_SPARK 30f1117). Verdicts: Echo Chamber as is; Hold The Square, Gate Runner, Lamp Lighter Run with a small change. 14 games across 3 batches are near enough to build. |
+| 03:56 | batch 4 started: the first run with the fixed prompt. |
 | 03:31 | yesterday's 14 road-trip drafts were uncommitted in LIB_SPARK: committed on main (0fa4c14). |
 
 ## Alone
