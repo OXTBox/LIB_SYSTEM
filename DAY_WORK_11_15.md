@@ -69,6 +69,23 @@ Python, git and Spark only.
 - Your Genetic Anomaly note (14 Nov, 8:13 PM: advancement economy, big scrolling/zooming map,
   turn based with End Turn) is a design job, not a quick fix: it waits for you to say go.
 
+## Your notes in MAIN_UI_REUSE.md (04:17)
+- Your five answers are now **A-84 to A-88** in TODO.md (LIB_SYSTEM 27f8b43); your edits to the file
+  committed as they are (LIB_ig3d 8ca871b). A-84, A-86, A-87 need LiveCode: not today.
+- **A-85 done (the Python part): .wtf animations DO convert to BVH**, so per your condition it goes
+  forward. Only 10 of the 775 distinct .wtf files have animations (the DeadDays models; the
+  others are copies). Each has its own rig. Format decoded from officer.wtf's geometry: each bone's
+  pair is (its joint vertex, parent + 1), and bone 0 is the whole model turning about its feet.
+  `LIB_MOCAP/tools/wtf_anim.py` wrote **58 BVH** into `LIB_BVH/iGame3D_DeadDays` (officer, human,
+  zombietobi, robothead, robotheadgun). Checked without a screen: rest pose exact, bone lengths
+  constant in every frame, walks keep the feet on the ground, Die ends with the head on the floor.
+  **Not checked:** the rotation order (I used the one wif.py fitted for iGame3D's tables). One look
+  in a BVH viewer will tell. LIB_MOCAP 1a7cb38, LIB_BVH (local only).
+- A-88 explained, since you asked: GameOverViewData was your 2007 game-design-document form, with
+  tabs Overview, Philosophy, Goals, World Layout, Scheduled, Sounds, Music, Weapons, Camera. A-88
+  would turn those tabs into a blank outline (headings and a one-line prompt each) that every new
+  game starts from: PROMPT & GLAZE's design doc, and a step in LIB_HOWTO ("write your design doc").
+
 ## Question for you (default: I keep going)
 Spark's game-design format is now settled and **46 designs are near enough to build**, more than
 we can build soon. More batches add more of the same. Options: (a) keep making designs all day
