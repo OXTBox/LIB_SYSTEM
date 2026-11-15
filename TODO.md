@@ -115,6 +115,11 @@ START ON igame3d UI reuse  NOW 1014 PM 11 11 2026
 | A-81 | (PARKED) Run a 2008 level headless-ish: ig3d_Init on the LIB_BIN Data, load a level by Lua, CopyGLToRevWindow into an image, save a screenshot |
 | A-83 | **Reuse inventory of the old iGame3D main UI** (2007 `.rev` vs 2026 `.livecode` harvests): every stack, card, control and script group sorted keep / adapt / junk, with where each kept piece goes now (LIB_SCRIPTBLOCKS examples, LIB_GENERICA, Vibecode3D/xt3d editors, LIB_TOOLBAR) |
 | A-82 | Harvest with the 9.6.3 server one process per stack (timeout each): the Collector stacks again |
+| A-84 | (owner accepted 2026-11-15, from A-83) **Vibecode3D editor Inspector**: Window > Inspector, one card per object kind (material, bones, colours), UIs with placeholder scripts filled when a game needs them. Only what games and procedural assets need; no iGame3D mesh editing ("Blender stays king"). First real card: a **BVH / bones animation previewer with a keyframe clipper** (stop before the glitch part) that adds clips to the game's Animation List, inherited by models, not embedded in them. Needs LiveCode. |
+| A-85 | (owner accepted, conditional) `.wtf` `#Animations` reader -> Sequencer clips (with A-23) **only if it converts to our glb/BVH**; otherwise .wtf goes on the back burner. Meshes stay glb/glTF (and USD). Python feasibility check first (no LiveCode needed). |
+| A-86 | (owner accepted) "Replace with model...": a small UI that swaps the placeholder geometry in template games and saves the choices as an alternate **Skin**. Needs LiveCode. |
+| A-87 | (owner accepted) Library preview drag: the preview goes into a temporary stack that follows the mouse over the viewport, works across stacks (maybe into other apps), drops the model into the scene. Needs LiveCode. |
+| A-88 | (owner: "not sure what this is, but sounds good") A game-design-document outline built from GameOverViewData's tabs, for LIB_HOWTO and PROMPT & GLAZE. Explain it in one paragraph with an example before building. |
 | O-14 | (owner, when convenient) try the iGame3D Player exe / the LC7 main UI on the desktop if you have LiveCode 7.1.4 (desktop) somewhere | 
 
 ### Project health
