@@ -65,6 +65,11 @@ Sprint ... 945 Tabletop Racers) wait for a review and scripts (Opus).
 Full list: `TODO.md`, owner lane.
 
 ## Next (AI): see the resume plan, section 2
+
+- **TTRPG Studio (15 Nov, Fable):** new repo `LIB_TTRPG`, branch `ttrpg-studio-1`. Design, prompts and a
+  tested terminal engine are done (`python3 ref/ttrpg_ref.py play "<idea>"`; owner's test steps 2 to 6
+  pass on gemma 2B, and on gemma + lfm3-omni-2b). **Opus next:** build the LiveCode stack from
+  `LIB_TTRPG/OPUS_BUILD.md` (3 to 4 hours), then the tuning pass. No more Fable time needed for iteration 1.
 1. Opus: Amazing Couple on cellmap v2 (each maze made once as a file, walls exactly as drawn:
    answers the owner's invisible-wall notes of 14 Nov, which are still open).
 2. Opus: E13 in the xt3d games bench; `CellMap.LevelBoxes` in LiveCode for the solid look.
