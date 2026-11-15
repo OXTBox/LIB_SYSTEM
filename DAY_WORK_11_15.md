@@ -14,6 +14,8 @@ Python, git and Spark only.
 | 03:56 | batch 4 started: the first run with the fixed prompt. |
 | 03:57 | batch 4 done (24 requests, 232 s): keys right in 12 of 12, so the prompt fix works. Lives still on everything, because the level table's columns were fixed (speed / count / lives / bonus). `run_designs.sh` now takes `| columns: ...` per idea (LIB_SPARK 8d15b81; the old queue builds the same). Verdicts: Pipe Flow Room, Tunnel Digger, Hover Polo with a small change. |
 | 04:00 | batch 5 started, each idea with its own columns. |
+| 04:05 | batch 5 done (24 requests, 279 s): own columns right in 12 of 12; "cells" read as screen pixels in 5. Sentinel Ring as is; Lockstep Bridge, Herd The Sparks, Bucket Line, Dark Elevator with a small change. Eight two-hero ideas now exist for a PROMPT & GLAZE co-op world. Ideas with own columns no longer get a LAYOUTS picture (LIB_SPARK 6a5a799; every cut-off was there). |
+| 04:08 | batch 6 started: columns carry their ranges, no pictures. |
 | 03:31 | yesterday's 14 road-trip drafts were uncommitted in LIB_SPARK: committed on main (0fa4c14). |
 
 ## Alone
