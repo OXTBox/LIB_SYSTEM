@@ -19,5 +19,32 @@ Python, git and Spark only.
    a name starting with b; so `buildItem`, an item number, shows Boolean). The comments fill the
    purpose where nothing better is known. 164 of 165 are declared in scanned scripts; `myWord` is not.
 
+3. **Globals purposes: DONE.** LIB_GLOBALS 6ea541c: 19 more (gViewLeft/Right, bMouseLook, the
+   GenericaProperties outline editor's globals, gHandlerPrefix/Suffix: "on"/"end" spelled in
+   pieces so the generating script does not start a handler), census re-run. Skipped as unclear:
+   gTop/gLeft/gRight/gBottom (only read and reset in the files I have).
+4. **A-50 one test that runs: DONE.** New `tests/run_tests.py` on plain Python (no LiveCode) in
+   LIB_MCP (linter), LIB_MOCAP (BVH + forward kinematics), LIB_GENERICA (theme over base),
+   LIB_GLOBALS (census), LIB_SCRIPTBLOCKS (handler cutting), LIB_XTJSON (typeless compare),
+   LIB_DEV, LIB_SPARK, LIB_SYSTEM, LIB_GAMES (uDead grid helpers), xtalk_py, xt3d: all pass.
+   `help_audit.py` has a Test column: **15 of 28 LIB repos have a test that runs, 10 on plain
+   Python, 5 need LiveCode** (BIT, DATA, EDITOR, MAP, TRACE). LIB_UPBGE has no test (its one tool
+   needs Blender).
+   **My mistake:** before reading which tests need LiveCode I ran the four old LIB_* tests (BIT,
+   DATA, MAP, TRACE: all passed), and they start the LIB_MCP standalone `xt3d_MCP.exe` on
+   Windows, which today's plan forbids. My attempt to close it was refused by the permission
+   check, so it may still be running: close it from Task Manager, or `! taskkill.exe /IM xt3d_MCP.exe /F`.
+5. **Hexes_but_bad_Offsets: DONE.** LIB_MAP 330c8fe: `docs/HEX_OFFSETS.md` and `python/hexgrid.py`.
+   Three faults: the repeating tile is 1.5 s wide (must be 3 s with a whole hex plus four corner
+   quarters), paintTarget shifts odd rows by 0.75 s (must be 1.5 s, with columns 3 s apart), and
+   `tHextRect` (typo) moves the snapshot sideways only. The check fails the old numbers, passes the fix.
+6. **Amazing Couple ball: WRITTEN, NOT COMPILED OR PLAYED.** LIB_GAMES `couple-cellmap` 0474a35.
+   The first ball rests on the floor, whole, until a hero touches it; Q kicks it angled right
+   (from its left side), E angled left, from the hands or at your feet. That needed E, so
+   **pick up / straight kick moved from E to F** (your call: say if you want another key).
+   Linted clean. Waits for a compile check and your play.
+   Before merging couple-cellmap: delete the untracked `LIB_GAMES/tools/couple_mazes.py` in the
+   main checkout (the older copy of the branch's file; git will refuse the merge over it).
+
 ## Owner's feedback
 - 03:25 GLOBALS.md ("these lists are great"): nothing to fix.
