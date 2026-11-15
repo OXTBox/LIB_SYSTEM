@@ -11,6 +11,11 @@ Opus briefed (`Next_Steps_With_Claude/previous_steps/FABLE_BRIEF_11_14_2026.md`)
 | Spark: iGame3D 2008 manifest | Spark's own window | stopped since 13 Nov (LM Studio was down); restart when wanted |
 
 ## Done today (14 November)
+**Opus, evening: Spark road trip, all 15 vehicle games** on LIB_GAMES branch `spark-roadtrip`
+(Neon Drift Wastes, Dodge Tunnel, Grid Sprint, Coast Road, Bounce Rally, Interceptor Run, Fuel Line,
+Fare Dash, Block City Hustle, Tabletop Racers, Wreck Ring, Light Trail Arena, Crater Crawler, Ramp
+Rider, Squad Buggy). Each played on the real engine with `LIB_GAMES/tools/engine_play.sh` and
+snapped; all on FOR_REVIEW with caveats (feel and tuning need your hands; test keys only).
 **Fable window (architecture):**
 - **cellmap v2**, the hub between the editor and the engines: `LIB_BIT/editor/CELLMAP_V2.md`.
   Five heights a cell (floor and ceiling greys 0-255 where 100 = a full hallway; red digs down,
@@ -47,6 +52,7 @@ Sprint ... 945 Tabletop Racers) wait for a review and scripts (Opus).
 | ID | Question | Default |
 |---|---|---|
 | F-3 | Test the BitEditor (Heights tab); then LIB_BIT `1bit-to-3d` can be merged: the last open branch | it stays checked out and unmerged until you say |
+| R-1 | Play the 15 road-trip games (LIB_GAMES `spark-roadtrip`); merge when happy | the branch waits unmerged |
 | O-1 | Correct LIB_ALPHA / OPERATING_PROMPT | they stand as written |
 | Q-1 | LIB_LOGS file name | `<intention>_<result>_<names>_<seconds>.lib_log` |
 Full list: `TODO.md`, owner lane.
