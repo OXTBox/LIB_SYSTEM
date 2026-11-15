@@ -16,6 +16,8 @@ Python, git and Spark only.
 | 04:00 | batch 5 started, each idea with its own columns. |
 | 04:05 | batch 5 done (24 requests, 279 s): own columns right in 12 of 12; "cells" read as screen pixels in 5. Sentinel Ring as is; Lockstep Bridge, Herd The Sparks, Bucket Line, Dark Elevator with a small change. Eight two-hero ideas now exist for a PROMPT & GLAZE co-op world. Ideas with own columns no longer get a LAYOUTS picture (LIB_SPARK 6a5a799; every cut-off was there). |
 | 04:08 | batch 6 started: columns carry their ranges, no pictures. |
+| 04:10 | batch 6 done (24 requests, 119 s, half the time, no cut-offs): every table inside its ranges. Fuse Runner and Rope Swing Gap as is; 8 more with a small change. Running count: 28 games near enough to build. Prompt: LOSE now names what ends a try, or "nothing: moves against par" (LIB_SPARK 8a5eb08). |
+| 04:13 | batch 7 started. |
 | 03:31 | yesterday's 14 road-trip drafts were uncommitted in LIB_SPARK: committed on main (0fa4c14). |
 
 ## Alone
