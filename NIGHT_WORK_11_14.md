@@ -51,5 +51,6 @@ A wake-up is scheduled for 22:33 (session-only: only if this Claude session is s
   analysed). **Still waiting in the inbox (never harvested; harvesting needs LiveCode):**
   `3DShufflepuckaroo_v5_NeonArcade`, `Game_card_reader_11_13_2025`, `LightCycles3`,
   `TKInter-izer`. `OLD_TO_DELETE/` is left for the owner.
+- **A-35 follow-up (15 Nov, Fable):** purposes for 44 of the most-used globals written into `LIB_GLOBALS/PURPOSES.md`; skipped as unclear: gGlobalList, gEditorState, gGridSize, tArray.
 - **Queue empty.** Waiting on the owner: R-1 / R-2 play, the BitEditor layout 2 rebuild, the proposals
   (P1-P6), the A-83 TODOs, the PROCEDURES Status column, the global renames.
