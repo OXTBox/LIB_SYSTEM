@@ -91,3 +91,15 @@ Spark's game-design format is now settled and **46 designs are near enough to bu
 we can build soon. More batches add more of the same. Options: (a) keep making designs all day
 (the plan; default), (b) switch Spark to another job, e.g. the HOWTO step words or the 2008
 manifest drafts, (c) you pick 4 to 6 designs and I write their level checkers next.
+
+## Your clarifications to Fable's globals questions (05:03)
+- The four Fable skipped now have purposes in `LIB_GLOBALS/PURPOSES.md`, in your words:
+  gGlobalList (the globals list.script.globals finds), gEditorState (one undo/history state of the
+  bitmap animation editor), gGridSize (cells per row; "can be scrapped"), tArray (a temp array made
+  global while bug hunting: drop the declaration and run).
+- Your prefixes are in the census now (LIB_GLOBALS ba756c9): `bName` is a boolean global and stays
+  as it is ("ok (b)", 37 of them no longer get a rename proposal); a `t`/`p` name declared global is
+  marked "leftover?" with "drop the global?" (18, tArray among them). 416 of 498 globals now follow
+  your naming; 82 still get a proposal; name clashes fell from 6 to 2. The prefixes are written
+  in LIB_GLOBALS/README.md and in my memory, so I use them in xTalk I write.
+- Your file moved to `LIB_LLMOUT/Read/LIB_GLOBALS/`.
