@@ -11,6 +11,8 @@ Voices fallback); headless self / mock / UI tests pass. Tuning in `LIB_TTRPG/TUN
 secret is now shown by code; qwen-7B makes better scenes but qwen + a 2B filled memory to 95%; 13B is
 out of reach. All models unloaded. **Waiting:** the owner opens the window (not yet seen on a screen).
 Not done: step 9 (old studio's world code), by design "later".
+Later the same day: skills drive the play (18 skills, skill buttons), self-play by a model, the owner played
+the terminal version ("That was great!"). **Resume from `LIB_TTRPG/NEXT.md`.**
 
 ## Running (no Claude usage)
 | What | Where | State |
