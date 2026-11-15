@@ -87,7 +87,22 @@ Python, git and Spark only.
   would turn those tabs into a blank outline (headings and a one-line prompt each) that every new
   game starts from: PROMPT & GLAZE's design doc, and a step in LIB_HOWTO ("write your design doc").
 
-## Question for you (default: I keep going)
+## Spark's next job: procedural entities (owner, 05:1x: "Yes!")
+Answered by the owner: Spark now designs **entities** instead of more game designs.
+- Spark writes a RECIPE: parts (box, prism, pyramid, sphere, lathe, loft, line, tri) with sizes,
+  positions and turns; words and numbers only. `LIB_SPARK/entities/entity.py` checks it (size,
+  every part joined, base on the ground, left/right mirror, at most 160 edges), draws a top and a
+  side view in characters, and writes the Vibecode3D `Ent.<Name>Mesh` function (the same calls
+  the games use). A failed recipe goes back to Spark once with the checker's faults.
+- Calibrated on the demo's sail boat: as a recipe it passes with 31 edges (its comment says 31)
+  and the generated function makes the same calls as the hand-written one.
+- Pilot queue (`entities/entities.tsv`): Cable Car, Ice Fishing Hut, Hover Polo Craft, Sentry
+  Drone, Dock Crane, Lighthouse, Penguin, Robot Vacuum, Clock Gear, Hot Air Balloon, Train
+  Engine, Two Key Door. Started 05:22 (rest until about 05:37, then work). LIB_SPARK a260cc6.
+- The game-design batch 12/13 was stopped after 4 of its 24 ideas; the other 20 stay queued.
+- Not done: entity "stacks" (one generic stack reading recipe files) need LiveCode.
+
+## Question for you (answered: entities)
 Spark's game-design format is now settled and **46 designs are near enough to build**, more than
 we can build soon. More batches add more of the same. Options: (a) keep making designs all day
 (the plan; default), (b) switch Spark to another job, e.g. the HOWTO step words or the 2008
