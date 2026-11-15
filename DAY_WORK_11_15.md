@@ -18,6 +18,8 @@ Python, git and Spark only.
 | 04:08 | batch 6 started: columns carry their ranges, no pictures. |
 | 04:10 | batch 6 done (24 requests, 119 s, half the time, no cut-offs): every table inside its ranges. Fuse Runner and Rope Swing Gap as is; 8 more with a small change. Running count: 28 games near enough to build. Prompt: LOSE now names what ends a try, or "nothing: moves against par" (LIB_SPARK 8a5eb08). |
 | 04:13 | batch 7 started. |
+| 04:15 | batch 7 done (24 requests, 120 s): LOSE names a cause in 8 of 12 (was about 2). 3 drafts copied the prompt's example wording into CONTROLS: reworded. Dust Devil Chase, Train Yard Switch, Clock Tower Climb as is; 5 with a small change. **Running count: 36 games near enough to build** (`LIB_SPARK/arcade/REVIEW.md`). |
+| 04:16 | **My mistake: Spark had no rest from 03:31 to 04:15.** Each batch took under 10 minutes and every run restarted the work clock, so the 10-on / 15-off pace never fired. The clock now carries across runs (LIB_SPARK 1c6fa70, tested); batch 8 began with a 15-minute rest, model unloaded, until about 04:31. |
 | 03:31 | yesterday's 14 road-trip drafts were uncommitted in LIB_SPARK: committed on main (0fa4c14). |
 
 ## Alone
