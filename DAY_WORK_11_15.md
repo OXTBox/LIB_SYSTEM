@@ -147,3 +147,10 @@ manifest drafts, (c) you pick 4 to 6 designs and I write their level checkers ne
   `the tArrayName of stack`, which is a property literally named "tArrayName", not the one named
   by the variable (the other handlers use `do` for this); and `record.object.transform.state`
   has `set the customPropertySet of of stack` (a doubled "of").
+
+## Compile checks without a window (found 06:1x)
+The LiveCode 9.6.3 **server** in `LIB_BIN` runs inside WSL and can compile-check a script with no
+window at all: `python3 -I LIB_MCP/python/lib_mcp/compile_headless.py FILE...` (LIB_MCP 4252bbe,
+tested both ways: a broken copy is caught at the exact line). First use: **today's three unchecked
+changes all compile**: Amazing Couple's ball (couple-cellmap), Fuel Line's traffic (spark-roadtrip),
+the engine's tArray renames (clear-names). Syntax only: playing them still needs the IDE.
