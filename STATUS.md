@@ -11,6 +11,9 @@ Opus briefed (`Next_Steps_With_Claude/previous_steps/FABLE_BRIEF_11_14_2026.md`)
 | Spark: iGame3D 2008 manifest | Spark's own window | stopped since 13 Nov (LM Studio was down); restart when wanted |
 
 ## Done today (14 November)
+**Opus, night (no screen needed):** Amazing Couple mazes as 12 checked cellmap files, the game draws
+and collides from them (LIB_GAMES branch `couple-cellmap`); A-12 CLIP/DND/Enochian analysis; A-15 review
+re-run; A-16 GLOSSARY.md + PROCEDURES.md in LIB_ig3d. Details: `NIGHT_WORK_11_14.md`.
 **Merged to main (owner: "merge everything that is not a game"):** LIB_DEV `game-browser`, LIB_BIT
 `1bit-to-3d`; LIB_BIN, LIB_BUILD, LIB_GENERICA, LIB_SCRIPTBLOCKS, LIB_SYSTEM, LIB_TEST, LIB_UPBGE got
 a main from their only branch. Still open: LIB_GAMES `spark-roadtrip` (games).
@@ -55,6 +58,7 @@ Sprint ... 945 Tabletop Racers) wait for a review and scripts (Opus).
 | ID | Question | Default |
 |---|---|---|
 | F-3 | Test the BitEditor (Heights tab). LIB_BIT `1bit-to-3d` merged to main 14 Nov (owner: "merge everything that is not a game"); two uncommitted editor script edits from 13:31 ride along, unreviewed | they stay uncommitted until you look |
+| R-2 | Play Amazing Couple on branch `couple-cellmap` (mazes from files: any invisible walls left?); merge if good | waits unmerged |
 | R-1 | Play the 15 road-trip games (LIB_GAMES `spark-roadtrip`); merge when happy | the branch waits unmerged |
 | O-1 | Correct LIB_ALPHA / OPERATING_PROMPT | they stand as written |
 | Q-1 | LIB_LOGS file name | `<intention>_<result>_<names>_<seconds>.lib_log` |
