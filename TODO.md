@@ -137,3 +137,9 @@ START ON igame3d UI reuse  NOW 1014 PM 11 11 2026
 | Q-3 | Make `LIB_GAD` a git repo (third-party Galactica sources ignored, local only)? | yes, local only, the Galactica folders in `.gitignore` |
 | Q-2 | Thrmnlra's G.O.A.T.-style test: name it something of ours in public? | "Fitness of Service test" | HAHA mayb. We have to work on funny typos, later and see how it holds up in a demo release of the games in on go.
 
+
+### LIB_THEME (the owner, 2026-11-15)
+| ID | Task |
+|---|---|
+| A-89 | **Theme stack**: a small stack that runs and edits LIB_THEME's settings: every key of `themes/*.txt` with its colour, a live sample of each control kind (buttons, fields, lists, menus, tabs, scrollbars), save back to the theme file. Needs LiveCode. |
+| A-90 | **The white scrollbars** (owner: "it wrecks the whole aesthetic"; blendLevel helps but fades the text too). Find out on 9.6.3 what can colour a scrollbar (its own colour properties on Windows, the theme setting, a custom thin scrollbar group with the native one hidden, wheel/drag scrolling only) and show each option in the A-89 stack for the owner to pick. |
