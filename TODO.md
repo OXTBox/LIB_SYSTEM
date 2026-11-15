@@ -77,6 +77,7 @@ START ON igame3d UI reuse  NOW 1014 PM 11 11 2026
 | A-32 | LIB_TEST and LIB_LOGS folders with READMEs; the test-stack save step (rule 16) as a library handler |
 | A-33 | Escape/pause with developer options and an MCP command-line toggle (rules 18-20) as a shared library every game uses |
 | A-34 | Developer card 1 blank; cards laid out as a grid on screen |
+| A-36 | Close-and-free pattern (LIB_ALPHA 12b) in every stack: GAME_Browser, Game_Player (+ launcher), Status_Browser (+ launcher), BitEditor, Vibecode3D, the xt3d benches, LIB_HOWTO, LIB_EDITOR, the batch app; check none stays in memory after its window closes |
 | A-35 | LIB_GLOBALS: register every global, its use and its Python equivalent, so standalone scripts reuse them safely |
 
 ### New LIBs (plan first, with Fable when the owner switches) 

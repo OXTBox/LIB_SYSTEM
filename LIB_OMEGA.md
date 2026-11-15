@@ -15,6 +15,7 @@ project's notes). Newest at the bottom. Add to it whenever something costs a deb
 | 6 | `"+0.5"` may count as a number, so a relative time read as absolute | Test special prefixes before `is a number`. |
 | 7 | The engine HUD font is upper case only, one colour; `>`, `[`, `?` missing | The Sequencer's `Term` layer draws its own vector text in any colour. |
 | 8 | The engine's camera position is private to the stack script | A card that projects points keeps its own camera constants and sets the camera itself. |
+| 10 | A closed stack in a standalone could stay in memory, still running, forever | `closeStackRequest`: set `destroyStack` true and close the mainStack; ask before quitting only where it matters (LIB_ALPHA 12b). |
 | 9 | LiveCode hung for good on some stacks (1.5 GB, no answer) and one batch stopped dead | Long batches run with an outside watchdog, or one process per item with a `timeout`, and log START before each item so a crash is known on restart. |
 
 ## Tools and shell

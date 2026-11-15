@@ -102,6 +102,27 @@ Details and routing rules: `OPERATING_PROMPT.md`.
 10. Test in the running app through LIB_MCP (`lcmcp run/eval/snap`); look at the screenshot.
 11. Read `Vibecode3D/LiveCode_Claude_Kit/kit/docs/livecode-gotchas.md` before writing LiveCode.
 12. Library code must not depend on the IDE; every app loads and saves through LIB_DATA.
+12b. **Every stack lets go of memory when it closes** (the owner, 2026-11-14: in an executable a
+    closed stack can stay running in memory forever). Asking before quitting is optional; setting
+    `destroyStack` true and closing the mainStack is not:
+    ```
+    on closeStackRequest
+       set the destroyStack of this stack to true
+       close stack (the mainStack of this stack)
+    end closeStackRequest
+    ```
+    The owner's full form, when a stack should ask:
+    ```
+    on closeStack
+       answer "Are you sure you want to quit?" with "NO" or "YES"
+       if it is "YES" then
+          quit
+       else
+          exit closeStack
+       end if
+    end closeStack
+    ```
+    Windows a script creates set `destroyStack` true when made; a standalone's last window quits.
 
 ### Windows the owner sees (from the owner's notes, 2026-11-13)
 13. **Title of every window an AI, agent or person is driving:**
