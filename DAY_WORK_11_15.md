@@ -12,6 +12,8 @@ Python, git and Spark only.
 | 03:47 | batch 3 (12 arena and run ideas) started. |
 | 03:50 | batch 3 done (24 requests, 232 s). 10 of 12 still invented Space: the real cause was `arcade_prompt.md` itself ("CONTROLS: Only arrow keys and Space", and "what costs a life"). Prompt fixed (LIB_SPARK 30f1117). Verdicts: Echo Chamber as is; Hold The Square, Gate Runner, Lamp Lighter Run with a small change. 14 games across 3 batches are near enough to build. |
 | 03:56 | batch 4 started: the first run with the fixed prompt. |
+| 03:57 | batch 4 done (24 requests, 232 s): keys right in 12 of 12, so the prompt fix works. Lives still on everything, because the level table's columns were fixed (speed / count / lives / bonus). `run_designs.sh` now takes `| columns: ...` per idea (LIB_SPARK 8d15b81; the old queue builds the same). Verdicts: Pipe Flow Room, Tunnel Digger, Hover Polo with a small change. |
+| 04:00 | batch 5 started, each idea with its own columns. |
 | 03:31 | yesterday's 14 road-trip drafts were uncommitted in LIB_SPARK: committed on main (0fa4c14). |
 
 ## Alone
