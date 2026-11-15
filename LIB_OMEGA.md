@@ -16,6 +16,7 @@ project's notes). Newest at the bottom. Add to it whenever something costs a deb
 | 7 | The engine HUD font is upper case only, one colour; `>`, `[`, `?` missing | The Sequencer's `Term` layer draws its own vector text in any colour. |
 | 8 | The engine's camera position is private to the stack script | A card that projects points keeps its own camera constants and sets the camera itself. |
 | 10 | A closed stack in a standalone could stay in memory, still running, forever | `closeStackRequest`: set `destroyStack` true and close the mainStack; ask before quitting only where it matters (LIB_ALPHA 12b). |
+| 11 | Game_Player sent "quit" to its own closing window; destroyStack removed the window first, so the quit never came and every closed game stayed in memory (then `launch` refused a second copy) | Quit directly in closeStack; never `send` to a stack that is closing. Start programs with `shell("start ...")`, not `launch`, when several copies may run. |
 | 9 | LiveCode hung for good on some stacks (1.5 GB, no answer) and one batch stopped dead | Long batches run with an outside watchdog, or one process per item with a `timeout`, and log START before each item so a crash is known on restart. |
 
 ## Tools and shell
