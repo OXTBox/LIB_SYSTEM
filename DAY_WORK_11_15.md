@@ -51,3 +51,8 @@ Python, git and Spark only.
 
 ## Owner's feedback
 - 03:25 GLOBALS.md ("these lists are great"): nothing to fix.
+- 03:50 your Fuel Line note (14 Nov, 8:09 PM, "too much damn traffic") had no fix yet. LIB_GAMES
+  `spark-roadtrip` d2f143e: cars are 30% of what spawns (was 45%), fuel cans 45% (was 30%, so fuel
+  is no harder to find), oil 25% as before; 35% of cars swerve at you (was 50%). Linted, not played.
+- Your Genetic Anomaly note (14 Nov, 8:13 PM: advancement economy, big scrolling/zooming map,
+  turn based with End Turn) is a design job, not a quick fix: it waits for you to say go.
