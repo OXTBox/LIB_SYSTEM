@@ -7,6 +7,9 @@ Python, git and Spark only.
 | Time | What |
 |---|---|
 | 03:31 | pace `10 900` (10 min work, 15 min rest, model unloaded in the rest). 12 new ideas added to `LIB_LLMIN/LIB_SPARK/GAME_IDEAS.txt` ("Maze and rooms batch 1": Lantern Crawl, Two Key Doors, Echo Rescue, Push Block Vault, Ring Arena, Stair Hopper, Glass Corridors, Bargain Hall, Wire Sentries, Falling Floor, Tower Shift, Courier Run). `run_designs.sh` started from WSL; LM Studio answered. |
+| 03:36 | batch 1 done (24 requests, 160 s); verdicts in `LIB_SPARK/arcade/REVIEW.md`: Ring Arena as is; Wire Sentries, Courier Run with a small change; Tower Shift dropped for now (needs stacked maps); the rest need changes. Spark's layouts are unusable: levels should come from a Python maze tool with a checker. |
+| 03:43 | batch 2 done (24 requests, 181 s; one level table cut off). Every draft invented a Space key: my "no Space key" rule sat in a `#` line Spark never reads. Batch 3 puts the keys in each idea. |
+| 03:47 | batch 3 (12 arena and run ideas) started. |
 | 03:31 | yesterday's 14 road-trip drafts were uncommitted in LIB_SPARK: committed on main (0fa4c14). |
 
 ## Alone
