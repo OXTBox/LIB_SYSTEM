@@ -44,7 +44,7 @@ mention LiveCode 9.6.3 or the Community edition in public material (internally i
 | `LIB_SCRIPTBLOCKS` | harvest, manage and export script blocks: GAD's code palette as its own stack and library; edits examples and other stacks, never its own source |
 | `LIB_ig3d` | where the worlds converge: glossary, procedures, engine categories |
 | `LIB_PUBLIC` | the public page |
-| `LIB_GLOBALS` | (planned) every global name, its use, and its Python equivalent |
+| `LIB_GLOBALS` | every global name, its use, and its Python equivalent (GLOBALS.md, generated) |
 | `LIB_USERS` | (planned) who is at the controls: owner, Claude, Spark, other agents |
 | `LIB_SYSTEM` | this: the rules and the plan |
 | `LIB_BIN` | third-party applications (e.g. LiveCode Server 9.6.3 Linux) in versioned folders; git keeps only README + MANIFEST; internal only |
