@@ -4,6 +4,14 @@ Saturday, November 14, 2026, afternoon. Rewritten by Claude (Fable) at the end o
 Opus briefed (`Next_Steps_With_Claude/previous_steps/FABLE_BRIEF_11_14_2026.md`). Next plan:
 `Next_Steps_With_Claude/WHEN_WE_RESUME_AFTER_FABLE_11_14_2026.md`.
 
+## Done 15 November (Opus, TTRPG Studio iteration 1, from LIB_TTRPG/OPUS_BUILD.md)
+Stack built (LIB_TTRPG branch `ttrpg-studio-1`; copy in LIB_TEST branch `ttrpg-studio-1`, README section 4).
+Owner's test ALL PASS through the stack's engine with real models (gemma alone; gemma + lfm3-omni-2b;
+Voices fallback); headless self / mock / UI tests pass. Tuning in `LIB_TTRPG/TUNING.md`: a pressed-out
+secret is now shown by code; qwen-7B makes better scenes but qwen + a 2B filled memory to 95%; 13B is
+out of reach. All models unloaded. **Waiting:** the owner opens the window (not yet seen on a screen).
+Not done: step 9 (old studio's world code), by design "later".
+
 ## Running (no Claude usage)
 | What | Where | State |
 |---|---|---|
