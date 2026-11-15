@@ -119,3 +119,31 @@ manifest drafts, (c) you pick 4 to 6 designs and I write their level checkers ne
   your naming; 82 still get a proposal; name clashes fell from 6 to 2. The prefixes are written
   in LIB_GLOBALS/README.md and in my memory, so I use them in xTalk I write.
 - Your file moved to `LIB_LLMOUT/Read/LIB_GLOBALS/`.
+
+## Your notes 5:14 to 5:34 (all answered in LIB_LLMOUT/Read/LIB_DEV/FEEDBACK_HANDLED.txt)
+- **TTRPG Studio prompt for Fable:** `Next_Steps_With_Claude/FABLE_PROMPT_TTRPG_STUDIO_11_15_2026.md`.
+  Builds on your harvested TTRPG_STUDIO stack; DM + Voices model slots (one model is enough,
+  two if they load), constant and scene characters, the Lazy DM loop (short strong opening,
+  secrets and clues given only when the player looks or uses a skill), small-model care, your
+  30-minute test. Your machine: 16 GB RAM; two 2B models (about 2 GB each) should fit.
+  **Estimate: about one working day of AI time (5 to 7 hours) plus your half hour.** Cheaper:
+  Fable for the design only (30 to 45 min), Opus builds.
+- **Fable's BitEditor redesign was finished**, not cut off, but only as scripts: nobody built
+  the stack from them. Two lines in the message box build it (in FEEDBACK_HANDLED.txt).
+- **Theme:** TODO A-89 (a stack to run and edit the theme settings, at the bottom of TODO.md)
+  and A-90 (the white scrollbars: find and show the options). Both need LiveCode.
+
+## tArray renamed (your go-ahead, 05:4x)
+- Only the engine is live code: `Vibecode3D/livecode/VIBECODE3D_LIB_MCP_11_11_2026_647PM.livecodescript`
+  (17 uses in 7 handlers). The other 60 files with tArray are harvests of your stacks (renaming
+  there changes nothing until a stack is rebuilt from them) and corpus originals.
+- Branch **`clear-names`** in Vibecode3D (cd5560c; main untouched): tXYZArray (the stored x/y/z
+  vertex lists; subArray -> tAxisArray), tTransformArray, and the parameter pTransformArray (your
+  p = parameter). Inside `do` strings too. Linted clean; **not compiled** (LiveCode closed today).
+  The engine's copies (xt3d testbench, LIB_ig3d, LIB_BUILD, corpus) are other versions: not touched.
+- Tool: `LIB_DEV/tools/rename_in_handlers.py` (one handler at a time; refuses when it would
+  merge two variables or touch a global), so harvested stacks can get the same when rebuilt.
+- **Found, not fixed** (they change behaviour; need a test): `setXYZ` / `getXYZ` read
+  `the tArrayName of stack`, which is a property literally named "tArrayName", not the one named
+  by the variable (the other handlers use `do` for this); and `record.object.transform.state`
+  has `set the customPropertySet of of stack` (a doubled "of").
