@@ -11,6 +11,9 @@ Opus briefed (`Next_Steps_With_Claude/previous_steps/FABLE_BRIEF_11_14_2026.md`)
 | Spark: iGame3D 2008 manifest | Spark's own window | stopped since 13 Nov (LM Studio was down); restart when wanted |
 
 ## Done today (14 November)
+**Merged to main (owner: "merge everything that is not a game"):** LIB_DEV `game-browser`, LIB_BIT
+`1bit-to-3d`; LIB_BIN, LIB_BUILD, LIB_GENERICA, LIB_SCRIPTBLOCKS, LIB_SYSTEM, LIB_TEST, LIB_UPBGE got
+a main from their only branch. Still open: LIB_GAMES `spark-roadtrip` (games).
 **Opus, evening: Spark road trip, all 15 vehicle games** on LIB_GAMES branch `spark-roadtrip`
 (Neon Drift Wastes, Dodge Tunnel, Grid Sprint, Coast Road, Bounce Rally, Interceptor Run, Fuel Line,
 Fare Dash, Block City Hustle, Tabletop Racers, Wreck Ring, Light Trail Arena, Crater Crawler, Ramp
@@ -51,7 +54,7 @@ Sprint ... 945 Tabletop Racers) wait for a review and scripts (Opus).
 ## Waiting on the owner (with the default I'll take)
 | ID | Question | Default |
 |---|---|---|
-| F-3 | Test the BitEditor (Heights tab); then LIB_BIT `1bit-to-3d` can be merged: the last open branch | it stays checked out and unmerged until you say |
+| F-3 | Test the BitEditor (Heights tab). LIB_BIT `1bit-to-3d` merged to main 14 Nov (owner: "merge everything that is not a game"); two uncommitted editor script edits from 13:31 ride along, unreviewed | they stay uncommitted until you look |
 | R-1 | Play the 15 road-trip games (LIB_GAMES `spark-roadtrip`); merge when happy | the branch waits unmerged |
 | O-1 | Correct LIB_ALPHA / OPERATING_PROMPT | they stand as written |
 | Q-1 | LIB_LOGS file name | `<intention>_<result>_<names>_<seconds>.lib_log` |
