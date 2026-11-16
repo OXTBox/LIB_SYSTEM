@@ -44,7 +44,7 @@ gone "$P/LIB_GAMES/TEMPLATES_DO_NOT_COMMIT/igame3D_2008_Texts"
 echo "== B  untracked, in NO git (removed only with --run --all; cannot be undone)"
 if $ALL; then
    gone "$P/LIB_GAMES/iGame3d_To_Recreate"
-else
+elif [ -e "$P/LIB_GAMES/iGame3d_To_Recreate" ]; then
    echo "   $(size "$P/LIB_GAMES/iGame3d_To_Recreate")	$P/LIB_GAMES/iGame3d_To_Recreate   (the 2008 Player builds, iGame3D_Aquarius_Chars, iGame3D_uDeadGame2009-master)"
 fi
 
@@ -52,7 +52,11 @@ echo "== C  tracked: git rm + commit (recoverable from history)"
 # LIB_MOCAP/library/iGame3D_* (the clips) and LIB_BVH/iGame3D* (their BVH sources)
 cd "$P/LIB_MOCAP" || exit 1
 M=$(ls -d library/iGame3D_* 2>/dev/null | while read d; do keep_clip "$(basename "$d")" || echo "$d"; done)
-echo "   LIB_MOCAP: $(echo "$M" | grep -c .) clip folders ($(du -shc $M 2>/dev/null | tail -1 | cut -f1)); keeping $KEEP_CLIPS"
+if [ -n "$M" ]; then
+   echo "   LIB_MOCAP: $(echo "$M" | grep -c .) clip folders ($(du -shc $M 2>/dev/null | tail -1 | cut -f1)); keeping $KEEP_CLIPS"
+else
+   echo "   LIB_MOCAP: nothing left to remove (kept: $KEEP_CLIPS)"
+fi
 if $RUN && [ -n "$M" ]; then
    T=$(echo "$M" | xargs git ls-files --)
    if [ -n "$T" ]; then
