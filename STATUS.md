@@ -4,6 +4,12 @@ Saturday, November 14, 2026, afternoon. Rewritten by Claude (Fable) at the end o
 Opus briefed (`Next_Steps_With_Claude/previous_steps/FABLE_BRIEF_11_14_2026.md`). Next plan:
 `Next_Steps_With_Claude/WHEN_WE_RESUME_AFTER_FABLE_11_14_2026.md`.
 
+## Done 16 November, late morning (Opus, LIB_SPARK branch `spark-designs-v2`)
+Owner's answers to the maze review + UFO idea -> `LIB_SPARK/arcade/REVIEW_FUN_ROUND.md` (build-ready
+designs; Two Key Doors marked next build; Stair Hopper question answered, default: keep 2D). Spark's
+concept prompt got a FUN block: filled 12/12 but only echoes fun in the brief (LIB_OMEGA 31). Entity
+checker now reads Spark's wordings (17/17 tests); entities round 3 running (`entities/out/`).
+
 ## Done 15 November (Opus, TTRPG Studio iteration 1, from LIB_TTRPG/OPUS_BUILD.md)
 Stack built (LIB_TTRPG branch `ttrpg-studio-1`; copy in LIB_TEST branch `ttrpg-studio-1`, README section 4).
 Owner's test ALL PASS through the stack's engine with real models (gemma alone; gemma + lfm3-omni-2b;
