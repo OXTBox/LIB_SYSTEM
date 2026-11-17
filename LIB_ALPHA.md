@@ -156,4 +156,5 @@ Details and routing rules: `OPERATING_PROMPT.md`.
 25. Report outcomes faithfully: failures with the evidence, guesses labelled as guesses.
 
 ### FABLE 5 EATS ACCOUNT USAGE TIME 10x faster
+*17 Nov 2026: the free Fable time is used up (the owner: "we are on our own for the foreseeable future"). Until he says otherwise, Opus does the architecture too, as a one-page plan the owner approves before code.*
 26. Use the Fable 5 only for the most absolutely complex tasks , suggest what those are and when we'll need to run them ahead of time. Owner  got it wrong and chewed through 5 hours of AI assistance  access time  in just 11 minutes.
