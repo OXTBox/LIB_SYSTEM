@@ -86,7 +86,7 @@ START ON igame3d UI reuse  NOW 1014 PM 11 11 2026
 | A-40 | LIB_TOOLBAR: a floating, always-in-front launcher for the latest and most important stacks, menus and folders (after O-8) |
 | A-41 | LIB_RAYGUI: raygui in xt3d, mirroring what we do in Vibecode3D and LiveCode; look: white page, 0.5 mm technical-pen colour lines |
 | A-42 | LIB_GUI: a GUI builder that keeps the system alive outside the LiveCode engine (the "put away the old IDE" test) |
-| A-43 | LIB_USERS: who is at the controls (for titles, logs and permissions) |
+| A-43 | LIB_USERS: who is at the controls (for titles, logs and permissions). **Plan kept 2026-11-17: `LIB_USERS/PLAN.md`** (titles `FOR OWNER \| ...`, Claude models may save); build steps 1 to 3 next (about a day) |
 | A-45 | Spark GUI design prompts (S-3), then test the approved ones in LiveCode via XTJSON redeem |
 
 ### LIB_GENERICA (approved 2026-11-13)
@@ -146,3 +146,15 @@ START ON igame3d UI reuse  NOW 1014 PM 11 11 2026
 |---|---|
 | A-89 | **DONE 2026-11-15 (Opus):** `LIB_THEME/livecode/theme_studio.livecodescript` (LIB_THEME branch `theme-studio`, on `tabstrip`), dev stack `LIB_THEME/Theme_Studio_dev_20261115_133543.oxtstack` open in OXT-Beyond. Headless 17 pass. **Theme stack**: a small stack that runs and edits LIB_THEME's settings: every key of `themes/*.txt` with its colour, a live sample of each control kind (buttons, fields, lists, menus, tabs, scrollbars), save back to the theme file. Needs LiveCode. |
 | A-90 | **ANSWERED 2026-11-15 (Opus):** OXT-Beyond follows Windows dark mode (systemAppearance = dark): native scroll bars and tabs draw dark, nothing to fake. The studio shows native, thin (scrollbarWidth 8) and no bar side by side. Left: how Beyond draws open menu lists in dark mode (the menu rule may need a dark-mode branch). **The white scrollbars** (owner: "it wrecks the whole aesthetic"; blendLevel helps but fades the text too). Find out on 9.6.3 what can colour a scrollbar (its own colour properties on Windows, the theme setting, a custom thin scrollbar group with the native one hidden, wheel/drag scrolling only) and show each option in the A-89 stack for the owner to pick. |
+
+### Kept 2026-11-17 (the owner): follow-ups
+| ID | Task |
+|---|---|
+| A-92 | **cellmap v3** (on LIB_BIT main): in order, (1) draw slopes in `LevelSegments`, then `CellMap.PackSegments`; (2) E13 walks `maps/two_rooms`; (3) BitEditor Slope tool; (4) pack panel; (5) the E12 checker. Plan: `LIB_BIT/editor/CELLMAP_V3.md` section 8 |
+| A-93 | **Engine contract** (on LIB_ig3d and LIB_GAMES main): the owner answers its 5 questions (`LIB_ig3d/ENGINE_CONTRACT.md` section 15); then add the ten planned calls to XT and retire the debts game by game (`python3 -I LIB_ig3d/tools/contract_check.py --by-game`) |
+| A-94 | Three game tests that fail on main as well (seen 17 Nov, maybe only my test-path rewrite): t21 Vector Toss `VT.ClipField` threw; t23 Block City "never the same booth twice running"; t36 DeadDays: iGame3D XT's buildings, props and figures came back empty. Rerun on the real folders and fix or explain |
+
+### Last on the list (the owner, 2026-11-17: "can't guarantee we have an hour this week")
+| ID | Task |
+|---|---|
+| A-95 | **Spark with OXT-Beyond** (never tested): Spark fills a table (label, what it does, where it goes) for a stack's controls read through the bridge; a script of mine checks the table and builds the controls on a COPY of the stack; the owner looks. Spark stays draft-only (no code, no tool calls). About an hour to set up |
