@@ -4,6 +4,11 @@ Saturday, November 14, 2026, afternoon. Rewritten by Claude (Fable) at the end o
 Opus briefed (`Next_Steps_With_Claude/previous_steps/FABLE_BRIEF_11_14_2026.md`). Next plan:
 `Next_Steps_With_Claude/WHEN_WE_RESUME_AFTER_FABLE_11_14_2026.md`.
 
+## Done 17 November (Opus, LIB_COMFY branch `comfy-vector-pong`)
+- ComfyUI as a Blueprint-style node editor for Vibecode3D games: 7 nodes (Vibecode3D/Vectors),
+  Build Game assembles xTalk parts into a playable `Vibecode3D_Play_ComfyPong<seed>`. Owner ran it
+  in ComfyUI (install VectorPong3D_Game_Node): "it worked!". Notes: LIB_COMFY/NOTES.md. Go deep later.
+
 ## Done 16 November, late morning (Opus, LIB_SPARK branch `spark-designs-v2`)
 Owner's answers to the maze review + UFO idea -> `LIB_SPARK/arcade/REVIEW_FUN_ROUND.md` (build-ready
 designs; Two Key Doors marked next build; Stair Hopper question answered, default: keep 2D). Spark's
