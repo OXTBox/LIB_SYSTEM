@@ -150,9 +150,9 @@ START ON igame3d UI reuse  NOW 1014 PM 11 11 2026
 ### Kept 2026-11-17 (the owner): follow-ups
 | ID | Task |
 |---|---|
-| A-92 | **cellmap v3** (on LIB_BIT main): in order, (1) draw slopes in `LevelSegments`, then `CellMap.PackSegments`; (2) E13 walks `maps/two_rooms`; (3) BitEditor Slope tool; (4) pack panel; (5) the E12 checker. Plan: `LIB_BIT/editor/CELLMAP_V3.md` section 8 |
+| A-92 | **cellmap v3** (on LIB_BIT main): in order, ~~(1) draw slopes in `LevelSegments`, then `CellMap.PackSegments`; (2) E13 walks `maps/two_rooms`~~ **done 17 Nov** (branch `cellmap-v3-followups` in LIB_BIT and LIB_EDITOR, for review: slopes drawn, Python = xTalk; E13's M goes to the pack, E takes the ladder; headless `LIB_EDITOR/tests/e13_headless.txt` 20 PASS); still to do: (3) BitEditor Slope tool; (4) pack panel; (5) the E12 checker; `LevelBoxes` still draws a slope flat. Plan: `LIB_BIT/editor/CELLMAP_V3.md` section 8 |
 | A-93 | **Engine contract** (on LIB_ig3d and LIB_GAMES main): **answered 17 Nov** (`LIB_ig3d/ENGINE_CONTRACT.md` section 15); now add the ten planned calls to XT and retire the debts game by game (`python3 -I LIB_ig3d/tools/contract_check.py --by-game`) |
-| A-94 | Three game tests that fail on main as well (seen 17 Nov, maybe only my test-path rewrite): t21 Vector Toss `VT.ClipField` threw; t23 Block City "never the same booth twice running"; t36 DeadDays: iGame3D XT's buildings, props and figures came back empty. Rerun on the real folders and fix or explain |
+| A-94 | ~~Three game tests that fail on main as well~~ **done 17 Nov** (rerun on the real folders, both headless engines): t21 Vector Toss passes 41/41 on `vector-toss-dangle`; `VT.ClipField` exists only on that branch, so t21 fails on main until it merges (nothing to fix). t36 DeadDays passes 19/19: it finds iGame3D XT's Tools by walking up to `LIB_EDITOR`, which a copy outside `~/projects` cannot (the test-path rewrite). t23 Block City was a real bug, failing about one run in three: a car parked at the ringing booth took the SPACE press, and a new level forgot the last booth; fixed on `vector-toss-dangle` (40 runs clean) |
 
 ### Last on the list (the owner, 2026-11-17: "can't guarantee we have an hour this week")
 | ID | Task |
