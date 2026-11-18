@@ -41,6 +41,7 @@ mention LiveCode 9.6.3 or the Community edition in public material (internally i
 | `LIB_DATA` | the one Data folder every app loads and saves through (`Documents/Data`) |
 | `LIB_GAD` | Galactica (Ed Zavada) reference; GAD = Generic Any Data; our Genetic Anomaly Detector |
 | `LIB_GENERICA` | a game's words as plain label files (Galactica's 533 labels; themes overlay a base): retheme by editing labels, not code |
+| `LIB_LISTS` | word lists for games (names, places, things), one list a file, `CATALOG.md` names them; AIs never read the list files. **Lists live here and are referenced, never copied** (the owner, 18 Nov: "the LIST might grow/change outside of the sub-projects that use them"): LIB_GENERICA and the games point at a list by its name |
 | `LIB_SCRIPTBLOCKS` | harvest, manage and export script blocks: GAD's code palette as its own stack and library; edits examples and other stacks, never its own source |
 | `LIB_SFX` | game sound effects from numbers: xTalk drives rfxgen (the sfxr family) through its own small C bridge; stands alone, no raylib; `Sfx.Make`, `Sfx.Play` |
 | `LIB_ig3d` | where the worlds converge: glossary, procedures, engine categories |

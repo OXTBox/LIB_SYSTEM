@@ -61,6 +61,7 @@ When an item is finished, its row moves to `DONE.md` with the date and where the
 | ID | Task | State |
 |---|---|---|
 | A-60 | Thrmnlra and Amazing Couple take their words from LIB_GENERICA | not started (Thrmnlra stopped) |
+| A-66 | LIB_GENERICA refers to LIB_LISTS lists by name (`<set>/<list>.txt`), never copies them; the Python and xTalk loaders follow the reference (owner, 18 Nov) | not started |
 | A-62 | A label editor stack | not started |
 | A-65 | GAD's script tools (insert global, init builder, trace codes) as a library that edits other stacks, with a backup | not started; the GAD doc lists 5 bugs |
 | A-71 | A viewer that shows any harvested stack even when it cannot run | not started |
