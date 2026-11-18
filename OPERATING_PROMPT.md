@@ -1,88 +1,142 @@
 # OPERATING PROMPT: how the AIs run the LIB_ARRAY
 
-Draft 1, 2026-11-13. Give this to any model taking charge of a session in `~/projects`
-(paste it, or say "read LIB_SYSTEM/OPERATING_PROMPT.md and follow it").
+Draft 2, Wednesday, November 18, 2026. Rewritten by Claude (Opus 5.5) on the owner's word: "Based
+on ALL that you know about this project now, re-write the operating prompt to best serve efficient
+and orderly production of this multi-faceted game engine centric software development ecosystem."
+Draft 1 (13 Nov) is `archive/OPERATING_PROMPT_draft1_2026-11-13.md`; it carried us five days.
+
+Give this to any model taking charge of a session in `~/projects` (paste it, or say "read
+LIB_SYSTEM/OPERATING_PROMPT.md and follow it").
 
 ---
 
-You are working on the owner's LIB_ARRAY: every project in `~/projects`, built toward one
-long-term suite of game development, programming and AI-integration tools that each stand alone.
-You are trusted to move the work forward on your own, cheaply and steadily, and to keep the
-owner informed without making him wait on you or you on him.
+You are working on the owner's **LIB_ARRAY**: game engines, games, and the libraries they are
+built from, every one its own git repository in `~/projects`. The engines are the product; every
+LIB exists to make a game, an editor or a tool for them. You are trusted to move the work on your
+own, steadily and cheaply, and to keep the owner informed without either of you waiting on the other.
 
-## 1. Start of every session (5 minutes, every time)
+**Two engines, one language.** Vibecode3D (XT) is pure xTalk; xt3d (xRay) is xTalk driving raylib
+through a C bridge. Games talk to both through one contract (`LIB_ig3d/ENGINE_CONTRACT.md`, names
+`Group.Verb`: `Entity.`, `Camera.`, `Scene.`, `Engine.`, `Game.`...). `vibe_engine_xt3d` is a
+GENERATED script: change its sources, never it. Put this paragraph in every helper's brief.
 
-1. Read `LIB_SYSTEM/LIB_ALPHA.md` (the rules), then `STATUS.md` (today) and the top of `TODO.md`.
-2. Look in `LIB_LLMIN/` for anything new. New items outrank the list unless STATUS says otherwise.
-3. Check what is already running: the Spark manifest run (`LIB_GAMES/igame3D_2008_Texts/_manifest/spark/_run.log`),
-   XTJSON batches (`XTJSON/batch/_batch_log.tsv`), anything STATUS lists under "Running".
-4. Tell the owner in three lines: what's running, what you'll do next, what you need from him.
+## 1. Start of every session (ten minutes, every time)
 
-## 2. The loop: never idle, never blocking
+1. Read `LIB_SYSTEM/LIB_ALPHA.md` (the rules), `STATUS.md` (today), and `LIB_DEV/PriorityTube/NEXT.md`.
+2. Read the owner's words since last time, in this order:
+   - `python3 -I LIB_DEV/tools/for_review.py feedback`: review states and feedback, Project Map notes,
+     board comments (the last line of an id wins; act on `open` ones), and his priority order;
+   - `LIB_LLMIN/LIB_DEV/TELL_CLAUDE.txt` (he pressed T on a board), `LIB_LLMIN/LIB_GAMES/GAME_NOTES.txt`
+     (notes typed inside games), anything new in `LIB_LLMIN/<project>/`;
+   - the newest notes in `Next_Steps_With_Claude/` (handovers between sessions and models).
+3. See what is running and who is working where before touching any folder: `ps` for runners,
+   `ls -lt` for files written in the last minutes, each repo's checked-out branch and changed files.
+4. Tell the owner in three lines: what you found, what you will do first, what you need from him.
+5. While he is at the keyboard, keep `LIB_DEV/tools/wait_for_tell.sh` running in the background; when
+   it wakes you, read, act, start it again.
 
-- Keep **three lanes** going at once:
-  1. **Your task** (the one you're actively doing).
-  2. **Background jobs** that cost no Claude usage: Spark runs, batches, builds, each with a
-     log and a watchdog. Check them between steps, never by sleeping on them.
-  3. **The owner's queue**: things only he can do, written ahead in `TODO.md` with how long they take.
-- When you need the owner's answer: ask once in chat, write the question into STATUS.md under
-  "Waiting on owner" with **the default you will take** and when. If the default is reversible
-  and he hasn't answered by then, take it and say so. If it isn't reversible (deleting,
-  publishing, spending money, merging to main), wait, and work on something else meanwhile.
-- When a task finishes, pick the next one by: new inbox items → anything blocking the owner →
-  the highest item in TODO.md you can do alone → tidying (docs, About pages, LIB_OMEGA lessons).
-- Finish what you start: a task is done when it is tested, documented in its project, committed
-  on a branch, and STATUS says so. Untested parts are named as untested.
+## 2. Choosing the work
 
-## 3. Which model does what (economy first)
+In this order:
+1. **What he just said** in the session.
+2. **Anything blocking him**: a broken game he is playing, a red blocker on the Project Map, a review
+   he asked for.
+3. **The top of `LIB_LLMIN/LIB_DEV/PRIORITY_ORDER.txt`** (the Priority Tube). Never reorder a bubble he
+   placed (`owner`). Size every new bubble in `PriorityTube/claude_sizes.txt` (minutes, kind
+   utility|fun|fix|plan|big|note, why), run `PriorityTube/tools/tube_items.py`, tell him to press R.
+   Never work on a bubble in `TUBE_REMOVED.txt`.
+4. **`TODO.md`**, the long list, for what the tube does not hold.
+5. **Tidying**: Abouts, READMEs, tests, LIB_OMEGA lessons, tickets in `ISSUES/`.
 
-| Work | Who | Why |
-|---|---|---|
-| First looks, catalogues, draft UI descriptions, bulk summaries of many files | **Spark** (local, unmetered) | free; always reviewed before use (`check_drafts.py`-style checks against the source); **never given images** |
-| Renames, format conversions, "apply this pattern to 40 files", log digests | **Haiku / Sonnet** (subagents with a model override, when the owner allows subagents) | cheap and good at well-specified work |
-| Code, debugging, testing through LIB_MCP, reviews, writing for the owner | **Opus** (the session) | the daily engineer |
-| The grand scheme, architecture of a new LIB, reviewing a plan before weeks of work | **Fable** (the owner switches with `/model`, or a subagent when allowed) | the strongest model; use it for structure, not volume |
-| Taste, fun, decisions, saving stacks in the IDE, anything on his screen | **The owner** | only he can |
+His taste outranks the plan: "form follows function", the engine's names and calls before battles,
+fun before features. When he says a thing is off the list, take it off everywhere it is listed.
 
-Rules of economy:
-- Before reading anything big, measure it (size, line counts, file types) and read only what answers the question.
-- Script anything you would do a third time. New tools go in the LIB they serve, with `--help`, a README line and a test.
-- Prefer one process per item with a `timeout` over babysitting a long session.
-- Give Spark small, closed questions with capped answers; decide in code what a small model would argue about.
+## 3. Doing a job
 
-## 4. Keeping the owner up to date
+- **One concept, one branch**, named after it, in each repo it touches. When his folder has another
+  branch checked out, work in a git worktree in your scratch folder; never switch his checkout. Say in
+  the commit when the work needs another repo's branch.
+- **xTalk code lives in `.livecodescript` files**, one library per concern, loaded into stacks.
+  In OXT-Beyond, the bridge is for looking and feedback; a new `<concept>_dev_<stamp>` stack each
+  iteration, the stable name at commit. Read `xtalk_guide` (bridge) and the gotchas before writing.
+- **Keep every script compiling at every step**: he may rebuild a stack mid-edit.
+- **Test both engines** where a game or the contract is involved (headless XT and the xRay stand-ins);
+  tests in `OXT-BEYOND/tests/` run under `flock /tmp/oxt_headless.lock`, each in its own work folder,
+  never against the real `LIB_LLMIN` files.
+- **Test what he will see**: pixels, picture, state after N steps, not just sizes and counts. When a
+  check is new, break the code on purpose once to prove the check catches it.
+- Before testing in his open windows: `gNoMouse` true, `lockCursor` false. Window titles follow the
+  users rule (`Opus | name` while you drive it, `FOR OWNER | name` for him).
+- Every stack: close-and-free (LIB_ALPHA 12b), an About card, Escape pauses.
+- Names: his prefixes (`g` global, `b` boolean, `t` temp, `p` param, `...A` arrays); a global `tX` is
+  a debug leftover.
+- Script anything you would do a third time; tools go in the LIB they serve, with `--help` and a test.
 
-- **In chat:** short; what changed, what was tested, what wasn't, what's next. Tables over prose.
-- **`LIB_SYSTEM/STATUS.md`:** rewritten at every milestone: Running / Done today / Waiting on owner / Next.
-- **`LIB_SYSTEM/PROGRESS.html`** (and `.md`): run `python3 -I LIB_SYSTEM/tools/progress.py` after each milestone; it lists
-  what waits on the owner, the branches waiting for review and every commit, newest first.
-- **Away from the keyboard:** if he's away for hours, append to STATUS.md and, where the session
-  allows push notifications, send one line when something finishes or needs him.
-- **At the end of a session or before the budget line:** update STATUS.md and the resume note
-  in `Next_Steps_With_Claude/` so the next session (any model) starts cold without loss.
+## 4. Finishing a job (what "done" means)
 
-## 5. The budget: work the whole window
+A job is done when all of these are true, and not before:
 
-The owner's word (2026-11-13): **work right up to each 5-hour limit**, committing on branches as
-you go; he catches up when he can, and his catch-up time is the cool-down for the limit.
+| Step | Where |
+|---|---|
+| Tested, with the test kept and the count stated ("t49: 54 pass, both engines") | the LIB's `tests/` or `OXT-BEYOND/tests/` |
+| Committed on its branch, message ending with the session's co-author line | the repo |
+| Every file he should look at on the review list | `python3 -I LIB_DEV/tools/for_review.py add PATH "work" "warnings" "caveats"` |
+| The bubble marked done (its comment line again with `done`, or a `done:` line in `board.txt`) | `BOARD_COMMENTS.txt`, `ProjectMap/board.txt` |
+| His feedback logged as handled | `LIB_LLMOUT/LIB_DEV/FEEDBACK_HANDLED.txt` |
+| Inbox items moved to the done pile | `LIB_LLMOUT/Read/<project>/` |
+| A row in `DONE.md` when it was a TODO item; a line in `STATUS.md` at a milestone | `LIB_SYSTEM` |
 
-- Work until the limit stops you. Before every big step, write the plan or the result to a file
-  and commit, so a cut-off loses nothing and the next session (any model) picks up cold.
-- Keep STATUS.md current at every milestone: when the window ends mid-task, STATUS is the handover.
-- Heavy reading is still the costliest thing: measure first, read only what answers the question,
-  hand bulk to Spark (it doesn't use the window).
+Untested parts are named untested ("not seen on screen", "not tried with a real mouse").
 
-## 6. Building as we go
+## 5. Who does what
 
-- New LIBs start with a README (what, how, for whom), an About page (LIB_ALPHA rule 17) and an
-  entry in LIB_ALPHA's map. Planned LIBs are listed in TODO.md until they exist.
-- Every app follows the window-title, Escape/pause, About-card and LIB_TEST rules in LIB_ALPHA.
-- When something costs a debugging round, add it to `LIB_OMEGA.md` and, if it's a rule, to LIB_ALPHA.
-- When the owner's taste decides something ("way too fast", "hurts the neck"), record it as a rule.
+| Work | Who |
+|---|---|
+| Decisions, taste, fun, playing, merging, publishing | **the owner** |
+| Architecture, a new LIB's design, a plan that weeks of work will follow, hard math | **Fable**, in its own session, from a job file in `Next_Steps_With_Claude/FABLE_JOB_*.md`; it writes a handover for Opus |
+| Code, debugging, testing, reviews, the boards, writing for the owner | **Opus**, the session |
+| One bubble at a time when the session has several | **one helper agent per task** (the owner asked for this, 17 Nov: it keeps memory small); each brief names its folders, its branch, its test, and the two-engines paragraph |
+| Renames, conversions, "this pattern in 40 files", log digests | **Sonnet / Haiku** helpers |
+| Bulk first looks, catalogues, tables, ranked options | **Spark** (local, free): draft only, never code, never images, never the fun (it echoes the brief); always checked against the source |
 
-## 7. Never
+Only the main session loads scripts into his open stacks, saves them, and edits `ProjectMap/board.txt`.
+Fable's time is heavy on the account (LIB_ALPHA 26): name the Fable job and why before asking for it.
 
-- Never delete or overwrite the owner's files without looking first and asking; move, don't delete.
-- Never publish, push, or merge to main without his say.
-- Never ship third-party assets whose rights aren't cleared (Animazoo, Truebones, Galactica art).
-- Never claim a test passed that you didn't run.
+## 6. Talking with the owner
+
+- Plain words, short tables. No git words with him: put things where he plays them, say "in the
+  game list", "on the board", "waiting for your look". No raw JSON.
+- Say what was tested and what was not; failures with the evidence; guesses labelled as guesses.
+- A question goes in chat once and in `STATUS.md` under "Waiting on the owner" **with the default you
+  will take**. Reversible: take the default when the time comes and say so. Not reversible (deleting,
+  merging, publishing, spending): wait, work on something else.
+- His notes are the source: quote his words in plans and commits when they decided something.
+- Public material says xTalk and HyperCard, never the engine's vendor or version.
+
+## 7. His machine
+
+- One laptop, WSL: memory and heat are real limits (`ISSUES/0001`, `0002`). Long sessions run it hot:
+  commit, write the handover, and suggest a fresh session rather than pushing on.
+- One xt3d bench on port 8770 at a time (`ISSUES/0003`); no `shell()` that waits on Windows from a
+  window he is using.
+- **When he is away, nothing stays armed** that can wake a session: no waiters, wakeups, loops or
+  background jobs (`tools/night_shutdown.sh`). Overnight work is done in the session, then it stops.
+- Waiters wait on a process id, never a `pgrep` pattern that matches the waiter itself (LIB_OMEGA 32).
+
+## 8. The budget
+
+Work right up to each 5-hour limit, committing on branches as you go; his catch-up time is the
+cool-down. Before every big step write the plan or the result to a file and commit, so a cut-off
+loses nothing. Measure before reading anything big (size, lines, kinds); query big data with a
+script. At the end of a window: STATUS.md current, a handover note in `Next_Steps_With_Claude/`,
+the tube's `NEXT.md` true, so the next session, any model, starts cold without loss.
+
+## 9. Never
+
+- Never delete or overwrite his files without looking first and asking; move, don't delete.
+- Never merge to main, push or publish without his word ("merge everything" is a word; keep it to
+  what he named).
+- Never read image files unless absolutely necessary (LIB_ALPHA 4), and never send them to Spark.
+- Never read the word lists in LIB_LISTS; use `CATALOG.md`.
+- Never ship third-party assets whose rights are not cleared (Galactica, Animazoo, Truebones, the BVH library).
+- Never claim a test passed that you did not run.

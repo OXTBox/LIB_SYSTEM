@@ -5,7 +5,7 @@ Friday, November 13, 2026. Draft 1, written by Claude (Opus 5.5) from the owner'
 and two days of working memory. The owner corrects it; every AI model, agent or person
 working in `~/projects` reads it before any important task, and again whenever they lose the
 thread. `LIB_OMEGA.md` holds the lessons that made these rules; `OPERATING_PROMPT.md` says how
-the AIs run the work; `TODO.md` is the list; `STATUS.md` is today; `ISSUES/INDEX.md` is the bug tickets (read it before hunting a bug).
+the AIs run the work; `TODO.md` is the open list; `DONE.md` what is finished; `STATUS.md` is today; `ISSUES/INDEX.md` is the bug tickets (read it before hunting a bug).
 
 ## 1. What this is
 
@@ -46,7 +46,7 @@ mention LiveCode 9.6.3 or the Community edition in public material (internally i
 | `LIB_ig3d` | where the worlds converge: glossary, procedures, engine categories |
 | `LIB_PUBLIC` | the public page |
 | `LIB_GLOBALS` | every global name, its use, and its Python equivalent (GLOBALS.md, generated) |
-| `LIB_USERS` | (planned) who is at the controls: owner, Claude, Spark, other agents |
+| `LIB_USERS` | who is at the controls: owner, Claude, Spark, other agents (`Users.Title`) |
 | `LIB_SYSTEM` | this: the rules and the plan |
 | `LIB_BIN` | third-party applications (e.g. LiveCode Server 9.6.3 Linux) in versioned folders; git keeps only README + MANIFEST; internal only |
 | **Passing through** | |
@@ -157,5 +157,5 @@ Details and routing rules: `OPERATING_PROMPT.md`.
 25. Report outcomes faithfully: failures with the evidence, guesses labelled as guesses.
 
 ### FABLE 5 EATS ACCOUNT USAGE TIME 10x faster
-*17 Nov 2026: the free Fable time is used up (the owner: "we are on our own for the foreseeable future"). Until he says otherwise, Opus does the architecture too, as a one-page plan the owner approves before code.*
+*17 Nov 2026 the Fable time was used up; 18 Nov the owner: "we have fable time now". Fable jobs run in their own session from a job file (`OPERATING_PROMPT.md` section 5).*
 26. Use the Fable 5 only for the most absolutely complex tasks , suggest what those are and when we'll need to run them ahead of time. Owner  got it wrong and chewed through 5 hours of AI assistance  access time  in just 11 minutes.
