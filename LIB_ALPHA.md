@@ -5,7 +5,7 @@ Friday, November 13, 2026. Draft 1, written by Claude (Opus 5.5) from the owner'
 and two days of working memory. The owner corrects it; every AI model, agent or person
 working in `~/projects` reads it before any important task, and again whenever they lose the
 thread. `LIB_OMEGA.md` holds the lessons that made these rules; `OPERATING_PROMPT.md` says how
-the AIs run the work; `TODO.md` is the list; `STATUS.md` is today.
+the AIs run the work; `TODO.md` is the list; `STATUS.md` is today; `ISSUES/INDEX.md` is the bug tickets (read it before hunting a bug).
 
 ## 1. What this is
 

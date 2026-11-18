@@ -1,0 +1,7 @@
+# Issue index (LIB_SYSTEM)
+
+| # | Status | Title | Opened |
+|---|---|---|---|
+| [0001](0001_wsl_exe_cpu_and_slow_program_starts.md) | workaround | wsl.exe at ~60% CPU, Windows program starts 20-50 s: it was WSL, not our apps | 18 Nov 2026 |
+| [0002](0002_vmmem_holds_4GB_idle.md) | open | vmmem keeps ~4 GB of RAM with nothing running | 18 Nov 2026 |
+| [0003](0003_two_benches_on_port_8770.md) | fixed | Game Browser froze: two xt3d benches on port 8770 + shell() freezes | 18 Nov 2026 |
