@@ -151,10 +151,18 @@ START ON igame3d UI reuse  NOW 1014 PM 11 11 2026
 | ID | Task |
 |---|---|
 | A-92 | **cellmap v3** (on LIB_BIT main): in order, (1) draw slopes in `LevelSegments`, then `CellMap.PackSegments`; (2) E13 walks `maps/two_rooms`; (3) BitEditor Slope tool; (4) pack panel; (5) the E12 checker. Plan: `LIB_BIT/editor/CELLMAP_V3.md` section 8 |
-| A-93 | **Engine contract** (on LIB_ig3d and LIB_GAMES main): the owner answers its 5 questions (`LIB_ig3d/ENGINE_CONTRACT.md` section 15); then add the ten planned calls to XT and retire the debts game by game (`python3 -I LIB_ig3d/tools/contract_check.py --by-game`) |
+| A-93 | **Engine contract** (on LIB_ig3d and LIB_GAMES main): **answered 17 Nov** (`LIB_ig3d/ENGINE_CONTRACT.md` section 15); now add the ten planned calls to XT and retire the debts game by game (`python3 -I LIB_ig3d/tools/contract_check.py --by-game`) |
 | A-94 | Three game tests that fail on main as well (seen 17 Nov, maybe only my test-path rewrite): t21 Vector Toss `VT.ClipField` threw; t23 Block City "never the same booth twice running"; t36 DeadDays: iGame3D XT's buildings, props and figures came back empty. Rerun on the real folders and fix or explain |
 
 ### Last on the list (the owner, 2026-11-17: "can't guarantee we have an hour this week")
 | ID | Task |
 |---|---|
 | A-95 | **Spark with OXT-Beyond** (never tested): Spark fills a table (label, what it does, where it goes) for a stack's controls read through the bridge; a script of mine checks the table and builds the controls on a COPY of the stack; the owner looks. Spark stays draft-only (no code, no tool calls). About an hour to set up |
+
+### From the owner's engine contract answers (2026-11-17)
+| ID | Task |
+|---|---|
+| A-96 | `Engine.SetLook pYaw, pPitch, pRoll` in XT and xRay (roll = side to side); move the 17 games off `gCameraYaw` / `gCameraPitch` |
+| A-97 | Retire `demo` and `Simple_Test2` as `original_demo` / `Original_Simple_Test2` (out of the game list and libraries); rename `Simple_Test1` (spinning cube) to `Simple_Cube` and keep it in the game list for tutorials |
+| A-98 | **Rename Day**: `Entity.SetPosition` style names beside the old `SetObjectPosition` ones (330 uses), then the games move over |
+| A-99 | Blender-style suggestions: type `Entity.` (or any group) and a list of its calls and properties appears; built from the contract tables. Companion to A-98 |
