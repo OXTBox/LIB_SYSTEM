@@ -20,6 +20,10 @@ Where to start a session: the Priority Tube (`LIB_DEV/PriorityTube/NEXT.md`) and
 | LIB_USERS answers (FOR OWNER in titles, personas lower case, saves in Documents/My Games) | owner + Opus | LIB_USERS main |
 | GAD battles taken off the list ("form follows function") | owner | - |
 | This file, the operating prompt rewritten, TODO turned into a DONE list | Opus | LIB_SYSTEM |
+| LIB_GUI popup kind (right-click menus; FromStack reads them): t41 251 pass, not seen on screen | Opus helper | LIB_GUI `gui-step1` d10143f |
+| Users.Title: built apps get no driver head (owner's NEXT.md note); t42 32 pass | Opus | LIB_USERS main |
+| Rule: word lists live in LIB_LISTS, LIB_GENERICA refers to them by name (TODO A-66) | owner | LIB_ALPHA map |
+| **GAD battles plan** (one page, from the owner's answers): turn-based travel, fights resolve on arrival, optional 3D zoom, one unit by default, rendezvous X (U), send-to points, squads form in one place | Opus + owner | LIB_GAD `gad-battles`; copy `LIB_LLMOUT/LIB_GAD/BATTLES_PLAN_for_review.md` |
 
 ## Running (no Claude usage)
 | What | Where | State |
@@ -40,7 +44,8 @@ Where to start a session: the Priority Tube (`LIB_DEV/PriorityTube/NEXT.md`) and
 
 ## Next (AI)
 From the top of `LIB_LLMIN/LIB_DEV/PRIORITY_ORDER.txt` (the owner's order), today:
-1. LIB_GUI: a popup kind (right-click menus in .gui; FromStack reads them).
+1. **GAD battles step 2** (`LIB_GAD/BATTLES_PLAN.md` on `gad-battles`, section "Step 2"), when the owner says go (asked 18 Nov, no answer yet).
+   Owner's rule for the tube: small and old jobs first; big ones wait at the bottom.
 2. LIB_EDITOR cards E07 (half done, uncommitted in the working folder) to E12, E14, E15: an overnight job.
 3. cellmap v3: BitEditor Slope tool, pack panel (the E12 checker is done on `cellmap-v3-checker`).
 4. Step code for LIB_HOWTO (needs the owner's look at the outline first).
