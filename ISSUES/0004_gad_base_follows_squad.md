@@ -1,6 +1,6 @@
 # 0004: GAD battles: your Base's units followed the squad instead of their point
 
-**Status:** fixed, waits for the owner's play (18 Nov 2026)
+**Status:** fixed, played by the owner (18 Nov 2026)
 **Opened:** 18 Nov 2026 · **Area:** LIB_GAD/battles (branch gad-battles) · **Fix commit:** 97646fb
 
 ## What we saw (owner)
