@@ -4,6 +4,14 @@ Saturday, November 14, 2026, afternoon. Rewritten by Claude (Fable) at the end o
 Opus briefed (`Next_Steps_With_Claude/previous_steps/FABLE_BRIEF_11_14_2026.md`). Next plan:
 `Next_Steps_With_Claude/WHEN_WE_RESUME_AFTER_FABLE_11_14_2026.md`.
 
+## Done 17 November (Opus, LIB_DEV main): the Project Map
+`LIB_DEV/ProjectMap/ProjectMap.oxtstack` in OXT-Beyond: the whole project as one zoomable board of
+cards and strings (where we are, where we are going, what stops each part; red strings to YOU).
+Pink chips list their files (Open / Reviewed / Feedback), red chips take feedback and file paths
+(`LIB_LLMIN/LIB_DEV/MAP_NOTES.txt`), T tells Claude. `for_review.py relink` keeps the review list's
+paths current (14 relinked today). Owner: "like having a whole house instead of just the idea of
+one"; more input to come. Keep `ProjectMap/board.txt` true as parts change.
+
 ## Done 17 November (Opus, LIB_COMFY branch `comfy-vector-pong`)
 - ComfyUI as a Blueprint-style node editor for Vibecode3D games: 7 nodes (Vibecode3D/Vectors),
   Build Game assembles xTalk parts into a playable `Vibecode3D_Play_ComfyPong<seed>`. Owner ran it
