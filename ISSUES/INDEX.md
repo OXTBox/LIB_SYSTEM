@@ -14,3 +14,4 @@
 | [0010](0010_shut_door_walkable_on_heights_branch.md) | fixed | a shut door (E07: ceiling at the floor) can be walked through with LIB_BIT on heights-floor-ceiling: green's meaning changed; doors now From Ceiling (LIB_EDITOR cards-heights) | 18 Nov 2026 |
 | [0011](0011_nine_tests_stop_at_camera_reset.md) | open | nine headless tests (t21, t23-t26, t33-t36) stop at Camera.Reset: their stand-in engine lacks the Rename Day names (as t22/t28 did) | 18 Nov 2026 |
 | [0012](0012_settings_menu_in_play_hunter.md) | parked | Settings menu does not show during play in Hunter; after Settings, Escape = pointer tool + Developer card (Canyon fine) | 19 Nov 2026 |
+| [0013](0013_game_player_has_no_sound.md) | open | the Game Player plays no sound: Audio.Init makes players only in a "Viewport" group (found by LIB_HOWTO topic 16) | 19 Nov 2026 |
