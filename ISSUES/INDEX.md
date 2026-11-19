@@ -9,3 +9,8 @@
 | [0005](0005_t39_two_on_git_or_not_checks_fail.md) | open | t39: On Git or Not "grey chip" and "ignored popup groups" checks fail (87/89), already on main | 18 Nov 2026 |
 | [0006](0006_stale_test_counts_after_merge.md) | open | after the merge: t46, t27, t17, t48 expect old counts (t22/t28 fixed: alias file) | 18 Nov 2026 |
 | [0007](0007_lc_editor_test_rebuilds_real_biteditor.md) | open | lc_editor_test.txt rebuilds the real BitEditor.livecode in place (and throws at line 89); lc_feedback_1115 throws at Bit.Blank | 18 Nov 2026 |
+| [0008](0008_biteditor_erases_glyphs.md) | bugged | BitEditor erases the glyphs completely (after the heights work); parked: procedural levels first | 18 Nov 2026 |
+| [0009](0009_harvest_blocks_index_dropped_rows.md) | fixed | harvest_blocks rewrote the Data/Example index with only the last harvest (61 rows dropped) | 18 Nov 2026 |
+| [0010](0010_shut_door_walkable_on_heights_branch.md) | open | a shut door (E07: ceiling at the floor) can be walked through with LIB_BIT on heights-floor-ceiling; fine on main | 18 Nov 2026 |
+| [0011](0011_nine_tests_stop_at_camera_reset.md) | open | nine headless tests (t21, t23-t26, t33-t36) stop at Camera.Reset: their stand-in engine lacks the Rename Day names (as t22/t28 did) | 18 Nov 2026 |
+| [0012](0012_settings_menu_in_play_hunter.md) | parked | Settings menu does not show during play in Hunter; after Settings, Escape = pointer tool + Developer card (Canyon fine) | 19 Nov 2026 |
