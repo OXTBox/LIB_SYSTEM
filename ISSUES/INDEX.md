@@ -8,3 +8,4 @@
 | [0004](0004_gad_base_follows_squad.md) | fixed | GAD battles: your Base followed the squad instead of its point (click hit your unit, not the place) | 18 Nov 2026 |
 | [0005](0005_t39_two_on_git_or_not_checks_fail.md) | open | t39: On Git or Not "grey chip" and "ignored popup groups" checks fail (87/89), already on main | 18 Nov 2026 |
 | [0006](0006_stale_test_counts_after_merge.md) | open | after the merge: t46, t27, t17, t48 expect old counts (t22/t28 fixed: alias file) | 18 Nov 2026 |
+| [0007](0007_lc_editor_test_rebuilds_real_biteditor.md) | open | lc_editor_test.txt rebuilds the real BitEditor.livecode in place (and throws at line 89); lc_feedback_1115 throws at Bit.Blank | 18 Nov 2026 |
