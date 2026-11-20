@@ -54,7 +54,7 @@ When an item is finished, its row moves to `DONE.md` with the date and where the
 | A-23 | Sequencer: a timeline view of a `.seq` file | not started (Thrmnlra stopped) |
 | A-89 | iGame3D XT (LIB_EDITOR): generators, Aquarius, stick figures, the 2008 Lua as xTalk, DeadDays, the editor | ongoing; the owner picks the order |
 | A-90 | LIB_Taylor: a customize-your-character editor | later |
-| A-92 (3)(4) | cellmap v3: BitEditor Slope tool, pack panel | tube #3 |
+| A-92 (3)(4) | cellmap v3: BitEditor Slope tool, pack panel | built 19 Nov, LIB_BIT branch `cellmap-v3-slope-tool` (on heights-floor-ceiling); waits for the owner to try it |
 | A-97 | Retire `demo` and `Simple_Test2` (as `original_demo`, `Original_Simple_Test2`), rename `Simple_Test1` to `Simple_Cube` | the files are still under the old names |
 
 ### LIB_GENERICA, LIB_SCRIPTBLOCKS, stack tools
