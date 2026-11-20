@@ -15,3 +15,9 @@ The rules and the plan for the whole LIB_ARRAY (`~/projects`). Read in this orde
 
 Started 2026-11-13 from the owner's notes (`LIB_LLMOUT/Read/LIB_SYSTEM/`, `LIB_ARRAY/`). Draft 1:
 the owner corrects it, the models keep it current.
+
+## Licence
+
+GPL-3.0 (see `LICENSE`), because the xTalk work here is built on the GPL-licensed LiveCode Community 9 engine. Copyright (c) 2026 xAction.
+
+The Python files (`.py`) and other material that is not xTalk are also offered under the MIT licence, Copyright (c) 2026 xAction: you may use them under either licence.
