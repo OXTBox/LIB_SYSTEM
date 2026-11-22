@@ -7,6 +7,11 @@ is in `archive/STATUS_2026-11-13_to_2026-11-17.md`; older plans in `Next_Steps_W
 Where to start a session: the Priority Tube (`LIB_DEV/PriorityTube/NEXT.md`) and the Project Map
 (`LIB_DEV/ProjectMap`). This file says what is true today; the tube says what comes first.
 
+## Update 21 November 2026 (Opus, after /clear)
+- Every branch in every repo is merged to main (owner: "merge everything", 20 Nov); the B-1 list below is history. All 46 repos are public in org OXTBox since 21 Nov.
+- Owner's two open Project Map notes answered: RELEASE_CHECKLIST.md lives in `LIB_EDITOR/iGame3D_XT/` on main (keep); "face" = which screen shows the Entity. suggestion list (default: in-game command line).
+- Priority Tube holds only: Comfy Games app (built and merged, owner to try) and Pythonizing day (his word). Nothing else queued; waiting for his next pick.
+
 ## Done 18 November
 
 | What | Who | Where |
