@@ -16,3 +16,4 @@
 | [0012](0012_settings_menu_in_play_hunter.md) | parked | Settings menu does not show during play in Hunter; after Settings, Escape = pointer tool + Developer card (Canyon fine) | 19 Nov 2026 |
 | [0013](0013_game_player_has_no_sound.md) | open | the Game Player plays no sound: Audio.Init makes players only in a "Viewport" group (found by LIB_HOWTO topic 16) | 19 Nov 2026 |
 | [0014](0014_xtalk_names_pi_shadow.md) | fixed | a parameter named pI does not compile (it is the constant pi); a library that fails to compile only shows "can't find handler" | 19 Nov 2026 |
+| [0015](0015_tab_key_games_vs_console.md) | open | five games use Tab (Amazing_Couple, PromptAndGlazeMaze, VectorToss, PhotonBall, Thrmnlra) but Tab is now the console key; in the xt3d bench Tab pops the console menu over them | 22 Nov 2026 |
