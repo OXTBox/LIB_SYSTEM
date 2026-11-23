@@ -43,3 +43,11 @@ All in `LIB_GAMES/Vibecode3D_Games/Vibecode3D_Play_<name>.livecodescript`.
   no console menu; paused: the menu), xt3D bridge tests/console_bench_headless.txt (Con.TabIsMine).
 - **Still open, the owner's call:** which key replaces Tab in the five games (one "switch / swap" key for
   all would be easiest). Until then the games keep Tab and it works while they play.
+
+## Owner's keys, 22 Nov (late): done on LIB_GAMES branch `tab-to-c` (compiles; not yet played)
+- **C = companion / swap**: Amazing_Couple (Couple.Switch), PromptAndGlazeMaze (swap agents). Vector Toss and
+  Photon Ball already used C for the swap.
+- **Vector Toss**: landing ring (shadow) always on, its Tab toggle removed ("impossible hard with it off").
+- **Thrmnlra**: `\` cycles the focus (Thrm.FocusKey, still two doom ticks; the clips still receive "tab");
+  the card's tabKey handler is gone, so Tab goes to the console. Strike.seq on-screen text says [\].
+- **Photon Ball**: same Tab ring toggle as Vector Toss, NOT changed yet (asked the owner).
