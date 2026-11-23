@@ -50,4 +50,8 @@ All in `LIB_GAMES/Vibecode3D_Games/Vibecode3D_Play_<name>.livecodescript`.
 - **Vector Toss**: landing ring (shadow) always on, its Tab toggle removed ("impossible hard with it off").
 - **Thrmnlra**: `\` cycles the focus (Thrm.FocusKey, still two doom ticks; the clips still receive "tab");
   the card's tabKey handler is gone, so Tab goes to the console. Strike.seq on-screen text says [\].
-- **Photon Ball**: same Tab ring toggle as Vector Toss, NOT changed yet (asked the owner).
+- **Photon Ball** (owner: "a toggle, but not by a keyboard command: some map difficulty that can be randomized in
+  the ComfyUI outputs"): constant kMatchRing, per match 1 shows / 0 hides (hand-made "1" = always on), "NO LANDING
+  RING" in the match message when off. LIB_COMFY branch `photon-ring`: Break Rules node input "ring" =
+  always / fades / random / never (match 1 keeps the ring unless danger >= 0.85). photon_play_test all PASS
+  (+ a built game with "1,0": ring shown match 1, hidden 2-4).
