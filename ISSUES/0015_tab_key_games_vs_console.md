@@ -1,4 +1,4 @@
-# 0015 Games that use Tab, now that Tab belongs to the console (open, 22 Nov 2026; guard in, key still his)
+# 0015 Games that use Tab, now that Tab belongs to the console (CLOSED 22 Nov 2026: keys picked and merged)
 
 **Owner, 22 Nov:** "we may still have games using the TAB key for game interaction that will need to have
 that key replaced."
@@ -55,3 +55,6 @@ All in `LIB_GAMES/Vibecode3D_Games/Vibecode3D_Play_<name>.livecodescript`.
   RING" in the match message when off. LIB_COMFY branch `photon-ring`: Break Rules node input "ring" =
   always / fades / random / never (match 1 keeps the ring unless danger >= 0.85). photon_play_test all PASS
   (+ a built game with "1,0": ring shown match 1, hidden 2-4).
+
+## Closed 22 Nov 2026 (late): owner "Merge everything on that it's great!"
+LIB_GAMES main a7ce3c5 (tab-to-c), LIB_COMFY main ec20878 (photon-ring); node pack installed into both Comfy installs.
