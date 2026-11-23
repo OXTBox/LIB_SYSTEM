@@ -48,3 +48,13 @@ Games that DO act on repeating key messages (the game scan, p1-01, lists them: `
 Done when: two arrows held 30 s on the star map, both engines: no crash, pending messages stay under
 10, fps within 10% of no keys held, Escape still pauses in one frame, F4 and the notes key work. Keep
 it as a test (OXT-BEYOND/tests) so it never comes back.
+
+## Looked into (Claude Opus, 23 Nov 2026, night). Fixed on LIB_GAD branch `arrow-keys-stay`, waits for his look
+Same cause as 0020 (Bat Duel): Genetic Anomaly had no `on arrowKey` handler (only a `rawKeyDown` for the wheel),
+so Left reached the engine's card navigation = previous card. Not a pile-up; the guard design above is not needed.
+- Already covered in the Game Player since LIB_DEV 8232292 (it swallows arrows no game took): the arrow test
+  passed for Genetic Anomaly before any change.
+- LIB_GAD arrow-keys-stay: empty `on arrowKey` in the game itself (covers the xRay bench too).
+- Test OXT-BEYOND/tests/t71_arrow_keys_stay.txt now runs GeneticAnomaly too (copied from LIB_GAD into LIB_GAMES
+  for the run, deleted after): 12/12 PASS both engines. t14 passes; t15 stops at Camera.Reset as before (ISSUES 0011).
+Still to do: he holds two arrows on the star map, then says "merge".
