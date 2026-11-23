@@ -1,4 +1,4 @@
-# 0015 Games that use Tab, now that Tab belongs to the console (open, 22 Nov 2026)
+# 0015 Games that use Tab, now that Tab belongs to the console (open, 22 Nov 2026; guard in, key still his)
 
 **Owner, 22 Nov:** "we may still have games using the TAB key for game interaction that will need to have
 that key replaced."
@@ -28,3 +28,18 @@ All in `LIB_GAMES/Vibecode3D_Games/Vibecode3D_Play_<name>.livecodescript`.
 2. Change the five games; keep the old Tab working in the Game Player until the console reaches it?
 3. Meanwhile, a cheap guard is possible: the bench's `tabKey` passes Tab on while a game plays (sGameOn)
    unless the console line has the keyboard.
+
+## Done 22 Nov (evening): the cheap guard, games NOT changed (branch `console-player`, not merged)
+- Rule now, in both places: **Tab is the console's only while its line has the keyboard, or while no game
+  plays.** While a game plays and the line does not have the keyboard, Tab is the game's: the window does
+  nothing with it (a keysDown game reads it itself; Thrmnlra's card `tabKey` comes first anyway). It is not
+  passed on either: passed, the engine would move the keyboard into the console line and the game would wait.
+- One place for the rule: LIB_ig3d `lib_console` `Con.TabIsMine(game plays?)` and `Con.TabFromHost`.
+- xt3d Games bench (Engine 2): the stack's `tabKey` asks it with `sGameOn`.
+- Game Player (Engine 1, LIB_DEV `game_player`): it now has the console too (F4 or ... > Console, lower left,
+  hidden until asked for); its stack `tabKey` asks it with "plays = running and not paused". Paused or
+  ended: Tab anywhere opens the console's menu. Console hidden: Tab as before.
+- Tests: OXT-BEYOND/tests/t67_console_player.txt (Game Player, Tab on a playing game reaches the game's card,
+  no console menu; paused: the menu), xt3D bridge tests/console_bench_headless.txt (Con.TabIsMine).
+- **Still open, the owner's call:** which key replaces Tab in the five games (one "switch / swap" key for
+  all would be easiest). Until then the games keep Tab and it works while they play.
