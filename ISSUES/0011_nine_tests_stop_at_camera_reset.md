@@ -24,3 +24,8 @@ after it, so the whole test stops before the real engine is reached.
 culling work (Vibecode3D branch `occlusion-culling`) the check was made another way: t22 and t28
 (game stand-ins) and t18, t45, t48, t49 (real engine) give the same lines before and after, and eight
 real games were played 200 frames on the real engine in each mode with no error.
+
+## Seen 23 Nov 2026 (night, Claude Opus)
+Fix for one test: t25 (Light Trail Arena) appends LIB_ig3d/livecode/contract_aliases.livecodescript to the stand-ins,
+as LIB_GAMES/tools/headless_play.sh does, and now runs its 26 checks (both engines). The same line likely fixes the
+others (t15 Genetic Anomaly and t26 Crater Crawler stop the same way); not done yet.
