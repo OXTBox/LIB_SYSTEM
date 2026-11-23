@@ -18,3 +18,7 @@
 | [0014](0014_xtalk_names_pi_shadow.md) | fixed | a parameter named pI does not compile (it is the constant pi); a library that fails to compile only shows "can't find handler" | 19 Nov 2026 |
 | [0015](0015_tab_key_games_vs_console.md) | closed | five games use Tab (Amazing_Couple, PromptAndGlazeMaze, VectorToss, PhotonBall, Thrmnlra) but Tab is now the console key; guard in (branch console-player): while a game plays Tab is the game's; keys picked 22 Nov (C swap, \\ Thrmnlra focus, Vector Toss ring always on) on LIB_GAMES branch tab-to-c; Photon Ball ring = per-match difficulty (LIB_COMFY photon-ring) | 22 Nov 2026 |
 | [0016](0016_recursive_call_inside_call_args_loses_text.md) | workaround | a recursive function called inside another call's brackets lost the caller's text on OXT-Beyond (LIB_EMITTERS bolts lost their main line two branches deep); call it on its own line | 22 Nov 2026 |
+| [0017](0017_held_keys_pile_up_crash_xt.md) | open | two arrow keys held on the Genetic Anomaly star map crash the XT engine (key presses pile up as pending messages) | 22 Nov 2026 |
+| [0018](0018_amazing_couple_missing_library_installed.md) | open | Amazing Couple shows a missing Lib warning on the installed copy (tester's PC) | 22 Nov 2026 |
+| [0019](0019_tabletop_racers_crash_new_level.md) | open | Tabletop Racers: a crash seen at a new level (not confirmed) | 22 Nov 2026 |
+| [0020](0020_bat_duel_quits_on_arrow_keys.md) | open | Bat Duel quits on the arrow keys | 22 Nov 2026 |
