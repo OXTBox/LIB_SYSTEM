@@ -21,4 +21,4 @@
 | [0017](0017_held_keys_pile_up_crash_xt.md) | open | two arrow keys held on the Genetic Anomaly star map crash the XT engine (key presses pile up as pending messages) | 22 Nov 2026 |
 | [0018](0018_amazing_couple_missing_library_installed.md) | open | Amazing Couple shows a missing Lib warning on the installed copy (tester's PC) | 22 Nov 2026 |
 | [0019](0019_tabletop_racers_crash_new_level.md) | open | Tabletop Racers: a crash seen at a new level (not confirmed) | 22 Nov 2026 |
-| [0020](0020_bat_duel_quits_on_arrow_keys.md) | fixed on branch arrow-keys-stay (waits for his play) | Bat Duel quits on the arrow keys: Left arrow went to card navigation (no arrowKey handler) | 22 Nov 2026 |
+| [0020](0020_bat_duel_quits_on_arrow_keys.md) | closed 23 Nov (merged) | Bat Duel quits on the arrow keys: Left arrow went to card navigation (no arrowKey handler) | 22 Nov 2026 |

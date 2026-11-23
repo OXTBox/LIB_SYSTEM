@@ -36,3 +36,6 @@ cards, which is why Down alone never showed it. Holding Down+Left just meant Lef
 - Not done: the xRay (xt3d) bench has no arrowKey guard of its own. The game fix covers Bat Duel there too.
   0017 (Genetic Anomaly star map) is a different game and stays open.
 Still to do: he holds Down+Left in Bat Duel in the Game Player (XT), then says "merge".
+
+## Closed (23 Nov 2026, evening)
+Owner: "Fixed Achieved, I held down as many keys as I have fingers and no crash." Merged to main: LIB_GAMES 3d606cb, LIB_DEV 8232292.
