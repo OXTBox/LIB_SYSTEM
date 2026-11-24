@@ -36,6 +36,7 @@ mention LiveCode 9.6.3 or the Community edition in public material (internally i
 | **Libraries** | |
 | `LIB_MCP` | lets Claude, a local model or any tool drive a running LiveCode (dev server, `tools/lcmcp`) |
 | `LIB_XTJSON` | LiveCode stacks <-> JSON (harvest, rebuild, batch app) |
+| `LIB_CITY` | a city as a height map (grey x multiplier, PGM + seed file) and the City Editor: a very large sparse block city from a bird's eye, fill-in and auto-fill to 20 fps (started 20 Nov; stage of the LIB_TRANSVERSAL bench) |
 | `LIB_BIT` / `LIB_MAP` / `LIB_TRACE` | 1-bit grids / levels from grids / bitmap to shapes |
 | `LIB_MOCAP` / `LIB_BVH` | video -> motion capture -> characters / the BVH motion library (local only: rights unsettled) |
 | `LIB_DATA` | the one Data folder every app loads and saves through (`Documents/Data`) |
