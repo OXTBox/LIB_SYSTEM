@@ -24,3 +24,4 @@
 | [0020](0020_bat_duel_quits_on_arrow_keys.md) | closed 23 Nov (merged) | Bat Duel quits on the arrow keys: Left arrow went to card navigation (no arrowKey handler) | 22 Nov 2026 |
 | [0021](0021_e13_teleporter_cloud_height.md) | open | E13 test: the teleporter lands at y 265, the test wants 231 (on main before lean-water-off) | 23 Nov 2026 |
 | [0022](0022_switch_fact_was_wrong.md) | closed 25 Nov | xtalk_py: "switch is case-sensitive" in LIVECODE_FACTS was wrong (never measured); broke LightCycles3 in the Python runtime | 25 Nov 2026 |
+| [0023](0023_xtalk_py_script_level_globals.md) | fixed (branch phase2-thorough) | xtalk_py: script-level `global` lines were ignored (900 survey errors) | 25 Nov 2026 |
