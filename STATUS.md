@@ -7,6 +7,12 @@ is in `archive/STATUS_2026-11-13_to_2026-11-17.md`; older plans in `Next_Steps_W
 Where to start a session: the Priority Tube (`LIB_DEV/PriorityTube/NEXT.md`) and the Project Map
 (`LIB_DEV/ProjectMap`). This file says what is true today; the tube says what comes first.
 
+## Update 25 November 2026 (Opus): Pythonizing, Phase 2 thorough
+- xtalk_py branch `phase2-thorough` (13 commits, not merged, not pushed): every harvested stack loads and runs its
+  clicks except TKInter-izer 14/15 (its own missing button) and GAD 65/77 (skipped by the owner). Each rule measured
+  in LiveCode first; what is done and the open questions: `xtalk_py/docs/HANDOFF_PHASE3.md` ("Phase 2 thorough:
+  done so far"). Bug of the day: ISSUES 0023 (script-level globals).
+
 ## Update 21 November 2026 (Opus, after /clear)
 - Every branch in every repo is merged to main (owner: "merge everything", 20 Nov); the B-1 list below is history. All 46 repos are public in org OXTBox since 21 Nov.
 - Owner's two open Project Map notes answered: RELEASE_CHECKLIST.md lives in `LIB_EDITOR/iGame3D_XT/` on main (keep); "face" = which screen shows the Entity. suggestion list (default: in-game command line).
