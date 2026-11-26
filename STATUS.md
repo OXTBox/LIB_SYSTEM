@@ -8,7 +8,7 @@ Where to start a session: the Priority Tube (`LIB_DEV/PriorityTube/NEXT.md`) and
 (`LIB_DEV/ProjectMap`). This file says what is true today; the tube says what comes first.
 
 ## Update 25 November 2026, night (Opus): Pythonizing Phase 3, xt3d on Python raylib
-- xtalk_py branch `phase3-xt3d` (not merged, not pushed). Owner's choice: run his testbench host script
+- xtalk_py Phase 3 MERGED + PUSHED to main 25 Nov night (2ce495d), on his word. He played uDead in a real window (tools/play_xt3d.sh): close box slow, Escape lost, mouse look wrong, slows to 4 fps; next = xtalk_py/docs/HANDOFF_PHASE3.md START HERE, then a human-clicks test with him. Owner's choice: run his testbench host script
   itself. Done: the 493 xt3d calls generated from the manifest + the 43 helpers (248/248 against the real
   bridge), the view demo unchanged at 60 fps, and **uDead CullTest playing in Python** through the unchanged
   host + generated engine, hiding modes 0-3, ~18 fps (xRay ~20). Not yet seen on his screen.
