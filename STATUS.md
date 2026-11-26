@@ -7,6 +7,13 @@ is in `archive/STATUS_2026-11-13_to_2026-11-17.md`; older plans in `Next_Steps_W
 Where to start a session: the Priority Tube (`LIB_DEV/PriorityTube/NEXT.md`) and the Project Map
 (`LIB_DEV/ProjectMap`). This file says what is true today; the tube says what comes first.
 
+## Update 25 November 2026, night (Opus): Pythonizing Phase 3, xt3d on Python raylib
+- xtalk_py branch `phase3-xt3d` (not merged, not pushed). Owner's choice: run his testbench host script
+  itself. Done: the 493 xt3d calls generated from the manifest + the 43 helpers (248/248 against the real
+  bridge), the view demo unchanged at 60 fps, and **uDead CullTest playing in Python** through the unchanged
+  host + generated engine, hiding modes 0-3, ~18 fps (xRay ~20). Not yet seen on his screen.
+  Where to start: `xtalk_py/docs/HANDOFF_PHASE3.md` "START HERE".
+
 ## Update 25 November 2026, late (Opus): Pythonizing, the fast translator
 - xtalk_py branch `fast-translate` (on phase2-thorough; not merged, not pushed): stack scripts are translated to
   Python before they run (owner's word). Raycasting_101: 12 ms a game step (was 85-125), the window no longer
