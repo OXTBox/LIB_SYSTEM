@@ -26,3 +26,4 @@
 | [0022](0022_switch_fact_was_wrong.md) | closed 25 Nov | xtalk_py: "switch is case-sensitive" in LIVECODE_FACTS was wrong (never measured); broke LightCycles3 in the Python runtime | 25 Nov 2026 |
 | [0023](0023_xtalk_py_script_level_globals.md) | fixed (branch phase2-thorough) | xtalk_py: script-level `global` lines were ignored (900 survey errors) | 25 Nov 2026 |
 | [0024](0024_xtalk_py_raycasting_frozen.md) | fixed (branch fast-translate) | xtalk_py: Raycasting_101 answered one key, then froze (slow interpreter + the window starved by re-sent messages) | 25 Nov 2026 |
+| [0025](0025_xtalk_py_udead_hidden_rules.md) | fixed (branch phase3-xt3d) | xtalk_py: uDead via the xt3d host was black, then hung in hiding mode 1: array keys must ignore case, itemDel is per handler, delete item 1 of "3," is empty | 25 Nov 2026 |
