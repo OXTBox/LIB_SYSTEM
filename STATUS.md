@@ -7,6 +7,12 @@ is in `archive/STATUS_2026-11-13_to_2026-11-17.md`; older plans in `Next_Steps_W
 Where to start a session: the Priority Tube (`LIB_DEV/PriorityTube/NEXT.md`) and the Project Map
 (`LIB_DEV/ProjectMap`). This file says what is true today; the tube says what comes first.
 
+## Update 25 November 2026, late (Opus): Pythonizing, the fast translator
+- xtalk_py branch `fast-translate` (on phase2-thorough; not merged, not pushed): stack scripts are translated to
+  Python before they run (owner's word). Raycasting_101: 12 ms a game step (was 85-125), the window no longer
+  freezes (ISSUES 0024). Tests 421 / 847 / 132; survey identical to the interpreter. Waits for his look on screen
+  (`tools/open_stack.sh ~/projects/XTJSON/xTalk_Raycasting_101_02_2024_NewMap`), then uDead CullTest.
+
 ## Update 25 November 2026 (Opus): Pythonizing, Phase 2 thorough
 - xtalk_py branch `phase2-thorough` (13 commits, not merged, not pushed): every harvested stack loads and runs its
   clicks except TKInter-izer 14/15 (its own missing button) and GAD 65/77 (skipped by the owner). Each rule measured

@@ -25,3 +25,4 @@
 | [0021](0021_e13_teleporter_cloud_height.md) | open | E13 test: the teleporter lands at y 265, the test wants 231 (on main before lean-water-off) | 23 Nov 2026 |
 | [0022](0022_switch_fact_was_wrong.md) | closed 25 Nov | xtalk_py: "switch is case-sensitive" in LIVECODE_FACTS was wrong (never measured); broke LightCycles3 in the Python runtime | 25 Nov 2026 |
 | [0023](0023_xtalk_py_script_level_globals.md) | fixed (branch phase2-thorough) | xtalk_py: script-level `global` lines were ignored (900 survey errors) | 25 Nov 2026 |
+| [0024](0024_xtalk_py_raycasting_frozen.md) | fixed (branch fast-translate) | xtalk_py: Raycasting_101 answered one key, then froze (slow interpreter + the window starved by re-sent messages) | 25 Nov 2026 |
